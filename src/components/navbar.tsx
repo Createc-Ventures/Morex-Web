@@ -17,7 +17,7 @@ export default function Navbar() {
         ${
           scrolled
             ? 'top-4 left-1/2 transform -translate-x-1/2 w-[90%] h-[80px] rounded-[40px]'
-            : 'top-6 left-[65%] transform -translate-x-[55%] w-[800px] h-[68px] rounded-[30px]'
+            : 'top-6 left-[65%] transform -translate-x-[60%] w-[800px] h-[68px] rounded-[30px]'
         }`}
     >
       <div className="flex items-center justify-between w-full h-full relative">
@@ -32,11 +32,9 @@ export default function Navbar() {
           </div>
         )}
 
-        {/* Navigation Links - centered when scrolled */}
+        {/* Navigation Links - always centered */}
         <div
-          className={`absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex space-x-8 transition-all duration-500 ${
-            scrolled ? 'opacity-100' : 'opacity-100 justify-end right-0'
-          }`}
+          className={`absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex space-x-8 transition-all duration-500`}
         >
           {['HOME', 'INVEST', 'INSIGHT', 'ABOUT US'].map((item, i) => (
             <a

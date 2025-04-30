@@ -1,6 +1,7 @@
 import VideoMaskSection from "@/components/VideoMaskSection"; // Adjust the path if needed
 import { ArrowUpRight } from 'lucide-react'; // optional if you want the same style arrow
 import Kipscards from "@/components/kipscards";
+import { Link, useNavigate } from 'react-router-dom';
 import Graph from "@/components/graph";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
@@ -34,7 +35,7 @@ export default function Homepage() {
     { label: "HOME", href: "#" },
     { label: "INSIGHT", href: "#" },
     { label: "INVEST", href: "#" },
-    { label: "ABOUT US", href: "#" },
+    { label: "ABOUT US", href: "/aboutus" },
     { label: "LEARN", href: "#" },
   ];
 
@@ -92,7 +93,7 @@ export default function Homepage() {
 
   // Years for performance chart
   const performanceYears = ["2015", "2017", "2019", "2021", "2023"];
-
+  const navigate = useNavigate();
   return (
     <div className="bg-white flex flex-row justify-center w-full">
       <div className="bg-white overflow-hidden w-full max-w-[1280px] relative">
