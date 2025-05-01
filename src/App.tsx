@@ -7,8 +7,8 @@ import Homepage from "./pages/home";
 import AboutUs from "./pages/aboutus";
 import Index from "./pages/home";
 import NotFound from "./pages/NotFound";
-import ContactUs from './pages/Contact-us';
-
+import ContactPage from './pages/contact-us-2';
+import MeetTheTeamCarousel from './pages/meet-the-team'
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -18,9 +18,10 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-        <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/contactus" element={<ContactPage />} />
           <Route path="/home" element={<Homepage />} />
           <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/meetTheTeam" element={<MeetTheTeamCarousel />} />
           <Route path="/" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

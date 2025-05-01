@@ -1,18 +1,26 @@
 import React from 'react';
+import Navbar from "@/components/navbar";
 
 export default function ContactPage() {
   return (
-    <div className="font-serif text-blue-900">
+    <div className="bg-white flex flex-row justify-center w-full font-times" data-model-id="0:633">
+      <div className="bg-white overflow-hidden relative">
+        <Navbar startPosition="custom" />
       {/* Hero Section */}
-      <section
-        className="relative bg-cover bg-center h-[300px] flex flex-col items-center justify-center text-white"
-        style={{ backgroundImage: 'url("/assets/contact-hero.jpg")' }}
-      >
-        <h1 className="text-5xl font-bold mb-4">CONTACT US</h1>
-        <p className="text-lg text-center max-w-xl px-4">
-          Need an expert? You are more than welcomed to leave your contact info and we will be in touch shortly.
-        </p>
-      </section>
+      <section className="relative w-full h-[450px]">
+          <div className="absolute w-full h-[450px] top-0 left-0">
+            <img
+              className="absolute w-full h-[450px] top-0 left-0 object-cover"
+              alt="Hero background"
+              src="public/assets/images/contact-us-banner.jpg"
+            />
+            <div className="absolute w-full h-[450px] top-0 left-0 bg-[#000000a6]" />
+          </div>
+
+          <div className="relative h-full flex flex-col items-center justify-center">
+          <div data-layer="Contact us" className="ContactUs" style={{color: '#CDB989', fontSize: 48, fontFamily: 'Libre Bodoni', fontWeight: '700', textTransform: 'uppercase', wordWrap: 'break-word'}}>Contact us</div>
+            <div data-layer="Need an expert? you arc more than welcomed to leave your contact info and we will be in touch shortly." className="NeedAnExpertYouArcMoreThanWelcomedToLeaveYourContactInfoAndWeWillBeInTouchShortly" style={{textAlign: 'center', color: 'white', fontSize: 16, fontFamily: 'Libre Bodoni', fontWeight: '400', wordWrap: 'break-word'}}>Need an expert? you arc more than welcomed to leave your contact<br/>info and we will be in touch shortly. </div>          </div>
+        </section>
 
       {/* Info Cards */}
       <section className="py-12 px-6 md:px-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
@@ -107,6 +115,7 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      </div>
     </div>
   );
 }
