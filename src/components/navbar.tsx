@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import {Link} from 'react-router-dom';
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
@@ -38,7 +38,7 @@ export default function Navbar() {
             scrolled ? 'opacity-100' : 'opacity-100 justify-end right-0'
           }`}
         >
-          {['HOME', 'INVEST', 'INSIGHT', 'ABOUT US'].map((item, i) => (
+          {['HOME', 'COMPANY', 'INSIGHT', 'INVEST', 'LEARN'].map((item, i) => (
             <a
               key={i}
               href="#"
@@ -49,16 +49,16 @@ export default function Navbar() {
             </a>
           ))}
         </div>
-
+        
         {/* Contact Button - always far right */}
         <div className="flex-shrink-0 ml-auto">
-          <a
-            href="#"
+          <Link
+            to="/ContactPage"
             className="bg-blue-900 text-[#D4B968] px-6 py-3 rounded-full font-bold hover:bg-blue-800 transition-colors duration-300"
             style={{ fontFamily: 'Times New Roman, serif' }}
           >
             CONTACT
-          </a>
+          </Link>
         </div>
       </div>
     </header>
