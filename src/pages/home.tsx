@@ -99,7 +99,7 @@ export default function Homepage() {
       <div className="bg-white overflow-hidden w-full max-w-[1280px] relative">
         {/* Hero Section */}
         <Navbar/>
-        <VideoMaskSection />
+        <VideoMaskSection  />
           {/* Navigation */}
           
 

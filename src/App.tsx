@@ -7,6 +7,7 @@ import Homepage from "./pages/home";
 import AboutUs from "./pages/aboutus";
 import Index from "./pages/home";
 import NotFound from "./pages/NotFound";
+import ContactUs from './pages/Contact-us';
 
 const queryClient = new QueryClient();
 
@@ -17,6 +18,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
+        <Route path="/contactus" element={<ContactUs />} />
           <Route path="/home" element={<Homepage />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/" element={<Index />} />

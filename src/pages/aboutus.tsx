@@ -1,15 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import Navbar from "@/components/navbar";
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-} from "@/components/ui/navigation-menu";
-import { Separator } from "@/components/ui/separator";
-import { Textarea } from "@/components/ui/textarea";
 import {
   Facebook,
   Instagram,
@@ -22,367 +10,175 @@ import {
 } from "lucide-react";
 import React from "react";
 
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import Testimonials from "@/components/Testimonials";
+import { Input } from "@/components/ui/input";
+import { Separator } from "@/components/ui/separator";
+import { Textarea } from "@/components/ui/textarea";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+
 export default function AboutUs(): JSX.Element {
-  // Navigation items
-  const navItems = [
-    { label: "HOME", href: "#" },
-    { label: "INSIGHT", href: "#" },
-    { label: "INVEST", href: "#" },
-    { label: "ABOUT US", href: "#" },
-    { label: "LEARN", href: "#" },
+  const teamMembers = [
+    { name: "Moe Manzoor", title: "President & CEO, Founder" },
+    { name: "Maria Tilotta", title: "Chief Compliance Officer, Co-Founder" },
+    { name: "Atul Mehra", title: "Vice President" },
+    { name: "Djamal Saleh", title: "Investor Relations" },
   ];
 
-  // Stats data
-  const statsData = [
-    { value: "3m", description: "Weekly turnover of the company" },
-    { value: "237", description: "Clients working with us" },
-    { value: "18%", description: "Average profit of our clients" },
-    {
-      value: "92%",
-      description: "So many years we help people to manage their money",
-    },
+  const partnerBenefits = [
+    "Access to high-quality private market opportunities",
+    "Conservative lending philosophy with capital preservation focus",
+    "Institutional-grade due diligence and underwriting standards",
+    "Professional and regulatory compliant investor onboarding experience",
   ];
 
-  // Services data
-  const servicesData = [
-    {
-      title: "Lorem ipsum",
-      description:
-        "Lorem ipsum dolor sit amet, amet consectetur adipiscing elit.",
-    },
-    {
-      title: "Lorem ipsum",
-      description:
-        "Lorem ipsum dolor sit amet, amet consectetur adipiscing elit.",
-    },
-    {
-      title: "Lorem ipsum",
-      description:
-        "Lorem ipsum dolor sit amet, amet consectetur adipiscing elit.",
-    },
-    {
-      title: "Lorem ipsum",
-      description:
-        "Lorem ipsum dolor sit amet, amet consectetur adipiscing elit.",
-    },
-    {
-      title: "Lorem ipsum",
-      description:
-        "Lorem ipsum dolor sit amet, amet consectetur adipiscing elit.",
-    },
-    {
-      title: "Lorem ipsum",
-      description:
-        "Lorem ipsum dolor sit amet, amet consectetur adipiscing elit.",
-    },
-  ];
+  
 
-  // Values data
-  const valuesData = [
-    {
-      title: "'Integrity'",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sapien lacus, gravida vitae fermentum vitae,",
-    },
-    {
-      title: "'Excellence'",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sapien lacus, gravida vitae fermentum vitae,",
-    },
-    {
-      title: "'Transparency'",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sapien lacus, gravida vitae fermentum vitae,",
-    },
-    {
-      title: "'Innovation'",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sapien lacus, gravida vitae fermentum vitae,",
-    },
-    {
-      title: "'Client Focus'",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sapien lacus, gravida vitae fermentum vitae,",
-    },
-    {
-      title: "'Sustainability'",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sapien lacus, gravida vitae fermentum vitae,",
-    },
-  ];
+  
 
-  // Contact info data
-  const contactInfo = [
-    {
-      icon: <Phone className="w-12 h-12" />,
-      items: ["+6549816186", "+1644843655"],
-    },
-    {
-      icon: <MapPin className="w-12 h-12" />,
-      items: [
-        "Lorem ipsum dolor amet, consectetur elit. Aliquam ullamcorper lorem",
-      ],
-    },
-    {
-      icon: <Mail className="w-12 h-12" />,
-      items: ["Loremipsum55@gamil.com", "Loremi9655@gamil.com"],
-    },
-  ];
-
-  // Social media data
-  const socialMedia = [
-    { icon: <Facebook className="w-12 h-12" />, href: "#" },
-    { icon: <Linkedin className="w-12 h-12" />, href: "#" },
-    { icon: <Instagram className="w-12 h-12" />, href: "#" },
-    { icon: <Twitter className="w-12 h-12" />, href: "#" },
-  ];
+  
 
   return (
-    <div className="bg-white flex flex-row justify-center w-full">
-      <div className="bg-white overflow-hidden w-full max-w-[1280px] relative">
-        {/* Navigation Bar */}
-        <Navbar/>
-        
-        {/* Hero Section */}
-        <section className="relative w-full h-[314px]">
-          <div className="absolute inset-0 bg-[#000000a6]" />
-          <img
-            className="w-full h-full object-cover"
-            alt="Hero Background"
-            src=""
-          />
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-            <h1 className="font-['Libre_Bodoni-Bold',Helvetica] font-bold text-5xl text-[#cdb989]">
-              OUR STORY
-            </h1>
-            <p className="font-['Libre_Bodoni-Regular',Helvetica] text-white text-base mt-6">
-              -More Than Mortgages-
-            </p>
-          </div>
-        </section>
+    <div className="bg-white flex flex-row justify-center w-full font-times" data-model-id="0:633">
+      <div className="bg-white overflow-hidden relative">
+        <Navbar startPosition="custom" />
 
-        {/* Our Journey Section */}
-        <section className="flex flex-col md:flex-row gap-8 px-8 py-16">
-          <div className="md:w-1/2">
+        <section className="relative w-full h-[450px]">
+          <div className="absolute w-full h-[450px] top-0 left-0">
             <img
-              className="w-full h-auto object-cover"
-              alt="Team Working"
-              src=""
+              className="absolute w-full h-[450px] top-0 left-0 object-cover"
+              alt="Hero background"
+              src="public/assets/images/hero.png"
             />
+            <div className="absolute w-full h-[450px] top-0 left-0 bg-[#000000a6]" />
           </div>
-          <div className="md:w-1/2 flex flex-col">
-            <h2 className="font-['Libre_Bodoni-Bold',Helvetica] font-bold text-5xl text-[#012c51] mb-8 text-center md:text-left">
-              Our Journey
-            </h2>
-            <p className="font-['Segoe_UI-Regular',Helvetica] text-black text-base text-center md:text-left">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              sapien lacus, gravida vitae fermentum vitae, molestie id lorem.
-              Quisque quis ex nisi. Nam tempus erat arcu, et molestie purus
-              porttitor id. Donec mollis velit augue, non pellentesque tortor
-              volutpat vitae. Phasellus varius odio id metus iaculis aliquam.
-              Cras elementum ut eros in convallis.
-              <br />
-              <br />
-              Ut venenatis pharetra erat ac efficitur. Ut ultrices magna ut
-              neque elementum, sit amet mollis ipsum pulvinar. Nulla congue in
-              mi sed elementum. Donec mauris ipsum, condimentum vel convallis
-              nec, condimentum sed ipsum. Integer euismod ligula vitae nulla
-              rhoncus fringilla. Vivamus purus nulla, auctor nec vestibulum nec,
-              rhoncus sit amet lacus. Nam tincidunt egestas porttitor. Vivamus
-              rhoncus, ligula et ornare congue, sapien purus rhoncus est.
-              <br />
-              <br />
-              Suspendisse eget nulla eget ante finibus ultrices vitae ut arcu.
-              Aenean malesuada, lacus nec suscipit pellentesque, nibh urna
-              bibendum diam, et dignissim est ligula vitae metus. Phasellus
-              consectetur turpis id cursus faucibus. Nam sit amet ipsum euismod,
-              lacinia dolor ut, consectetur augue. Praesent fringilla nulla ut
-              metus tempus, nec fermentum elit accumsan. Nullam sit amet sodales
-              leo, sed mollis.
-              <br />
-              <br />
-              Sed efficitur, nisl eget efficitur consequat, ipsum odio rutrum
-              dui, at suscipit ipsum quam non magna. Praesent maximus eu sapien
-              at cursus. Nam interdum lacinia lacus iaculis commodo. Nulla id
-              euismod erat. Aenean venenatis dignissim mauris eget facilisis.
+
+          <div className="relative h-full flex flex-col items-center justify-center">
+            <h1 className="font-bold text-[#cdb989] text-5xl" style={{ fontFamily: "'Times New Roman', Times, serif" }}>ABOUT US</h1>
+            <p className="mt-6 font-normal text-white text-base" style={{ fontFamily: "'Times New Roman', Times, serif" }}>-More Than Mortgages-</p>
+          </div>
+        </section>
+
+        <section className="flex flex-row items-center justify-between px-12 py-16">
+          <div className="w-[517px]">
+            <img className="w-full h-[604px] object-cover" alt="Our journey" src="public\assets\images\journey.png" />
+          </div>
+
+          <div className="w-[591px] flex flex-col items-center">
+            <h2 className="font-bold text-[#012c51] text-5xl mb-8" style={{ fontFamily: "'Times New Roman', Times, serif" }}>OUR JOURNEY</h2>
+            <p className="font-normal text-black text-base text-center" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+              At Morex Asset Management, our story is rooted in a clear vision — to empower qualified
+              investors with access to exclusive, high-quality private investment opportunities...
+              <br /><br />
+              At Morex Asset Management, our story is rooted in a clear vision — to empower qualified investors with access to exclusive, 
+              high-quality private investment opportunities. As a registered Exempt Market Dealer (EMD), we serve as the dedicated distribution 
+              arm of the Morex Group, guiding our clients toward smart, income-generating investments in a rapidly evolving financial landscape.
+              Our journey began with a commitment to connect discerning investors with reliable, performance-driven opportunities. This vision led 
+              us to partner closely with Morex Capital, one of Canada’s leading Mortgage Investment Corporations (MICs), known for its expertise in 
+              high-quality, income-producing residential mortgages.
+              Together, we’ve built a trusted platform that emphasizes integrity, transparency, and excellence — offering not just 
+              investment solutions, but long-term partnerships rooted in shared success. At Morex Asset Management, we continue to grow by staying 
+              true to our mission: delivering value through thoughtful capital raising and strategic access to the private markets.
             </p>
-          </div>
-        </section>
 
-        {/* Stats Section */}
-        <section className="relative w-full h-[220px] bg-[#012c51bf] flex items-center justify-center">
-          <img
-            className="absolute inset-0 w-full h-full object-cover -z-10"
-            alt="Stats Background"
-            src=""
-          />
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full max-w-5xl px-4">
-            {statsData.map((stat, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-center text-center"
-              >
-                <span className="font-['Libre_Bodoni-Bold',Helvetica] font-bold text-[#cdb989] text-5xl">
-                  {stat.value}
-                </span>
-                <p className="font-['Libre_Bodoni-Bold',Helvetica] font-bold text-white text-base mt-4">
-                  {stat.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* What We Do Section */}
-        <section className="bg-neutral-100 py-12 shadow-[-8px_8px_10px_#00000040]">
-          <h2 className="font-['Libre_Bodoni-Bold',Helvetica] font-bold text-[#cdb989] text-5xl text-center mb-12">
-            What We Do
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
-            {servicesData.map((service, index) => (
-              <div key={index} className="flex flex-col md:flex-row gap-4">
-                <div className="flex-shrink-0 flex items-start justify-center">
-                  <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
-                    {/* Icon placeholder */}
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-['Libre_Bodoni-Bold',Helvetica] font-bold text-black text-base">
-                    {service.title}
-                  </h3>
-                  <p className="font-['Segoe_UI-Regular',Helvetica] text-black text-base mt-1">
-                    {service.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Our Organizational Values Section */}
-        <section className="py-16">
-          <h2 className="font-['Libre_Bodoni-Bold',Helvetica] font-bold text-[#012c51] text-5xl text-center mb-2">
-            Our Organizational Values
-          </h2>
-          <p className="font-['Libre_Bodoni-Regular',Helvetica] text-[#012c51] text-base text-center mb-12">
-            -What keeps us moving-
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
-            {valuesData.map((value, index) => (
-              <Card
-                key={index}
-                className="relative bg-neutral-100 rounded-[30px_30px_100px_30px] shadow-[-8px_8px_10px_#00000040]"
-              >
-                <CardContent className="pt-12 pb-8 px-6">
-                  <h3 className="font-['Libre_Bodoni-Regular',Helvetica] text-[#012c51] text-[28px] text-center mb-4">
-                    {value.title}
-                  </h3>
-                  <p className="font-['Segoe_UI-Regular',Helvetica] text-black text-base text-center">
-                    {value.description}
-                  </p>
-                </CardContent>
-                {index === 0 && (
-                  <div className="absolute -top-12 -left-4 text-5xl text-[#cdb989]">
-                    "
-                  </div>
-                )}
-                {index === 5 && (
-                  <div className="absolute -top-12 -right-4 text-5xl text-[#cdb989]">
-                    "
-                  </div>
-                )}
-              </Card>
-            ))}
-          </div>
-        </section>
-
-        {/* Contact Section */}
-        <section className="bg-[#012c51] py-12">
-          <h2 className="font-['Libre_Bodoni-Regular',Helvetica] text-[#cdb989] text-[28px] text-center mb-12">
-            Get in touch with us !
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 mb-12">
-            {contactInfo.map((info, index) => (
-              <div key={index} className="flex flex-col items-center">
-                <div className="mb-4 text-[#cdb989]">{info.icon}</div>
-                <h3 className="font-['Libre_Bodoni-Regular',Helvetica] text-[#cdb989] text-base mb-4">
-                  {index === 0 ? "Phone" : index === 1 ? "Address" : "Email"}
-                </h3>
-                {info.items.map((item, idx) => (
-                  <p
-                    key={idx}
-                    className="font-['Segoe_UI-Regular',Helvetica] text-white text-xs text-center"
-                  >
-                    {item}
-                  </p>
-                ))}
-              </div>
-            ))}
-          </div>
-
-          <Separator className="bg-white/20 mb-12" />
-
-          <div className="text-center mb-8">
-            <h3 className="font-['Libre_Bodoni-Regular',Helvetica] text-[#cdb989] text-[28px] mb-4">
-              If you got any questions
-            </h3>
-            <p className="font-['Libre_Bodoni-Regular',Helvetica] text-[#cdb989] text-[28px]">
-              Please do not hesitate to send us a message.
-            </p>
-          </div>
-
-          <div className="max-w-md mx-auto px-4 mb-12">
-            <form className="flex flex-col gap-4">
-              <Input
-                placeholder="Name"
-                className="h-9 bg-white text-[#012c51] font-['Libre_Bodoni-Regular',Helvetica]"
-              />
-              <Input
-                placeholder="Email"
-                className="h-9 bg-white text-[#012c51] font-['Libre_Bodoni-Regular',Helvetica]"
-              />
-              <Input
-                placeholder="Subject"
-                className="h-9 bg-white text-[#012c51] font-['Libre_Bodoni-Regular',Helvetica]"
-              />
-              <Textarea
-                placeholder="Message"
-                className="h-[202px] bg-white text-[#012c51] font-['Libre_Bodoni-Regular',Helvetica]"
-              />
-              <Button className="w-[187px] h-[38px] bg-[#cdb989] text-[#012c51] rounded-[30px] mx-auto">
-                Send Message
+            <div className="mt-12">
+              <h3 className="font-bold text-[#cdb989] text-[28px] mb-4">Want To Know More?</h3>
+              <Button className="w-40 h-12 bg-[#012c51] rounded-[30px] font-bold text-[#cdb989] text-base">
+                LET&apos;S CONNECT
               </Button>
-            </form>
+            </div>
+          </div>
+        </section>
+
+        <section className="relative py-16 flex justify-center items-center">
+          <div className="absolute left-0 top-0">
+            <img className="w-[392px] h-[292px] object-cover" alt="Purpose visual left" src="public\assets\images\perpose-1.png" />
           </div>
 
-          <div className="text-center mb-8">
-            <h3 className="font-['Libre_Bodoni-Regular',Helvetica] text-[#cdb989] text-[28px] mb-4">
-              Connect with us !
-            </h3>
-            <div className="flex justify-center gap-6 mt-4">
-              {socialMedia.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  className="text-white hover:text-[#cdb989] transition-colors"
-                >
-                  {social.icon}
-                </a>
+          <div className="w-[423px] flex flex-col items-center z-10">
+            <h2 className="font-bold text-[#cdb989] text-5xl mb-6">OUR PURPOSE</h2>
+            <p className="font-normal text-black text-base text-center">
+            We connect investors with alternative investment solutions designed to deliver stable income and diversify 
+            portfolios beyond traditional public markets. Our disciplined, investor-first approach prioritizes transparency, 
+            risk management, and long-term value creation.
+            </p>
+          </div>
+
+          <div className="absolute right-0 bottom-0">
+            <img className="w-[420px] h-[322px] object-cover" alt="Purpose visual right" src="public\assets\images\perpose-2.png" />
+          </div>
+        </section>
+
+        <section className="py-16 px-12">
+          <Card className="w-[1032px] h-[580px] mx-auto bg-[url(public/assets/images/group.png)] bg-cover relative overflow-hidden rounded-[30px]">
+            <div className="absolute inset-0 bg-[#00000080] rounded-[30px]"></div>
+            <CardContent className="relative z-10 p-16">
+              <h2 className="font-bold text-[#cdb989] text-5xl mb-12">OUR GROUP</h2>
+              <h3 className="font-bold text-white text-base mb-2">MOREX CAPITAL</h3>
+              <p className="font-normal text-white text-base w-[456px] mb-8">
+              Established in 2012, Morex Capital is a Mortgage Investment Corporation (MIC) with a 
+              proven track record of delivering stable, predictable returns by investing in short-term, 
+              owner-occupied residential mortgages primarily in Ontario’s Golden Horseshoe region.
+              </p>
+              <Button className="w-40 h-12 bg-[#012c51] rounded-[30px] font-bold text-[#cdb989] text-base">
+                LEARN MORE
+              </Button>
+            </CardContent>
+          </Card>
+        </section>
+
+        <section className="w-full bg-neutral-100 py-16">
+          <div className="flex flex-row px-16">
+            <div className="w-[328px]">
+              <h2 className="font-bold text-[#012c51] text-5xl">
+                Why Partner With Morex Asset Management?
+              </h2>
+            </div>
+
+            <div className="flex-1 grid grid-cols-2 gap-6 ml-16">
+              {partnerBenefits.map((benefit, index) => (
+                <Card key={index} className="h-[107px] bg-[#cdb989] rounded-lg shadow-[-8px_8px_10px_#00000040]">
+                  <CardContent className="flex items-center justify-center h-full p-5">
+                    <p className="font-bold text-[#012c51] text-base text-center">{benefit}</p>
+                  </CardContent>
+                </Card>
               ))}
             </div>
           </div>
+        </section>
 
-          <div className="mt-12">
-            <div className="w-full h-[468px] relative">
-              <img src="" alt="Map" className="w-full h-full object-cover" />
-            </div>
-            <div className="flex justify-center py-8">
-              <img src="" alt="Company Logo" className="h-[165px]" />
-            </div>
+        <section className="py-16">
+          <div className="flex flex-col items-center mb-12">
+            <h2 className="font-bold text-[#012c51] text-5xl mb-6">Our Team</h2>
+            <p className="font-normal text-[#012c51] text-base text-center max-w-[900px]">
+              Get to know the passionate professionals driving our mission...
+            </p>
+          </div>
+
+          <div className="flex justify-center gap-8 mb-8">
+            {teamMembers.map((member, index) => (
+              <Card key={index} className="w-[261px] h-[124px] bg-neutral-100 rounded-[30px_30px_30px_0px] shadow-[-8px_8px_10px_#00000040]">
+                <CardContent className="flex flex-col items-center justify-center h-full p-4">
+                  <h3 className="font-bold text-[#012c51] text-base text-center">{member.name}</h3>
+                  <p className="font-normal text-[#cdb989] text-base text-center mt-2">{member.title}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div className="flex justify-end pr-12">
+            <a href="#" className="font-bold text-[#012c51] text-base text-center underline">
+              MORE DETAILS→
+            </a>
           </div>
         </section>
+
+       
+        <Testimonials />
+
+        <Footer />
       </div>
     </div>
   );
