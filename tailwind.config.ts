@@ -38,6 +38,7 @@ export default {
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
         inter: ["Inter", "sans-serif","Times New Roman"],
+        times: ['"Times New Roman"', 'Times', 'serif'],
       },
       keyframes: {
         "fade-up": {
