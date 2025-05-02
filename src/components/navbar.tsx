@@ -62,12 +62,12 @@ export default function Navbar({ startPosition = "default" }) {
     {
       title: "Meet the Team",
       desc: "Learn about the people behind our mission.",
-      link: "/team",
+      link: "/aboutus/team",
     },
     {
-      title: "More About Us",
+      title: "About Us",
       desc: "Explore our vision, values, and journey.",
-      link: "/more-about-us",
+      link: "/aboutus",
     },
   ];
 
@@ -112,7 +112,7 @@ export default function Navbar({ startPosition = "default" }) {
           </Link>
 
           <Link
-            to="#"
+            to="/Invest"
             className="text-blue-900 hover:text-[#D4B968] font-bold"
             style={{ fontFamily: "Times New Roman, serif" }}
           >
@@ -120,7 +120,7 @@ export default function Navbar({ startPosition = "default" }) {
           </Link>
 
           <Link
-            to="#"
+            to="/insights"
             className="text-blue-900 hover:text-[#D4B968] font-bold"
             style={{ fontFamily: "Times New Roman, serif" }}
           >

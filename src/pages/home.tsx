@@ -3,6 +3,7 @@ import { ArrowUpRight } from 'lucide-react'; // optional if you want the same st
 import Kipscards from "@/components/kipscards";
 import { Link, useNavigate } from 'react-router-dom';
 import Graph from "@/components/graph";
+import Graph1 from "@/components/graph1";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import AboutCompany from "@/components/AboutCompany";
@@ -360,7 +361,10 @@ export default function Homepage() {
         </section>
 
         {/* Performance Chart Section */}
-        <Graph />
+        <h3 className="font-['Libre_Bodoni',Helvetica] font-normal text-[#012c51] text-[28px] text-center mt-10">
+        OUR PERFORMANCE OVER THE YEARS
+      </h3>
+        <Graph1 />
 
         {/* Performance Chart Section */}
 
@@ -394,7 +398,7 @@ export default function Homepage() {
             </h2>
 
             <a
-              href="#"
+              href="/Blog & Article"
               className="font-['Segoe_UI-Bold',Helvetica] font-bold text-[#012c51] text-base text-center underline"
             >
               View All
