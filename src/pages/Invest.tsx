@@ -74,7 +74,7 @@ export default function Invest(): JSX.Element {
         </h3>
 
         {/* Graph Section */}
-        <Graph1 />
+        
         <Graph2 />
 
         {/* Yield Section */}

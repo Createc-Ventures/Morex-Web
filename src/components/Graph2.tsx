@@ -85,17 +85,7 @@ const options: ChartOptions<"bar"> = {
 const LoanToValueChart: React.FC = () => {
   return (
     <div style={{ width: "100%", height: "400px", padding: 20 }}>
-      <h2
-        style={{
-          textAlign: "center",
-          color: "#00264d",
-          fontWeight: "bold",
-          fontSize: "18px",
-          marginBottom: 20,
-        }}
-      >
-        LOW LOAN-TO-VALUE (LTV)
-      </h2>
+      
       <Bar data={data} options={options} />
     </div>
   );
