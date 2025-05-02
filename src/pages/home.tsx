@@ -32,13 +32,6 @@ import React from "react";
 
 export default function Homepage() {
   // Navigation items
-  const navItems = [
-    { label: "HOME", href: "#" },
-    { label: "INSIGHT", href: "#" },
-    { label: "INVEST", href: "#" },
-    { label: "ABOUT US", href: "/aboutus" },
-    { label: "LEARN", href: "#" },
-  ];
 
   // Why MIC is better data
   const micBenefitsData = [
@@ -147,9 +140,11 @@ export default function Homepage() {
               </p>
 
               <div className="flex justify-center ">
-                <Button className="w-[123px] h-[42px] mb-5 bg-[#cdb989] rounded-[30px] font-['Segoe_UI-Bold',Helvetica] font-bold text-[#012c51] text-base">
-                  LEARN MORE
-                </Button>
+              <a href="https://morexcapital.com/">
+                  <Button className="w-[123px] h-[42px] mb-5 bg-[#cdb989] rounded-[30px] font-['Segoe_UI-Bold',Helvetica] font-bold text-[#012c51] text-base">
+                      LEARN MORE
+                  </Button>
+              </a>
               </div>
             </CardContent>
           </Card>

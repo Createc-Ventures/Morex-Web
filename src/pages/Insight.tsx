@@ -51,7 +51,7 @@ export default function Insight(): JSX.Element {
     <div className="bg-white flex flex-row justify-center w-full">
       <div className="bg-white w-full max-w-[] relative">
         {/* Hero Section */}
-        <div className="relative w-full h-[450px] bg-[url(/tyler-franta-iusj25iyu1c-unsplash-1-1.png)] bg-cover bg-center">
+        <div className="relative w-full h-[450px] bg-[url(public/assets/images/insighthero.jpg)] bg-cover bg-center">
           <div className="absolute inset-0 bg-[#000000a6]" />
           <div className="absolute inset-0 flex flex-col items-center justify-center">
             <h1 className="font-['Libre_Bodoni-Bold',Helvetica] font-bold text-[#cdb989] text-5xl mb-8" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
@@ -109,7 +109,7 @@ export default function Insight(): JSX.Element {
               <img
                 className="w-full h-full object-cover mix-blend-overlay"
                 alt="Christina"
-                src=""
+                src="public\assets\images\private.jpg"
               />
             </div>
             <div className="absolute inset-0 flex items-center justify-center">
@@ -129,7 +129,7 @@ export default function Insight(): JSX.Element {
                   <img
                     className="w-full h-auto object-cover rounded-lg"
                     alt="Markus kammermann"
-                    src=""
+                    src="public\assets\images\Diversification.jpg"
                   />
                 </div>
                 <div className="lg:w-1/2 p-7">
@@ -202,7 +202,7 @@ export default function Insight(): JSX.Element {
                 <img
                   className="w-full h-full object-cover"
                   alt="Imagine buddy"
-                  src=""
+                  src="public\assets\images\Conclusion.jpg"
                 />
               </div>
               <div className="lg:w-1/2 p-12">
@@ -226,7 +226,7 @@ export default function Insight(): JSX.Element {
         {/* Fixed Navigation */}
         <Navbar startPosition="custom" />
 
-        {/* Mobile Menu Button */}
+    
         <Footer />
         
       </div>

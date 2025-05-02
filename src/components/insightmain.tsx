@@ -53,7 +53,7 @@ const ThreeColumnInvestment: React.FC = () => {
         </div>
 
         {/* Text Box */}
-        <div className="bg-[#1f365c] text-white p-6 rounded-2xl flex flex-col justify-between shadow-lg h-40%">
+        <div className="bg-[#1f365c] text-white p-6 rounded-2xl flex flex-col justify-between shadow-lg h-full">
           <div className="space-y-3">
             <h3 className="text-lg font-semibold">
               The Role of Alternative Investments in a Modern Portfolio

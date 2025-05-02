@@ -19,8 +19,8 @@ export default function Invest(): JSX.Element {
     <div className="bg-white flex flex-row justify-center w-full">
       <div className="bg-white w-full max-w-[] relative min-h-[3173px]">
         {/* Hero Section */}
-        <div className="relative w-[95%] h-[900px] mx-auto mt-4 bg-[url(public/assets/images/InvestHero.jpg)] bg-cover bg-[50%_50%] rounded-lg">
-          <div className="absolute w-full h-full top-0 left-0 bg-[#000000a6] rounded-lg" />
+        <div className="relative w-[] h-[900px] mx-auto  bg-[url(public/assets/images/InvestHero.jpg)] bg-cover bg-[50%_50%] ">
+          <div className="absolute w-full h-full top-0 left-0 bg-[#000000a6] " />
 
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
             <h1 className="font-['Libre_Bodoni-Bold',Helvetica] font-bold text-[#cdb989] text-5xl mb-10">
