@@ -2,6 +2,7 @@ import VideoMaskSection from "@/components/VideoMaskSection"; // Adjust the path
 import { ArrowUpRight } from 'lucide-react'; // optional if you want the same style arrow
 import Kipscards from "@/components/kipscards";
 import { Link, useNavigate } from 'react-router-dom';
+import Blogcard from "@/components/Blogcar";
 import Graph from "@/components/graph";
 import Graph1 from "@/components/graph1";
 import Navbar from "@/components/navbar";
@@ -120,9 +121,11 @@ export default function Homepage() {
 
           
 
-          <Button className="absolute w-52 h-12 top-[792px] left-[1055px] bg-[#cdb989] rounded-[30px] font-['Segoe_UI-Bold',Helvetica] font-bold text-[#012c51] text-base">
-            START YOUR JOURNEY
-          </Button>
+          <a href="#start">
+            <Button className="absolute w-52 h-12 top-[792px] left-[1055px] bg-[#cdb989] rounded-[30px] font-['Segoe_UI-Bold',Helvetica] font-bold text-[#012c51] text-base hover:text-[#cdb989] ">
+              START YOUR JOURNEY
+            </Button>
+          </a>
 
           {/* CTA Card */}
           <Card className="absolute w-[285px] h-[266px] top-[480px] left-[965px] bg-[#012c51] rounded-[30px] border-none">
@@ -141,9 +144,10 @@ export default function Homepage() {
 
               <div className="flex justify-center ">
               <a href="https://morexcapital.com/">
-                  <Button className="w-[123px] h-[42px] mb-5 bg-[#cdb989] rounded-[30px] font-['Segoe_UI-Bold',Helvetica] font-bold text-[#012c51] text-base">
-                      LEARN MORE
-                  </Button>
+              <Button className="w-[123px] h-[42px] mb-5 bg-[#cdb989] rounded-[30px] font-['Segoe_UI-Bold',Helvetica] font-bold text-[#012c51] text-base hover:text-[#cdb989] ">
+                LEARN MORE
+              </Button>
+
               </a>
               </div>
             </CardContent>
@@ -151,7 +155,7 @@ export default function Homepage() {
         
 
         {/* Tagline Section */}
-        <section className="flex flex-col md:flex-row mt-20 px-7 gap-8">
+        <section id="start" className="flex flex-col md:flex-row mt-20 px-7 gap-8 ">
           <h2 className="font-['Mate_SC-Regular',Helvetica] font-normal text-[#012c51] text-5xl max-w-[783px]" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
             WITH YEARS OF INDUSTRY EXPERIENCE AND A CUSTOMER-FIRST APPROACH,
             WE'VE HELPED THOUSANDS ACHIEVE THEIR DREAM.
@@ -284,12 +288,12 @@ export default function Homepage() {
               </p>
 
               <div className="flex gap-2">
-                <Button className="h-[65px] flex-1 bg-[#cdb989] rounded-[15px] font-['Libre_Bodoni-Regular',Helvetica] text-[#012c51] text-[28px]" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+                <Button className="h-[65px] flex-1 bg-[#cdb989] rounded-[15px] font-['Libre_Bodoni-Regular',Helvetica] text-[#012c51] hover:text-[#cdb989] text-[28px]" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
                   Learn More
                 </Button>
 
                 <Button className="w-[113px] h-[65px] bg-[#cdb989] rounded-[15px] flex items-center justify-center">
-                <ArrowUpRight className="text-blue-900 w-5 h-5" />
+                <ArrowUpRight className="text-blue-900 w-5 h-5 hover:[#cdb989]" />
                 </Button>
               </div>
             </CardContent>
@@ -387,63 +391,17 @@ export default function Homepage() {
 
         {/* Latest Blogs Section */}
         <section className="mt-20 px-7">
-          <div className="flex justify-between items-center mb-8">
-            <h2 className="font-['DM_Serif_Display-Regular',Helvetica] font-normal text-[#cdb989] text-[28px]">
-              Latest Blogs and Newsletter
-            </h2>
-
-            <a
+        <a
               href="/Blog & Article"
               className="font-['Segoe_UI-Bold',Helvetica] font-bold text-[#012c51] text-base text-center underline"
             >
               View All
             </a>
-          </div>
+            <Blogcard/>
 
-          <div className="flex flex-col md:flex-row gap-8">
-            {blogPostsData.map((post, index) => (
-              <Card
-                key={index}
-                className="w-full md:w-[428px] h-[516px] bg-neutral-100 shadow-[-8px_8px_10px_#00000040] border-none"
-              >
-                <CardContent className="p-7">
-                  <div className="h-[252px] relative">
-                    <img
-                      className="w-[270px] h-[252px] ml-auto object-cover"
-                      alt="Blog image"
-                      src="public\assets\images\corner1.png"
-                    />
-
-                    {index === 2 && (
-                      <Button className="absolute top-[234px] left-[266px] w-12 h-12 bg-[#012c51] rounded-3xl shadow-[-6px_6px_10px_#00000040] flex items-center justify-center">
-                        <img
-                          className="w-[26px] h-[13px] rotate-180"
-                          alt="Arrow"
-                          src=""
-                        />
-                      </Button>
-                    )}
-                  </div>
-
-                  <div className="mt-8">
-                    <h3 className="font-['Libre_Bodoni-Regular',Helvetica] font-normal text-[#012c51] text-2xl tracking-[-0.24px] leading-[33.6px]">
-                      {post.title}
-                    </h3>
-
-                    <p className="font-['Segoe_UI-Bold',Helvetica] font-bold text-black text-xs tracking-[-0.12px] leading-4 mt-2">
-                      {post.author}
-                    </p>
-                  </div>
-
-                  <div className="absolute bottom-[43px] left-7">
-                    <Button className="bg-[#012c51] rounded-[30px] text-[#cdb989] text-xs font-bold py-2 px-6">
-                      {post.readTime}
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          
+            
+          
         </section>
 
         {/* Contact Section */}

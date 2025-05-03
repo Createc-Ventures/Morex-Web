@@ -61,7 +61,7 @@ export default function AboutUs(): JSX.Element {
           </div>
         </section>
 
-        <section className="flex flex-row items-center justify-between px-12 py-16">
+        <section className="flex flex-row items-center justify-between px-36 py-16">
           <div className="w-[517px]">
             <img className="w-full h-[604px] object-cover" alt="Our journey" src="public\assets\images\journey.png" />
           </div>
@@ -85,9 +85,11 @@ export default function AboutUs(): JSX.Element {
 
             <div className="mt-12">
               <h3 className="font-bold text-[#cdb989] text-[28px] mb-4">Want To Know More?</h3>
-              <Button className="w-40 h-12 bg-[#012c51] rounded-[30px] font-bold text-[#cdb989] text-base">
-                LET&apos;S CONNECT
-              </Button>
+              <div className="flex justify-center">
+                <Button className="w-40 h-12 bg-[#012c51] rounded-[30px] font-bold text-[#cdb989] text-base">
+                  LET&apos;S CONNECT
+                </Button>
+              </div>
             </div>
           </div>
         </section>
@@ -169,7 +171,7 @@ export default function AboutUs(): JSX.Element {
           </div>
 
           <div className="flex justify-end pr-12">
-            <a href="#" className="font-bold text-[#012c51] text-base text-center underline">
+            <a href="/aboutus/team" className="font-bold text-[#012c51] text-base text-center underline">
               MORE DETAILS→
             </a>
           </div>

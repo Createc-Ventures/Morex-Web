@@ -1,0 +1,10 @@
+.mask-custom-shape {
+    -webkit-mask-image: url('public/assets/mask/heromobile.svg');
+    mask-image: url('public/assets/mask/heromobile.svg');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-position: center;
+    mask-position: center;
+  }

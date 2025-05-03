@@ -17,8 +17,8 @@ const AboutCompany: React.FC = () => {
           volutpat. Morbi ultricies risus odio, a cursus nibh iaculis in.
         </p>
         <a
-          href="#"
-          className="text-yellow-600 font-bold uppercase tracking-wide hover:underline"
+          href="/aboutus"
+          className="text-yellow-600 font-bold uppercase tracking-wide hover:text-[#1e3a8a] transition duration-300"
           style={{ fontFamily: "'Times New Roman', Times, serif" }}
         >
           Learn More About Us →
