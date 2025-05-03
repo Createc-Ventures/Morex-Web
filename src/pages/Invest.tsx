@@ -5,7 +5,10 @@ import { ChevronDown, Menu } from "lucide-react";
 import FundOverviewCard from "@/components/fundoverview";
 import Graph1 from "@/components/graph1";
 import Graph2 from "@/components/Graph2";
+import Footer from "@/components/footer";
+import DonutChart from "@/components/DonutChart";
 import React from "react";
+
 
 export default function Invest(): JSX.Element {
   // Years data for the graph
@@ -76,13 +79,20 @@ export default function Invest(): JSX.Element {
         {/* Graph Section */}
         
         <Graph2 />
-
+       {/* Donut Charts Section */}
+       <div className="flex justify-center mt-20 mb-10">
+         <DonutChart />
+       </div>
         {/* Yield Section */}
 
         <p className="text-center font-['Segoe_UI-Regular',Helvetica] font-normal text-black text-base mt-[20px]">
           Annualized Yield, February 1 2012 – March 31, 2024. Target Yield Is
           8.75% Per Annum, Subject To Change.
         </p>
+        
+        
+        {/* Contact Section */}
+        <Footer/>
       </div>
     </div>
   );
