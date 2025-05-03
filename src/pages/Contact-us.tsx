@@ -22,17 +22,17 @@ export default function ContactUs(): JSX.Element {
       icon: <Home className="w-12 h-12 text-[#cdb989]" />,
       title: "VISIT US",
       content:
-        "Lorem ipsum dolor amet, consectetur elit. Aliquam ullamcorper lorem",
+        "5025 Orbitor Drive, Bldg.2, Suite 200 Mississauga, Ontario L4W 4Y5",
     },
     {
       icon: <Phone className="w-12 h-12 text-[#cdb989]" />,
       title: "CALL US",
-      content: ["+6549816186", "+1644843655"],
+      content: "905-896-2642",
     },
     {
       icon: <Mail className="w-12 h-12 text-[#cdb989]" />,
       title: "CONTACT US",
-      content: ["Loremipsum55@gamil.com", "Loremi9655@gamil.com"],
+      content: "info@morexcapital.com",
     },
   ];
 
@@ -144,9 +144,7 @@ export default function ContactUs(): JSX.Element {
             </h2>
 
             <p className="[font-family:'Segoe_UI-Regular',Helvetica] font-normal text-black text-base mb-8">
-              Lorem ipsum dolor amet, consectetur elit.&nbsp;&nbsp;Aliquam
-              ullamcorper lorem dolor amet, consectetur elit.&nbsp;&nbsp;Aliquam
-              ullamcorper lorem
+              5025 Orbitor Drive, Bldg.2, Suite 200 Mississauga, Ontario L4W 4Y5
             </p>
 
             <div className="w-full h-[357px] mb-8">
@@ -161,15 +159,21 @@ export default function ContactUs(): JSX.Element {
         ></iframe>
             </div>
 
-            <h2 className="[font-family:'Libre_Bodoni-Regular',Helvetica] font-normal text-[#cdb989] text-[28px] mb-4">
-              Connect with us !
-            </h2>
+            
 
-            <div className="flex space-x-4">
-              <Facebook className="w-12 h-12 text-[#cdb989]" />
-              <Twitter className="w-12 h-12 text-[#cdb989]" />
-              <Linkedin className="w-12 h-12 text-[#cdb989]" />
-              <Instagram className="w-12 h-12 text-[#cdb989]" />
+            <div className="flex space-x-4 mt-16 ">
+              <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/icons/fb.svg" alt="Facebook" className="w-12 h-12 cursor-pointer" />
+              </a>
+              <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/icons/in.svg" alt="Facebook" className="w-12 h-12 cursor-pointer" />
+              </a>
+              <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/icons/insta.svg" alt="Facebook" className="w-12 h-12 cursor-pointer" />
+              </a>
+              <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/icons/x.svg" alt="Facebook" className="w-12 h-12 cursor-pointer" />
+              </a>
             </div>
           </div>
         </div>

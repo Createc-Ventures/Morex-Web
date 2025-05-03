@@ -114,9 +114,7 @@ export default function Insight(): JSX.Element {
             </div>
             <div className="absolute inset-0 flex items-center justify-center">
               <p className="font-['Libre_Bodoni-Regular',Helvetica] text-[#cdb989] text-[28px] text-center max-w-4xl px-4">
-                "Private mortgages often offer higher returns relative to
-                traditional bonds and GICs, especially in low-interest-rate
-                environments."
+                "At Morex Asset Management, we specialize in connecting investors to high-quality private market opportunities, helping you build a stronger, more resilient financial future."
               </p>
             </div>
           </div>

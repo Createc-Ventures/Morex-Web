@@ -100,7 +100,10 @@ export default function LandingPhone(): JSX.Element {
             <img src="public\assets\images\aboutusmob.jpg" alt="About Company" className="w-full mb-2 rounded" />
             <h3 className="text-[#012c51] font-semibold text-sm">ABOUT COMPANY</h3>
             <p className="text-[#012c51] text-xs mt-1">
-              Morex Asset Management is a registered Exempt Market Dealer (EMD)...
+            Morex Asset Management is a registered Exempt Market Dealer (EMD) specializing in providing 
+            qualified investors with exclusive access to private investment opportunities. We are the distribution 
+            arm of the Morex Group, focused on raising capital for Morex Capital, a leading Canadian Mortgage Investment 
+            Corporation (MIC) specializing in high-quality, income-generating residential mortgages.
             </p>
             <a href="#" className="text-[#cdb989] text-xs underline mt-2 inline-block">
               LEARN MORE ABOUT US →

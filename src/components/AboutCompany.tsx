@@ -8,13 +8,9 @@ const AboutCompany: React.FC = () => {
       <div className="w-full md:w-1/2 space-y-6">
         <h2 className="text-4xl font-bold text-blue-900" style={{ fontFamily: "'Times New Roman', Times, serif" }}>ABOUT COMPANY</h2>
         <p className="text-gray-700 leading-relaxed"style={{ fontFamily: "'Times New Roman', Times, serif" }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper lorem vel molestie tempor.
-          Aliquam ultrices nisl ac rhoncus ullamcorper. Aliquam erat volutpat. Morbi ultricies risus odio, a cursus
-          nibh iaculis in. Cras suscipit tellus non purus molestie tincidunt.
-          
-          a. Maecenas vitae dui sed metus efficitur rutrum sed id sapien. Aenean eu diam rhoncus, varius lacus vel,
-          placerat eros. Nam commodo metus massa. Aliquam ultrices nisl ac rhoncus ullamcorper. Aliquam erat
-          volutpat. Morbi ultricies risus odio, a cursus nibh iaculis in.
+        Morex Asset Management is a registered Exempt Market Dealer (EMD) specializing in providing qualified investors with exclusive access
+         to private investment opportunities. We are the distribution arm of the Morex Group, focused on raising capital for Morex Capital, 
+         a leading Canadian Mortgage Investment Corporation (MIC) specializing in high-quality, income-generating residential mortgages.
         </p>
         <a
           href="/aboutus"
