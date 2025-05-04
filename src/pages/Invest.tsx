@@ -23,10 +23,10 @@ export default function Invest(): JSX.Element {
           <div className="absolute w-full h-full top-0 left-0 bg-[#000000a6] " />
 
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-            <h1 className="font-['Libre_Bodoni-Bold',Helvetica] font-bold text-[#cdb989] text-5xl mb-10">
+            <h1 className="font-['Libre_Bodoni-Bold',Helvetica] font-bold text-[#cdb989] text-5xl mb-10"  style={{ fontFamily: "'Times New Roman', Times, serif" }}>
               INVEST
             </h1>
-            <p className="font-['Libre_Bodoni-Regular',Helvetica] font-normal text-white text-base max-w-[800px]">
+            <p className="font-['Libre_Bodoni-Regular',Helvetica] font-normal text-white text-base max-w-[800px]"  style={{ fontFamily: "'Times New Roman', Times, serif" }}>
               Explore exclusive opportunities designed to grow and protect your
               wealth through smart, alternative investments
             </p>
@@ -50,26 +50,26 @@ export default function Invest(): JSX.Element {
         {/* Fund Overview Section */}
         
 
-        <h2 className="text-center font-['Libre_Bodoni-Bold',Helvetica] font-bold text-[#012c51] text-5xl mt-10">
+        <h2 className="text-center font-['Libre_Bodoni-Bold',Helvetica] font-bold text-[#012c51] text-5xl mt-10"  style={{ fontFamily: "'Times New Roman', Times, serif" }}>
           FUND OVERVIEW
         </h2>
         <FundOverviewCard />
 
         
 
-        <p className="text-center font-['Segoe_UI-Regular',Helvetica] font-normal text-black text-base mt-[40px] mx-auto max-w-[800px]">
+        <p className="text-center font-['Segoe_UI-Regular',Helvetica] font-normal text-black text-base mt-[40px] mx-auto max-w-[800px]"  style={{ fontFamily: "'Times New Roman', Times, serif" }}>
           For a detailed overview of our fund's performance, strategy, and
           holdings, download the latest Fund Fact Sheet below.
         </p>
 
         <div className="flex justify-center mt-[50px]">
-          <Button className="w-[430px] h-[72px] bg-[#012c51] rounded-[30px] shadow-[-8px_8px_10px_#00000040] font-['Libre_Bodoni-Regular',Helvetica] font-normal text-[#cdb989] text-[28px]">
+          <Button className="w-[430px] h-[72px] bg-[#012c51] rounded-[30px] shadow-[-8px_8px_10px_#00000040] font-normal text-[#cdb989] text-[28px]" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
             Access Fund fact sheet
           </Button>
         </div>
 
         {/* LTV Section */}
-        <h3 className="text-center font-['Libre_Bodoni-Bold',Helvetica] font-bold text-[#012c51] text-[28px] mt-[135px]">
+        <h3 className="text-center font-['Libre_Bodoni-Bold',Helvetica] font-bold text-[#012c51] text-[28px] mt-[135px]" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
           LOW&nbsp;&nbsp;LOAN-TO-VALUE&nbsp;&nbsp;(LTV)
         </h3>
 

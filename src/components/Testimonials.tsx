@@ -31,12 +31,12 @@ const testimonials: Testimonial[] = [
 const Testimonials: React.FC = () => {
   return (
     <section className="py-16 bg-white text-center">
-      <h2 className="text-3xl font-semibold text-blue-900 mb-2">
+      <h2 className="text-3xl font-semibold text-blue-900 mb-2 font-serif">
         Hear From Those We’ve Worked With
       </h2>
-      <p className="text-gray-600 mb-12">We Make It Easy—Here’s How</p>
+      <p className="text-gray-600 mb-12 font-serif">We Make It Easy—Here’s How</p>
 
-      <div className="flex flex-col md:flex-row justify-center items-center gap-8 px-4 md:px-0">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-8 px-4 md:px-0 font-serif">
         {testimonials.map((t, index) => (
           <div
             key={index}

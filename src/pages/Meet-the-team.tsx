@@ -36,10 +36,10 @@ const Team: React.FC = () => {
 
           {/* Hero Content */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full">
-            <h1 className="[font-family:'Libre_Bodoni-Bold',Helvetica] font-bold text-[#cdb989] text-5xl mb-6">
+            <h1 className="[font-family:'Libre_Bodoni-Bold',Helvetica] font-bold text-[#cdb989] text-5xl mb-6"  style={{ fontFamily: "'Times New Roman', Times, serif" }}>
                 MEET THE PEOPLE THAT MAKE IT HAPPEN
             </h1>
-            <p className="[font-family:'Libre_Bodoni-Regular',Helvetica] font-normal text-white text-base max-w-xl mx-auto">
+            <p className="[font-family:'Libre_Bodoni-Regular',Helvetica] font-normal text-white text-base max-w-xl mx-auto"  style={{ fontFamily: "'Times New Roman', Times, serif" }}>
             Creators of Your Experience
             </p>
           </div>

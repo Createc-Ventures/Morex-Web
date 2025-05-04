@@ -72,10 +72,10 @@ export default function Insight(): JSX.Element {
 
           {/* The Power of Private Mortgage Investments Section */}
           <div className="mb-16">
-            <h2 className="font-['Libre_Bodoni-Regular',Helvetica] text-[#012c51] text-[28px] text-center mb-6">
+            <h2 className="font-['Libre_Bodoni-Regular',Helvetica] text-[#012c51] text-[28px] text-center mb-6" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
               The Power of Private Mortgage Investments
             </h2>
-            <p className="font-['Segoe_UI-Regular',Helvetica] text-black text-base text-center mb-10">
+            <p className="font-['Segoe_UI-Regular',Helvetica] text-black text-base text-center mb-10" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
               Private mortgage investments, especially those organized through
               professionally managed Mortgage Investment Corporations (MICs),
               provide investors with a chance to engage in the real estate
@@ -91,10 +91,10 @@ export default function Insight(): JSX.Element {
                   className="bg-neutral-100 rounded-lg shadow-[-8px_8px_10px_#00000040]"
                 >
                   <CardContent className="p-6">
-                    <h3 className="font-['Libre_Bodoni-Bold',Helvetica] font-bold text-[#cdb989] text-base text-center mb-4">
+                    <h3 className="font-['Libre_Bodoni-Bold',Helvetica] font-bold text-[#cdb989] text-base text-center mb-4" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
                       {card.title}
                     </h3>
-                    <p className="font-['Segoe_UI-Regular',Helvetica] text-black text-base text-center">
+                    <p className="font-['Segoe_UI-Regular',Helvetica] text-black text-base text-center" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
                       {card.description}
                     </p>
                   </CardContent>
@@ -113,7 +113,7 @@ export default function Insight(): JSX.Element {
               />
             </div>
             <div className="absolute inset-0 flex items-center justify-center">
-              <p className="font-['Libre_Bodoni-Regular',Helvetica] text-[#cdb989] text-[28px] text-center max-w-4xl px-4">
+              <p className="font-['Libre_Bodoni-Regular',Helvetica] text-[#cdb989] text-[28px] text-center max-w-4xl px-4" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
                 "At Morex Asset Management, we specialize in connecting investors to high-quality private market opportunities, helping you build a stronger, more resilient financial future."
               </p>
             </div>
@@ -131,10 +131,10 @@ export default function Insight(): JSX.Element {
                   />
                 </div>
                 <div className="lg:w-1/2 p-7">
-                  <h2 className="font-['Libre_Bodoni-Regular',Helvetica] text-[#012c51] text-[28px] mb-6">
+                  <h2 className="font-['Libre_Bodoni-Regular',Helvetica] text-[#012c51] text-[28px] mb-6" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
                     Enhancing Diversification and Reducing Correlation
                   </h2>
-                  <p className="font-['Segoe_UI-Regular',Helvetica] text-black text-base">
+                  <p className="font-['Segoe_UI-Regular',Helvetica] text-black text-base" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
                     Adding private mortgage investments to a portfolio may help
                     reduce overall portfolio risk due to their lower correlation
                     with equities and traditional fixed income. This
@@ -159,14 +159,14 @@ export default function Insight(): JSX.Element {
             <CardContent className="p-7">
               <div className="flex flex-col lg:flex-row gap-8">
                 <div className="lg:w-1/2">
-                  <h2 className="font-['Libre_Bodoni-Regular',Helvetica] text-[#012c51] text-5xl mb-8">
+                  <h2 className="font-['Libre_Bodoni-Regular',Helvetica] text-[#012c51] text-5xl mb-8" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
                     Key Considerations for Investors
                   </h2>
-                  <p className="font-['Segoe_UI-Regular',Helvetica] text-black text-base mb-6">
+                  <p className="font-['Segoe_UI-Regular',Helvetica] text-black text-base mb-6" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
                     While alternative investments present compelling advantages,
                     it is important to understand their unique characteristics:
                   </p>
-                  <p className="font-['Segoe_UI-Regular',Helvetica] text-black text-base">
+                  <p className="font-['Segoe_UI-Regular',Helvetica] text-black text-base" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
                     Professional advice, a disciplined investment process, and
                     regular portfolio monitoring are essential to successfully
                     integrating private mortgage investments into a broader
@@ -178,9 +178,8 @@ export default function Insight(): JSX.Element {
                   {considerationCards.map((card, index) => (
                     <div
                       key={index}
-                      className="bg-[#cdb989] rounded-[30px_8px_8px_0px] shadow-[-8px_8px_10px_#00000040] p-6"
-                    >
-                      <p className="font-['Segoe_UI-Regular',Helvetica] text-black text-base">
+                      className="bg-[#cdb989] rounded-[30px_8px_8px_0px] shadow-[-8px_8px_10px_#00000040] p-6" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+                      <p className="font-['Segoe_UI-Regular',Helvetica] text-black text-base" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
                         <span className="font-['Segoe_UI-Bold',Helvetica] font-bold">
                           {card.title}:
                         </span>{" "}
@@ -204,10 +203,10 @@ export default function Insight(): JSX.Element {
                 />
               </div>
               <div className="lg:w-1/2 p-12">
-                <h2 className="font-['Libre_Bodoni-Regular',Helvetica] text-[#012c51] text-[28px] mb-6">
+                <h2 className="font-['Libre_Bodoni-Regular',Helvetica] text-[#012c51] text-[28px] mb-6" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
                   Conclusion: Building Stronger Portfolios with Alternatives
                 </h2>
-                <p className="font-['Segoe_UI-Regular',Helvetica] text-black text-base">
+                <p className="font-['Segoe_UI-Regular',Helvetica] text-black text-base" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
                   Incorporating alternative investments like MICs into a modern
                   portfolio can enhance income generation, improve
                   diversification, and strengthen risk management. For investors

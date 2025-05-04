@@ -202,7 +202,7 @@ const Learn: React.FC = () => {
           <Learnmain />
           <div className="flex flex-row gap-12">
             <div className="w-full">
-              <h3 className="[font-family:'Libre_Bodoni-Bold',Helvetica] font-bold text-[#cdb989] text-[28px] mb-6">
+              <h3 className="font-serif font-bold text-[#cdb989] text-[28px] mb-6">
                 Investment Fundamentals:
               </h3>
 
@@ -227,10 +227,10 @@ const Learn: React.FC = () => {
                     >
                       <AccordionTrigger className="px-7 py-4 hover:no-underline">
                         <div className="w-full text-left">
-                          <h4 className="[font-family:'Segoe_UI-Semibold',Helvetica] font-bold text-[#012c51] text-base mb-4">
+                          <h4 className="font-serif font-bold text-[#012c51] text-base mb-4">
                             {topic.title}
                           </h4>
-                          <p className="[font-family:'Segoe_UI-Regular',Helvetica] font-normal text-black text-base">
+                          <p className="font-serif font-normal text-black text-base">
                             {topic.description}
                           </p>
                         </div>
@@ -238,7 +238,7 @@ const Learn: React.FC = () => {
 
                       <AccordionContent className="px-7 py-4">
                         <div className="pl-0 pr-12 ">
-                          <p className="[font-family:'Segoe_UI-Regular',Helvetica] text-black text-base mb-4">
+                          <p className="font-serif text-black text-base mb-4">
                             {paragraphs[0]}
                           </p>
 
@@ -248,7 +248,7 @@ const Learn: React.FC = () => {
                                 Read More
                               </summary>
                               <div className="mt-2">
-                                <p className="[font-family:'Segoe_UI-Regular',Helvetica] font-normal text-black text-base">
+                                <p className="font-serif font-normal text-black text-base">
                                   {paragraphs[1]}
                                 </p>
                               </div>

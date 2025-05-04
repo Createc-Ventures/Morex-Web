@@ -49,11 +49,11 @@ export default function ContactUs(): JSX.Element {
           <div className="absolute w-full h-full top-0 left-0 bg-[#000000a6]" />
 
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-            <h1 className="[font-family:'Libre_Bodoni-Bold',Helvetica] font-bold text-[#cdb989] text-5xl mb-8">
+            <h1 className="font-serif font-bold text-[#cdb989] text-5xl mb-8">
               CONTACT US
             </h1>
 
-            <p className="[font-family:'Libre_Bodoni-Regular',Helvetica] font-normal text-white text-base">
+            <p className="font-serif font-normal text-white text-base">
               Need an expert? you arc more than welcomed to leave your contact
               <br />
               info and we will be in touch shortly.
@@ -70,7 +70,7 @@ export default function ContactUs(): JSX.Element {
             >
               <CardContent className="flex flex-col items-center pt-16">
                 <div className="mb-8">{card.icon}</div>
-                <h3 className="[font-family:'Libre_Bodoni-Regular',Helvetica] font-normal text-[#012c51] text-base mb-8">
+                <h3 className="font-normal text-[#012c51] text-base mb-8 font-serif">
                   {card.title}
                 </h3>
                 {Array.isArray(card.content) ? (
@@ -78,14 +78,14 @@ export default function ContactUs(): JSX.Element {
                     {card.content.map((line, i) => (
                       <p
                         key={i}
-                        className="[font-family:'Segoe_UI-Regular',Helvetica] font-normal text-black text-xs"
+                        className="font-serif font-normal text-black text-xs"
                       >
                         {line}
                       </p>
                     ))}
                   </div>
                 ) : (
-                  <p className="[font-family:'Segoe_UI-Regular',Helvetica] font-normal text-black text-base text-center">
+                  <p className="font-serif font-normal text-black text-base text-center">
                     {card.content}
                   </p>
                 )}
@@ -99,11 +99,11 @@ export default function ContactUs(): JSX.Element {
           {/* Contact form */}
           <Card className="w-[557px] bg-[#cdb989a6] rounded-[30px] p-7">
             <CardContent className="p-0">
-              <h2 className="[font-family:'Libre_Bodoni-Regular',Helvetica] font-normal text-[#012c51] text-[28px] mb-4">
+              <h2 className="font-serif font-normal text-[#012c51] text-[28px] mb-4">
                 Get in Touch !
               </h2>
 
-              <p className="[font-family:'Segoe_UI-Regular',Helvetica] font-normal text-black text-base mb-8">
+              <p className="font-serif font-normal text-black text-base mb-8">
                 Lorem ipsum dolor amet, consectetur elit.&nbsp;&nbsp;Aliquam
                 ullamcorper lorem dolor amet, consectetur
                 elit.&nbsp;&nbsp;Aliquam ullamcorper lorem
@@ -112,25 +112,25 @@ export default function ContactUs(): JSX.Element {
               <form className="space-y-4">
                 <Input
                   placeholder="Name"
-                  className="h-9 rounded-[30px] [font-family:'Libre_Bodoni-Regular',Helvetica] text-[#012c51] opacity-50"
+                  className="h-9 rounded-[30px] font-serif text-[#012c51] opacity-50"
                 />
 
                 <Input
                   placeholder="Email"
-                  className="h-9 rounded-[30px] [font-family:'Libre_Bodoni-Regular',Helvetica] text-[#012c51] opacity-50"
+                  className="h-9 rounded-[30px] font-serif text-[#012c51] opacity-50"
                 />
 
                 <Input
                   placeholder="Subject"
-                  className="h-9 rounded-[30px] [font-family:'Libre_Bodoni-Regular',Helvetica] text-[#012c51] opacity-50"
+                  className="h-9 rounded-[30px] font-serif text-[#012c51] opacity-50"
                 />
 
                 <Textarea
                   placeholder="Message"
-                  className="h-[202px] rounded-[30px] [font-family:'Libre_Bodoni-Regular',Helvetica] text-[#012c51] opacity-50"
+                  className="h-[202px] rounded-[30px] font-serif text-[#012c51] opacity-50"
                 />
 
-                <Button className="bg-[#cdb989] text-[#012c51] rounded-[30px] h-[38px] w-[187px] [font-family:'Libre_Bodoni-Regular',Helvetica] font-normal">
+                <Button className="bg-[#cdb989] text-[#012c51] rounded-[30px] h-[38px] w-[187px] font-serif font-normal">
                   Send Message
                 </Button>
               </form>
@@ -139,11 +139,11 @@ export default function ContactUs(): JSX.Element {
 
           {/* Location section */}
           <div className="flex-1">
-            <h2 className="[font-family:'Libre_Bodoni-Regular',Helvetica] font-normal text-[#012c51] text-[28px] mb-4">
+            <h2 className="font-serif font-normal text-[#012c51] text-[28px] mb-4">
               Our location
             </h2>
 
-            <p className="[font-family:'Segoe_UI-Regular',Helvetica] font-normal text-black text-base mb-8">
+            <p className="font-serif font-normal text-black text-base mb-8">
               5025 Orbitor Drive, Bldg.2, Suite 200 Mississauga, Ontario L4W 4Y5
             </p>
 
