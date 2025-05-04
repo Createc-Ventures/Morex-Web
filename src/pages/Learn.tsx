@@ -177,7 +177,7 @@ const Learn: React.FC = () => {
             <img
               className="w-full h-full object-cover"
               alt="Person climbing mountain at sunset"
-              src="/assets/images/learn.jpg"
+              src="assets/images/learn.jpg"
             />
             <div className="absolute inset-0 bg-[#000000a6]" />
           </div>

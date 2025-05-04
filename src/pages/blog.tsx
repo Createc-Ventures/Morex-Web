@@ -64,7 +64,7 @@ export default function BlogArticalPage(): JSX.Element {
                     <img
                       className="w-full h-full object-cover"
                       alt="Person climbing mountain at sunset"
-                      src="public\assets\images\bloghero.jpg"
+                      src="assets/images/bloghero.jpg"
                     />
                     <div className="absolute inset-0 bg-[#000000a6]" />
                   </div>
@@ -98,7 +98,7 @@ export default function BlogArticalPage(): JSX.Element {
         <div className="w-full h-[479px] mt-24 bg-neutral-100 flex mb-8">
           <div className="w-[733px] h-full">
             <img
-              src="public\assets\images\sub.jpg"
+              src="assets/images/sub.jpg"
               alt="Subscribe background"
               className="w-full h-full object-cover"
             />

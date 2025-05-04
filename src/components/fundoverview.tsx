@@ -16,7 +16,7 @@ const InvestmentHighlight: React.FC = () => {
       <div className="relative w-full max-w-6xl flex flex-col md:flex-row items-center md:items-start">
         {/* Image */}
         <img
-          src="/assets/images/invest1.jpg"
+          src="assets/images/invest1.jpg"
           alt="Investment property"
           className="w-full md:w-[50%] object-cover rounded-t-md md:rounded-none md:rounded-l-md shadow-md"
         />

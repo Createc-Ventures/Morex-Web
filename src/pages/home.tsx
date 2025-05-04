@@ -102,7 +102,7 @@ export default function Homepage() {
           <img
             className="absolute w-[336px] h-[143px] top-[30px] left-0"
             alt="Logo"
-            src="\assets\logo\logo.png"
+            src="assets/logo/logo.png"
           />
 
           {/* Hero Content */}
@@ -134,7 +134,7 @@ export default function Homepage() {
                 <h3 className="w-[193px] font-['Segoe_UI-Bold',Helvetica] font-bold text-[#cdb989] text-base" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
                   DISCOVER MORE WITH MOREX CAPITAL
                 </h3>
-                <img className="w-12 h-[49px]" alt="Image" src="/assets/logo/Morex Cap.png" />
+                <img className="w-12 h-[49px]" alt="Image" src="assets/logo/Morex Cap.png" />
               </div>
 
               <p className="font-['Segoe_UI-Regular',Helvetica] text-white text-base mb-4" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
@@ -163,7 +163,7 @@ export default function Homepage() {
           <img
             className="ml-auto w-[81px] h-[87px]"
             alt="Whatsapp image"
-            src="\assets\logo\single.png"
+            src="assets/logo/single.png"
           />
         </section>
 
@@ -172,7 +172,7 @@ export default function Homepage() {
           <img
             className="w-full max-w-[1096px] h-auto"
             alt="Modern architecture"
-            src="\assets\images\house.png"
+            src="assets/images/house.png"
           />
         </section>
 
@@ -184,7 +184,7 @@ export default function Homepage() {
           <img
             className="w-full md:w-[670px] h-auto"
             alt="Whatsapp image"
-            src="\assets\images\Person.png"
+            src="assets/images/Person.png"
           />
 
           <div className="flex flex-col justify-end">
@@ -207,7 +207,7 @@ export default function Homepage() {
               <img
                 className="w-[490px] h-[490px] object-cover"
                 alt="Colin meg"
-                src="\assets\images\mic.png"
+                src="assets/images/mic.png"
               />
 
               <div className="p-8 flex flex-col justify-center">
@@ -267,7 +267,7 @@ export default function Homepage() {
   className="mt-20 relative w-full h-[656px] bg-cover bg-center"
   style={{
     backgroundImage:
-      "url(public/assets/images/exemptmarketdealer.png)",
+      "url(/assets/images/exemptmarketdealer.png)",
   }}
 >
 
@@ -340,7 +340,7 @@ export default function Homepage() {
 
       {/* First Image */}
       <img 
-        src="public\assets\images\pic.png" 
+        src="assets/images/pic.png"
         alt="Living room" 
         className="w-[267px] h-56 object-cover rounded-[30px]" 
       />
@@ -348,7 +348,7 @@ export default function Homepage() {
 
     {/* Bottom Image */}
     <img 
-      src="public/assets/images/coin.png" 
+      src="assets/images/coin.png"
       alt="Stacked coins" 
       className="w-full h-[230px] object-cover rounded-[30px]" 
     />

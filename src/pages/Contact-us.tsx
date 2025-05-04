@@ -45,7 +45,7 @@ export default function ContactUs(): JSX.Element {
         {/* Header/Navigation */}
         <Navbar startPosition="custom" />
         {/* Hero section */}
-        <div className="w-full h-[450px] relative bg-[url(public/assets/images/contactus.jpg)] bg-cover">
+        <div className="w-full h-[450px] relative bg-[url(/public/assets/images/contactus.jpg)] bg-cover">
           <div className="absolute w-full h-full top-0 left-0 bg-[#000000a6]" />
 
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
@@ -163,16 +163,16 @@ export default function ContactUs(): JSX.Element {
 
             <div className="flex space-x-4 mt-16 ">
               <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">
-                  <img src="/assets/icons/fb.svg" alt="Facebook" className="w-12 h-12 cursor-pointer" />
+                  <img src="assets/icons/fb.svg" alt="Facebook" className="w-12 h-12 cursor-pointer" />
               </a>
               <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">
-                  <img src="/assets/icons/in.svg" alt="Facebook" className="w-12 h-12 cursor-pointer" />
+                  <img src="assets/icons/in.svg" alt="Facebook" className="w-12 h-12 cursor-pointer" />
               </a>
               <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">
-                  <img src="/assets/icons/insta.svg" alt="Facebook" className="w-12 h-12 cursor-pointer" />
+                  <img src="assets/icons/insta.svg" alt="Facebook" className="w-12 h-12 cursor-pointer" />
               </a>
               <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">
-                  <img src="/assets/icons/x.svg" alt="Facebook" className="w-12 h-12 cursor-pointer" />
+                  <img src="assets/icons/x.svg" alt="Facebook" className="w-12 h-12 cursor-pointer" />
               </a>
             </div>
           </div>

@@ -13,7 +13,7 @@ const AlternativeInvestmentsSection: React.FC = () => {
         <img
           className="w-full h-full object-cover"
           alt="Micheile henderson"
-          src="public\assets\images\leaf.png"
+          src="assets/images/leaf.png"
         />
 
         <div className="absolute inset-0 bg-[#00000080] rounded-[30px]">
@@ -34,7 +34,7 @@ const AlternativeInvestmentsSection: React.FC = () => {
           </div>
 
           {/* RSP Card */}
-          <div className="absolute top-[38px] right-[130px] w-[469px] h-[233px] bg-[url(public/assets/mask/subtract-2.svg)] bg-no-repeat">
+          <div className="absolute top-[38px] right-[130px] w-[469px] h-[233px] bg-[url(/public/assets/mask/subtract-2.svg)] bg-no-repeat">
             <div className="p-7">
               <h3 className="font-['Libre_Bodoni',Helvetica] font-normal text-[#012c51] text-[28px] mb-2">
                 RSP (Retirement Savings Plan)
@@ -57,7 +57,7 @@ const AlternativeInvestmentsSection: React.FC = () => {
           </div>
 
           {/* TFSA Card */}
-          <div className="absolute top-[350px] left-7 w-[550px] h-[268px] bg-[url(public/assets/mask/subtract-1.svg)] bg-no-repeat">
+          <div className="absolute top-[350px] left-7 w-[550px] h-[268px] bg-[url(/public/assets/mask/subtract-1.svg)] bg-no-repeat">
             <div className="p-7">
               <h3 className="font-['Libre_Bodoni',Helvetica] font-normal text-[#012c51] text-[28px] mb-2">
                 TFSA (Tax-Free Savings Account)
@@ -79,7 +79,7 @@ const AlternativeInvestmentsSection: React.FC = () => {
           </div>
 
           {/* RRSP Card */}
-          <div className="absolute top-[310px] right-[119px] w-[483px] h-[268px] bg-[url(public/assets/mask/subtract.svg)] bg-no-repeat">
+          <div className="absolute top-[310px] right-[119px] w-[483px] h-[268px] bg-[url(/public/assets/mask/subtract.svg)] bg-no-repeat">
             <div className="p-7">
               <h3 className="font-['Libre_Bodoni',Helvetica] font-normal text-[#cdb989] text-[28px] mb-0">
                 RRSP (Registered Retirement Savings Plan)

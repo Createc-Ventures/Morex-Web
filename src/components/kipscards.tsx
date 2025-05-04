@@ -8,7 +8,7 @@ const InvestmentCards = () => {
       <Card className="w-full md:w-[400px] h-[500px] bg-neutral-100 rounded-[30px] border-none shadow-md hover:shadow-2xl transition-shadow duration-300">
         <CardContent className="p-7 flex flex-col items-center text-center">
           <img
-            src="public\assets\images\AnnualReturnPercentage.png"
+            src="assets/images/AnnualReturnPercentage.png"
             alt="Investment Diversification"
             className="w-[220px] h-[220px] mb-6 object-contain"
           />
@@ -26,7 +26,7 @@ const InvestmentCards = () => {
       <Card className="w-full md:w-[400px] h-[500px] bg-neutral-100 rounded-[30px] border-none shadow-md hover:shadow-2xl transition-shadow duration-300">
         <CardContent className="p-7 flex flex-col items-center text-center">
           <img
-            src="public\assets\images\Fundundermanagement.png"
+            src="assets/images/Fundundermanagement.png"
             alt="Liquidity Access"
             className="w-[220px] h-[220px] mb-6 object-contain"
           />
@@ -44,7 +44,7 @@ const InvestmentCards = () => {
       <Card className="w-full md:w-[400px] h-[500px] bg-neutral-100 rounded-[30px] border-none shadow-md hover:shadow-2xl transition-shadow duration-300">
         <CardContent className="p-7 flex flex-col items-center text-center">
           <img
-            src="public\assets\images\YearofInception.png"
+            src="assets/images/YearofInception.png"
             alt="Risk Management Strategy"
             className="w-[220px] h-[220px] mb-6 object-contain"
           />

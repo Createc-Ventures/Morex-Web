@@ -35,7 +35,7 @@ const ThreeColumnInvestment: React.FC = () => {
       {/* Column 2: Tall Image */}
       <div className="lg:col-span-1 rounded-2xl overflow-hidden h-full">
         <img
-          src="public\assets\images\Insight1.jpg"
+          src="assets/images/Insight1.jpg"
           alt="Main investment document"
           className="w-full h-full object-cover rounded-2xl"
         />
@@ -46,7 +46,7 @@ const ThreeColumnInvestment: React.FC = () => {
         {/* Top Image */}
         <div className="rounded-2xl overflow-hidden">
           <img
-            src="public\assets\images\Insight2.jpg"
+            src="assets/images/Insight2.jpg"
             alt="Chart"
             className="w-full h-full object-cover"
           />

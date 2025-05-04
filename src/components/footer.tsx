@@ -10,20 +10,20 @@ export default function Footer() {
       {/* Contact Info */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
         <div className="flex flex-col items-center gap-2">
-          <img src="public\assets\icons\phone.svg" alt="Phone" className="w-15 h-15" />
+          <img src="/assets/icons/phone.svg" alt="Phone" className="w-15 h-15" />
           <p className="font-bold font-serif">Phone</p>
           <p className='font-serif'>905-896-2642</p>
           
         </div>
 
         <div className="flex flex-col items-center gap-2">
-          <img src="public\assets\icons\location.svg" alt="Address" className="w-15 h-15" />
+          <img src="assets/icons/location.svg" alt="Address" className="w-15 h-15" />
           <p className="font-bold font-serif">Address</p>
           <p className='font-serif'>5025 Orbitor Drive, Bldg. #2, Suite 200 Mississauga, Ontario L4W 4Y5</p>
         </div>
 
         <div className="flex flex-col items-center gap-2">
-          <img src="public\assets\icons\mail-top.svg" alt="Email" className="w-15 h-15" />
+          <img src="assets/icons/mail-top.svg" alt="Email" className="w-15 h-15" />
           <p className="font-bold font-serif">Email</p>
           <p className='font-serif'>info@morexcapital.com</p>
          

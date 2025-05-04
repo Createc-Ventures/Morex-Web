@@ -32,7 +32,7 @@ export default function AboutUs(): JSX.Element {
           <img
             className="w-full h-full object-cover"
             alt="Hero background"
-            src="public/assets/images/hero.png"
+            src="assets/images/hero.png"
           />
           <div className="absolute w-full h-full top-0 left-0 bg-[#000000a6]" />
         </div>
@@ -44,7 +44,7 @@ export default function AboutUs(): JSX.Element {
 
       <section className="flex flex-col md:flex-row items-center justify-between px-4 md:px-36 py-16 gap-10">
         <div className="w-full md:w-[517px]">
-          <img className="w-full max-h-[600px] object-cover" alt="Our journey" src="public/assets/images/journey.png" />
+          <img className="w-full max-h-[600px] object-cover" alt="Our journey" src="assets/images/journey.png" />
         </div>
         <div className="w-full md:w-[591px] flex flex-col items-center text-center">
           <h2 className="text-[#012c51] font-bold text-3xl md:text-5xl mb-6 font-serif">OUR JOURNEY</h2>
@@ -65,7 +65,7 @@ export default function AboutUs(): JSX.Element {
 
       <section className="relative py-16 flex flex-col items-center text-center px-4 md:px-0">
         <div className="absolute left-0 top-0 hidden md:block">
-          <img className="w-[392px] h-[292px]" alt="Purpose visual left" src="public/assets/images/perpose-1.png" />
+          <img className="w-[392px] h-[292px]" alt="Purpose visual left" src="assets/images/perpose-1.png" />
         </div>
         <div className="max-w-lg z-10">
           <h2 className="text-[#cdb989] font-bold text-3xl md:text-5xl mb-6 font-serif">OUR PURPOSE</h2>
@@ -76,12 +76,12 @@ export default function AboutUs(): JSX.Element {
           </p>
         </div>
         <div className="absolute right-0 bottom-0 hidden md:block">
-          <img className="w-[420px] h-[322px]" alt="Purpose visual right" src="public/assets/images/perpose-2.png" />
+          <img className="w-[420px] h-[322px]" alt="Purpose visual right" src="assets/images/perpose-2.png" />
         </div>
       </section>
 
       <section className="py-16 px-4 md:px-12">
-        <Card className="w-full max-w-[1032px] h-auto mx-auto bg-[url(public/assets/images/group.png)] bg-cover relative rounded-[30px]">
+        <Card className="w-full max-w-[1032px] h-auto mx-auto bg-[url(/public/assets/images/group.png)] bg-cover relative rounded-[30px]">
           <div className="absolute inset-0 bg-[#00000080] rounded-[30px]"></div>
           <CardContent className="relative z-10 p-6 md:p-16 text-white">
             <h2 className="text-[#cdb989] font-bold text-3xl md:text-5xl mb-6 font-serif">OUR GROUP</h2>
