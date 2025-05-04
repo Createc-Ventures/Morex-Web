@@ -1,94 +1,65 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import React, { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
 
-type TeamMember = {
-  name: string;
-  title: string;
-  bio: string;
-  socials: string[];
-};
+// Components
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
+import TeamCarousel from "@/components/TeamCarousel";
 
-const teamMembers: TeamMember[] = [
-  {
-    name: 'MOE MANZOOR',
-    title: 'President & CEO, Founder',
-    bio: `Mr. Manzoor is the founder, Chief Executive Officer, Director and President of Morex Capital Corp...`,
-    socials: ['📘', '✉️', '💼'],
-  },
-  {
-    name: 'MARIA TILOTTA',
-    title: 'Chief Compliance Officer, Co-Founder',
-    bio: `Maria has extensive experience in regulatory compliance...`,
-    socials: ['💼', '✉️'],
-  },
-  {
-    name: 'DJAMAL SALEH',
-    title: 'Investor Relations',
-    bio: `Djamel specializes in client engagement and investment strategy...`,
-    socials: ['📘'],
-  },
-];
 
-export default function MeetTheTeamCarousel() {
+
+
+
+
+
+
+const Team: React.FC = () => {
+  
+
   return (
-    <div className="font-serif text-blue-900">
-      {/* Hero Section */}
-      <section
-        className="relative bg-cover bg-center h-[500px] text-white flex flex-col justify-center items-center text-center px-4"
-        style={{ backgroundImage: 'url("/assets/team-hero.jpg")' }}
-      >
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          MEET THE PEOPLE WHO MAKE IT HAPPEN
-        </h1>
-        <p className="text-lg">Creators of Your Experience</p>
-        <div className="absolute bottom-4 animate-bounce text-2xl">↓</div>
-      </section>
-
-      {/* Swiper Carousel */}
-      <section className="bg-[#E6DBC8] py-12 px-6 md:px-20 transition-all duration-500 ease-in-out">
-        <Swiper
-          modules={[Navigation, Pagination]}
-          navigation
-          pagination={{ clickable: true }}
-          spaceBetween={50}
-          slidesPerView={1}
-        >
-          {teamMembers.map((member, i) => (
-            <SwiperSlide key={i}>
-              <div className="text-center md:text-left">
-                <h2 className="text-3xl font-bold text-[#BFA76A] mb-2">{member.name}</h2>
-                <h3 className="text-lg font-bold text-blue-900 underline mb-4">{member.title}</h3>
-                <p className="text-sm max-w-4xl mx-auto leading-relaxed">{member.bio}</p>
-                <div className="flex justify-center md:justify-start space-x-4 mt-6">
-                  {member.socials.map((icon, j) => (
-                    <span key={j} className="text-2xl bg-white p-2 rounded-full shadow">
-                      {icon}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </section>
-
-      {/* Team Footer */}
-      <section className="bg-[#D3DDE4] py-8 px-6 md:px-20 grid grid-cols-1 md:grid-cols-3 text-center text-sm text-blue-900">
-        {[
-          { name: 'Djamel Saleh', role: 'Investor Relations' },
-          { name: 'Maria Tilotta', role: 'Chief Compliance Officer, Co-Founder' },
-          { name: 'Atul Mehra', role: 'Vice President' },
-        ].map((member, i) => (
-          <div key={i} className="py-4">
-            <h4 className="font-bold">{member.name}</h4>
-            <p>{member.role}</p>
+    <div className="bg-white flex flex-row justify-center w-full">
+      <div className="bg-white w-full">
+        {/* Hero Section */}
+        <div className="relative w-full h-[776px] mb-36">
+          <div className="absolute inset-0 overflow-hidden">
+            <img
+              className="w-full h-full object-cover"
+              alt="Person climbing mountain at sunset"
+              src="/assets/images/meet.jpg"
+            />
+            <div className="absolute inset-0 bg-[#000000a6]" />
           </div>
-        ))}
-      </section>
+
+          {/* Navigation Bar */}
+          <Navbar startPosition="custom" />
+
+          {/* Hero Content */}
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full">
+            <h1 className="[font-family:'Libre_Bodoni-Bold',Helvetica] font-bold text-[#cdb989] text-5xl mb-6"  style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+                MEET THE PEOPLE THAT MAKE IT HAPPEN
+            </h1>
+            <p className="[font-family:'Libre_Bodoni-Regular',Helvetica] font-normal text-white text-base max-w-xl mx-auto"  style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+            Creators of Your Experience
+            </p>
+          </div>
+        </div>
+
+        {/* Main Content */}
+        <div className=" mb-20 ">
+          <div className="flex flex-row gap-12">
+            <div className="w-full">
+              <TeamCarousel />
+
+            </div>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <Footer />
+      </div>
     </div>
   );
-}
+};
+
+export default Team;
