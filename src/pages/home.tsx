@@ -128,16 +128,16 @@ export default function Homepage() {
           </a>
 
           {/* CTA Card */}
-          <Card className="absolute w-[285px] h-[266px] top-[480px] left-[965px] bg-[#012c51] rounded-[30px] border-none">
+          <Card className="absolute w-[285px] h-[276px] top-[480px] left-[965px] bg-[#012c51] rounded-[30px] border-none">
             <CardContent className="p-7">
-              <div className="flex items-start mb-4">
-                <h3 className="w-[193px] font-['Segoe_UI-Bold',Helvetica] font-bold text-[#cdb989] text-base">
+              <div className="flex items-start mb-4" >
+                <h3 className="w-[193px] font-['Segoe_UI-Bold',Helvetica] font-bold text-[#cdb989] text-base" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
                   DISCOVER MORE WITH MOREX CAPITAL
                 </h3>
                 <img className="w-12 h-[49px]" alt="Image" src="/assets/logo/Morex Cap.png" />
               </div>
 
-              <p className="font-['Segoe_UI-Regular',Helvetica] text-white text-base mb-4">
+              <p className="font-['Segoe_UI-Regular',Helvetica] text-white text-base mb-4" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
                 Ready for mortgage solutions built around you? Learn how Morex
                 Capital can help you move forward with confidence.
               </p>

@@ -7,7 +7,7 @@ const VideoMaskSectionMobile: React.FC = () => {
     <section className="relative w-full h-[840px] overflow-hidden ">
       <div className="absolute inset-0">
         <video
-          className="w-full h-full object-cover mask-custom-shape"
+          className="w-full h-full object-cover mask-custom-shape-mobile"
           autoPlay
           loop
           muted
