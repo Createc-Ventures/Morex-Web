@@ -6,7 +6,9 @@ import FundOverviewCard from "@/components/fundoverview";
 import Graph1 from "@/components/graph1";
 import Graph2 from "@/components/Graph2";
 import Footer from "@/components/footer";
-import DonutChart from "@/components/DonutChart";
+import DonutCard1 from "@/components/DonutCard1";
+import DonutCard2 from "@/components/DonutCard2";
+import DonutCard3 from "@/components/DonutCard3";
 import React from "react";
 
 
@@ -80,8 +82,10 @@ export default function Invest(): JSX.Element {
         
         <Graph2 />
        {/* Donut Charts Section */}
-       <div className="flex justify-center mt-20 mb-10">
-         <DonutChart />
+       <div className="flex flex-wrap justify-center gap-8 mt-16">
+        <DonutCard1 />
+        <DonutCard2 />
+        <DonutCard3 />
        </div>
         {/* Yield Section */}
 
