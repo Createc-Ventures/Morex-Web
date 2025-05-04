@@ -6,6 +6,7 @@ import VideoMaskSectionMobile from "@/components/VideoMaskSectionMobile";
 import Grapgh1 from "@/components/graph1";
 import Kipscards from "@/components/kipscards";
 import Blogcard from "@/components/Blogcar";
+import Footer from "@/components/footer";
 
 function HeroSection() {
   return (
@@ -181,6 +182,7 @@ export default function LandingPhone(): JSX.Element {
         </a>
         <Blogcard />
       </section>
+      <Footer />
     </div>
   );
 }
