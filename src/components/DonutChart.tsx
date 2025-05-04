@@ -1,4 +1,5 @@
 import { PieChart, Pie, Cell } from "recharts";
+import { Card, CardContent } from "@/components/ui/card";
 
 const COLORS = {
   darkBlue: "#0E2A47",
@@ -24,28 +25,38 @@ const lendingData = [
   { name: "First Position", value: 25, color: COLORS.beige },
 ];
 
-// Wrapped in a div with Tailwind drop shadow for a soft glow
 const renderPie = (data: any[]) => (
-  <div className="shadow-xl rounded-full bg-white p-2">
+  <div className="flex justify-center">
     <PieChart width={220} height={220}>
       <Pie
         data={data}
         dataKey="value"
-        innerRadius={50}
+        innerRadius={60}
         outerRadius={90}
-        paddingAngle={1}
-        stroke="none"
+        paddingAngle={2}
+        stroke="#fff"
+        strokeWidth={2}
+        startAngle={180}
+        endAngle={-180}
+        isAnimationActive={true}
+        animationDuration={1500}
+        animationEasing="ease-out"
       >
         {data.map((entry, index) => (
-          <Cell key={`cell-${index}`} fill={entry.color} />
+          <Cell
+            key={`cell-${index}`}
+            fill={entry.color}
+            style={{ filter: "drop-shadow(2px 2px 4px rgba(0,0,0,0.25))" }}
+          />
         ))}
       </Pie>
     </PieChart>
   </div>
 );
 
+
 const renderLegend = (data: any[], title: string) => (
-  <div className="ml-4 text-sm font-semibold text-gray-800">
+  <div className="ml-6 text-sm font-semibold text-gray-800">
     <p className="mb-2">{title}</p>
     <div className="space-y-1">
       {data.map((entry) => (
@@ -63,25 +74,31 @@ const renderLegend = (data: any[], title: string) => (
 
 export default function DonutChart() {
   return (
-    <div className="flex flex-col items-center">
-      {/* Top row: Portfolio and Location */}
-      <div className="grid grid-cols-2 gap-12">
-        <div className="flex items-center">
-          {renderPie(portfolioData)}
-          {renderLegend(portfolioData, "Diversified Portfolio")}
-        </div>
+    <div className="flex flex-col items-center gap-10 mt-20">
+      {/* Top Row */}
+      <div className="grid grid-cols-2 gap-8">
+        <Card className="shadow-xl p-6 flex items-center">
+          <CardContent className="flex items-center">
+            {renderPie(portfolioData)}
+            {renderLegend(portfolioData, "Diversified Portfolio")}
+          </CardContent>
+        </Card>
 
-        <div className="flex items-center">
-          {renderPie(locationData)}
-          {renderLegend(locationData, "Location")}
-        </div>
+        <Card className="shadow-xl p-6 flex items-center">
+          <CardContent className="flex items-center">
+            {renderPie(locationData)}
+            {renderLegend(locationData, "Location")}
+          </CardContent>
+        </Card>
       </div>
 
-      {/* Bottom row: Secured Lending */}
-      <div className="mt-12 flex items-center">
-        {renderPie(lendingData)}
-        {renderLegend(lendingData, "Secured Lending")}
-      </div>
+      {/* Bottom Chart */}
+      <Card className="shadow-xl p-6 flex items-center">
+        <CardContent className="flex items-center">
+          {renderPie(lendingData)}
+          {renderLegend(lendingData, "Secured Lending")}
+        </CardContent>
+      </Card>
     </div>
   );
 }
