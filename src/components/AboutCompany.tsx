@@ -25,7 +25,7 @@ const AboutCompany: React.FC = () => {
       <div className="w-full md:w-1/2 mt-8 md:mt-0 relative">
         <div className="rounded-lg overflow-hidden ">
           <img
-            src="public\assets\images\2people.png" // Update to your correct path
+            src="assets/images/2people.png" // Update to your correct path
             alt="Two Businessmen Discussing"
             className="w-full h-full object-cover"
           />
