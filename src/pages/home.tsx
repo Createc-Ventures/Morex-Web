@@ -212,7 +212,7 @@ export default function Homepage() {
 
               <div className="p-8 flex flex-col justify-center">
                 <h2 className="font-serif font-normal text-[#012c51] text-5xl mb-6" >
-                  What Is Mic?
+                  What is aMIC?
                 </h2>
 
                 <p className="font-['Segoe_UI-Regular',Helvetica] font-normal text-[#012c51] text-base" >
@@ -370,13 +370,13 @@ export default function Homepage() {
         {/* Fund KPIs Section */}
         <section className="mt-20 px-7">
           <h2 className=" font-normal text-[#012c51] text-5xl text-center mb-4 font-serif  " >
-            Fund Kpis
+            Fund KPIs
           </h2>
 
           <p className="font-['Segoe_UI-Regular',Helvetica] font-normal text-black text-base text-center mb-12 max-w-[1152px] mx-auto" >
-            Fund Kpis For A Mic (mortgage Investment Corporation) Track
+            Fund KPIs For A Mic (Mortgage Investment Corporation) Track
             Performance Through Key Metrics Like Annual Returns, Loan-to-value
-            Ratios, Default Rates, And Monthly Distributions. These Indicators
+            Ratios, Mortgages Funded, And Monthly Distributions. These Indicators
             Help Investors Assess The Fund's Stability, Income Potential, And
             Overall Health.
           </p>

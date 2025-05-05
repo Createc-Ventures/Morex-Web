@@ -17,8 +17,8 @@ const InvestmentCards = () => {
               Annual Return Percentage
             </h3>
             <p className="text-sm text-[#4b5563]">
-              Diversification spreads investments across different assets to reduce
-              risk and enhance potential returns, ensuring a more balanced portfolio.
+              Class A: 9.25%
+              DRIP: 9.58%
             </p>
           </CardContent>
         </Card>
@@ -32,12 +32,10 @@ const InvestmentCards = () => {
               className="w-[180px] h-[180px] mb-5 object-contain"
             />
             <h3 className="font-serif text-[20px] text-[#1f2937] mt-2 mb-3">
-              Fund under Management
+              Mortgages Funded Till Date
             </h3>
             <p className="text-sm text-[#4b5563]">
-              Liquidity represents how easily investors can access their invested
-              capital. A fund’s liquidity level is crucial for flexible financial
-              planning and emergency needs.
+              $231,097,188
             </p>
           </CardContent>
         </Card>
@@ -51,12 +49,10 @@ const InvestmentCards = () => {
               className="w-[180px] h-[180px] mb-5 object-contain"
             />
             <h3 className="font-serif text-[20px] text-[#1f2937] mt-2 mb-3">
-              Year of Inception
+              Average Loan-to-Value (LTV)
             </h3>
             <p className="text-sm text-[#4b5563]">
-              Effective risk management identifies, assesses, and mitigates potential
-              investment threats, safeguarding returns and preserving investor
-              confidence.
+              67% (Weighted Average LTV)
             </p>
           </CardContent>
         </Card>
