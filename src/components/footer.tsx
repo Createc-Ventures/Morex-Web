@@ -12,20 +12,20 @@ export default function Footer() {
         <div className="flex flex-col items-center gap-2">
           <img src="/assets/icons/phone.svg" alt="Phone" className="w-15 h-15" />
           <p className="font-bold font-serif">Phone</p>
-          <p className='font-serif'>905-896-2642</p>
+          <p className=''>905-896-2642</p>
           
         </div>
 
         <div className="flex flex-col items-center gap-2">
           <img src="assets/icons/location.svg" alt="Address" className="w-15 h-15" />
           <p className="font-bold font-serif">Address</p>
-          <p className='font-serif'>5025 Orbitor Drive, Bldg. #2, Suite 200 Mississauga, Ontario L4W 4Y5</p>
+          <p className=''>5025 Orbitor Drive, Bldg. #2, Suite 200 Mississauga, Ontario L4W 4Y5</p>
         </div>
 
         <div className="flex flex-col items-center gap-2">
           <img src="assets/icons/mail-top.svg" alt="Email" className="w-15 h-15" />
           <p className="font-bold font-serif">Email</p>
-          <p className='font-serif'>info@morexcapital.com</p>
+          <p className=''>info@morexcapital.com</p>
          
         </div>
       </div>

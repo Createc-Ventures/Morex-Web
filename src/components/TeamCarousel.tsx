@@ -93,13 +93,13 @@ const TeamCarousel: React.FC = () => {
           transition={{ duration: 0.4 }}
           className="max-w-xl w-full mx-auto text-left"
         >
-          <h2 className="text-[#cdb989] text-2xl md:text-3xl font-semibold mb-2"  style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+          <h2 className="text-[#cdb989] text-2xl md:text-3xl font-semibold mb-2 font-serif"  >
             {current.name}
           </h2>
-          <a href="#" className="text-blue-800 text-base md:text-lg underline mb-4 block"  style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+          <a href="#" className="text-blue-800 text-base md:text-lg underline mb-4 block [font-family:'Segoe_UI-Semibold',Helvetica]"  >
             {current.title}
           </a>
-          <p className="text-sm md:text-base mb-6"  style={{ fontFamily: "'Times New Roman', Times, serif" }}>{current.description}</p>
+          <p className="text-sm md:text-base mb-6 [font-family:'Segoe_UI-Semibold',Helvetica]" >{current.description}</p>
           <div className="flex gap-4">
             <a href={current.social.facebook}>
               <Facebook className="text-black w-5 h-5" />

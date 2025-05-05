@@ -187,10 +187,10 @@ const Learn: React.FC = () => {
 
           {/* Hero Content */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full">
-            <h1 className="[font-family:'Libre_Bodoni-Bold',Helvetica] font-bold text-[#cdb989] text-5xl mb-6">
+            <h1 className="font-serif font-bold text-[#cdb989] text-5xl mb-6">
               YOUR INVESTMENT GUIDE
             </h1>
-            <p className="[font-family:'Libre_Bodoni-Regular',Helvetica] font-normal text-white text-base max-w-xl mx-auto">
+            <p className="font-serif font-normal text-white text-base max-w-xl mx-auto">
               Learn the basics, explore your options, and understand how smart
               investing can work for you.
             </p>
@@ -227,10 +227,10 @@ const Learn: React.FC = () => {
                     >
                       <AccordionTrigger className="px-7 py-4 hover:no-underline">
                         <div className="w-full text-left">
-                          <h4 className="font-serif font-bold text-[#012c51] text-base mb-4">
+                          <h4 className=" font-bold text-[#012c51] text-base mb-4">
                             {topic.title}
                           </h4>
-                          <p className="font-serif font-normal text-black text-base">
+                          <p className="[font-family:'Segoe_UI-Semibold',Helvetica] font-normal text-black text-base">
                             {topic.description}
                           </p>
                         </div>
@@ -238,7 +238,7 @@ const Learn: React.FC = () => {
 
                       <AccordionContent className="px-7 py-4">
                         <div className="pl-0 pr-12 ">
-                          <p className="font-serif text-black text-base mb-4">
+                          <p className="[font-family:'Segoe_UI-Semibold',Helvetica] text-black text-base mb-4">
                             {paragraphs[0]}
                           </p>
 

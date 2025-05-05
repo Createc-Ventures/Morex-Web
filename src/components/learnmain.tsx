@@ -7,7 +7,7 @@ export default function InvestmentIntro() {
         <h1 className="text-3xl md:text-5xl font-serif font-bold text-[#0A1F44]">
           Investment Fundamentals: A Guide To Getting Started
         </h1>
-        <p className="text-base text-gray-700 leading-relaxed font-serif">
+        <p className="text-base text-gray-700 leading-relaxed ">
           At Morex, we believe informed investing leads to confident decisions.
           Whether you're just starting out or looking to sharpen your financial
           knowledge, you’ve come to the right place. This page is your go-to

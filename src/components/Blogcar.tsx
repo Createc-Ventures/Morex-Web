@@ -91,7 +91,7 @@ const ScrollableCards: React.FC = () => {
               className="h-[230px] w-full object-cover rounded-t-lg"
             />
             <div className="p-6">
-              <h3 className="text-lg font-semibold text-[#b79d60] mb-2 text-left">
+              <h3 className="text-lg font-semibold text-[#b79d60] mb-2 text-left font-serif">
                 {card.title}
               </h3>
               <p className="text-sm text-gray-800 text-left mb-6">

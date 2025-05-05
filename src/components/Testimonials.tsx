@@ -34,9 +34,9 @@ const Testimonials: React.FC = () => {
       <h2 className="text-3xl font-semibold text-blue-900 mb-2 font-serif">
         Hear From Those We’ve Worked With
       </h2>
-      <p className="text-gray-600 mb-12 font-serif">We Make It Easy—Here’s How</p>
+      <p className="text-gray-600 mb-12 [font-family:'Segoe_UI-Semibold',Helvetica]">We Make It Easy—Here’s How</p>
 
-      <div className="flex flex-col md:flex-row justify-center items-center gap-8 px-4 md:px-0 font-serif">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-8 px-4 md:px-0 [font-family:'Segoe_UI-Semibold',Helvetica]">
         {testimonials.map((t, index) => (
           <div
             key={index}

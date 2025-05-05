@@ -136,22 +136,22 @@ export default function Navbar({ startPosition = "default" }) {
           >
             <Link
               to="/"
-              className="text-blue-900 hover:text-[#D4B968] font-bold"
-              style={{ fontFamily: "Times New Roman, serif" }}
+              className="text-blue-900 hover:text-[#D4B968] font-bold font-serif"
+              
             >
               HOME
             </Link>
             <Link
               to="/Invest"
-              className="text-blue-900 hover:text-[#D4B968] font-bold"
-              style={{ fontFamily: "Times New Roman, serif" }}
+              className="text-blue-900 hover:text-[#D4B968] font-bold font-serif"
+              
             >
               INVEST
             </Link>
             <Link
               to="/insights"
-              className="text-blue-900 hover:text-[#D4B968] font-bold"
-              style={{ fontFamily: "Times New Roman, serif" }}
+              className="text-blue-900 hover:text-[#D4B968] font-bold font-serif"
+              
             >
               INSIGHT
             </Link>
@@ -223,7 +223,7 @@ export default function Navbar({ startPosition = "default" }) {
                   <h3 className="text-[#D4B968] font-bold mb-4 text-sm tracking-widest">
                     ABOUT US →
                   </h3>
-                  <p className="text-gray-600 mb-6 text-sm">
+                  <p className="text-gray-600 mb-6 text-sm ">
                     Discover our mission and the people who bring it to life.
                   </p>
                   <div className="grid grid-cols-2 gap-4 border-t border-gray-300 pt-4">
@@ -254,9 +254,9 @@ export default function Navbar({ startPosition = "default" }) {
 
           <div className="flex-shrink-0 ml-auto">
             <Link
-              to="/contactus"
-              className="bg-blue-900 text-[#D4B968] px-6 py-3 rounded-full font-bold hover:bg-blue-800 transition"
-              style={{ fontFamily: "Times New Roman, serif" }}
+              to="/contactus" 
+              className="bg-blue-900 text-[#D4B968] px-6 py-3 rounded-full font-bold hover:bg-blue-800 transition font-['Segoe_UI-Bold',Helvetica]"
+              
             >
               CONTACT
             </Link>

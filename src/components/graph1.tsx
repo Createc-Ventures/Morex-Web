@@ -101,7 +101,7 @@ const options = {
 const TrendGraph: React.FC = () => {
   return (
     
-    <div style={{ width: "100%", height: "450px", padding: 15 }}>
+    <div style={{ width: "100%", height: "350px",  }}>
       <Line data={data} options={options as any} />
     </div>
   );

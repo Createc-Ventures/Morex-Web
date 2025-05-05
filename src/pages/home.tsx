@@ -107,7 +107,7 @@ export default function Homepage() {
 
           {/* Hero Content */}
           <div className="absolute w-[673px] h-[209px] top-[558px] left-[29px] bg-[#d9d9d980] rounded-[30px] backdrop-blur-[5px]">
-            <h1 className="absolute w-[638px] top-4 left-[18px] font-['Libre_Bodoni-Bold',Helvetica] font-bold text-5xl" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+            <h1 className="absolute w-[638px] top-4 left-[18px] font-serif font-bold text-5xl" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
               <span className="text-white">CANADA'S PREMIER </span>
               <span className="text-[#012c51]">MORTGAGE INVESTMENT </span>
               <span className="text-white">CORPORATION</span>
@@ -131,13 +131,13 @@ export default function Homepage() {
           <Card className="absolute w-[285px] h-[276px] top-[480px] left-[965px] bg-[#012c51] rounded-[30px] border-none">
             <CardContent className="p-7">
               <div className="flex items-start mb-4" >
-                <h3 className="w-[193px] font-['Segoe_UI-Bold',Helvetica] font-bold text-[#cdb989] text-base" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+                <h3 className="w-[193px] font-['Segoe_UI-Bold',Helvetica] font-bold text-[#cdb989] text-base" >
                   DISCOVER MORE WITH MOREX CAPITAL
                 </h3>
                 <img className="w-12 h-[49px]" alt="Image" src="assets/logo/Morex Cap.png" />
               </div>
 
-              <p className="font-['Segoe_UI-Regular',Helvetica] text-white text-base mb-4" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+              <p className="font-['Segoe_UI-Regular',Helvetica] text-white text-base mb-4" >
                 Ready for mortgage solutions built around you? Learn how Morex
                 Capital can help you move forward with confidence.
               </p>
@@ -177,7 +177,7 @@ export default function Homepage() {
         </section>
 
         {/* Second Tagline Section */}
-        <h2 className="mt-10 font-normal text-[#012c51] text-5xl text-left md:text-right" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+        <h2 className="mt-10 font-normal text-[#012c51] text-5xl text-left md:text-right font-serif">
               REAL HELP FROM REAL PEOPLE <br></br>WHO'VE GOT YOUR BACK.
             </h2>
         <section className="flex flex-col md:flex-row mt-20 px-7 gap-8">
@@ -211,11 +211,11 @@ export default function Homepage() {
               />
 
               <div className="p-8 flex flex-col justify-center">
-                <h2 className="font-['Libre_Bodoni-Regular',Helvetica] font-normal text-[#012c51] text-5xl mb-6" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+                <h2 className="font-serif font-normal text-[#012c51] text-5xl mb-6" >
                   What Is Mic?
                 </h2>
 
-                <p className="font-['Segoe_UI-Regular',Helvetica] font-normal text-[#012c51] text-base" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+                <p className="font-['Segoe_UI-Regular',Helvetica] font-normal text-[#012c51] text-base" >
                   A MIC (Mortgage Investment Corporation) is a Canadian company
                   that connects investors with borrowers. It pools funds from
                   individuals looking to earn strong, steady returns and lends
@@ -237,7 +237,7 @@ export default function Homepage() {
         <section className="mt-20 px-7">
           <div className="flex flex-col md:flex-row gap-8">
             <div className="w-[228px] h-[229px] bg-[#012c51] shadow-[-8px_8px_10px_#00000040] flex items-end p-7">
-              <h2 className="font-['Libre_Bodoni-Regular',Helvetica] font-normal text-[#cdb989] text-[28px]" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+              <h2 className=" font-normal text-[#cdb989] text-[28px] font-serif" >
                 Why Is
                 <br />
                 mic Better?
@@ -250,10 +250,10 @@ export default function Homepage() {
                 className="flex-1 h-[387px] bg-neutral-100 shadow-[-8px_8px_10px_#00000040] border-none"
               >
                 <CardContent className="p-7">
-                  <h3 className="font-['Libre_Bodoni-Regular',Helvetica] font-normal text-[#cdb989] text-[28px] mb-6" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+                  <h3 className="font-serif font-normal text-[#cdb989] text-[28px] mb-6" >
                     {benefit.title}
                   </h3>
-                  <p className="font-['Segoe_UI-Regular',Helvetica] font-normal text-[#012c51] text-base" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+                  <p className="font-['Segoe_UI-Regular',Helvetica] font-normal text-[#012c51] text-base" >
                     {benefit.content}
                   </p>
                 </CardContent>
@@ -277,7 +277,7 @@ export default function Homepage() {
                 Exempt Market Dealer
               </h2>
 
-              <p className="font-['Segoe_UI-Regular',Helvetica] font-normal text-white text-base mb-4"style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+              <p className="font-['Segoe_UI-Regular',Helvetica] font-normal text-white text-base mb-4">
                 As a registered Exempt Market Dealer (EMD), MOREX offers
                 investors exclusive access to private investment opportunities
                 that are not available on public markets. Our EMD status ensures
@@ -309,7 +309,7 @@ export default function Homepage() {
       <h2 className="font-['Libre_Bodoni-Regular',Helvetica] font-normal text-[#cdb989] text-[28px] mb-6" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
         Exploring MICs and GICs
       </h2>
-      <p className="font-['Segoe_UI-Regular',Helvetica] font-normal text-black text-base" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+      <p className="font-['Segoe_UI-Regular',Helvetica] font-normal text-black text-base" >
         GICs and MICs are both popular ways to grow your savings, but
         they work a little differently. A GIC (Guaranteed Investment
         Certificate) gives you a fixed return over time and protects
@@ -360,7 +360,7 @@ export default function Homepage() {
         </section>
 
         {/* Performance Chart Section */}
-        <h3 className="font-['Libre_Bodoni',Helvetica] font-normal text-[#012c51] text-[28px] text-center mt-10">
+        <h3 className=" font-normal text-[#012c51] text-5xl text-center mt-10 font-serif">
         OUR PERFORMANCE OVER THE YEARS
       </h3>
         <Graph1 />
@@ -369,11 +369,11 @@ export default function Homepage() {
 
         {/* Fund KPIs Section */}
         <section className="mt-20 px-7">
-          <h2 className="font-['Libre_Bodoni-Regular',Helvetica] font-normal text-[#012c51] text-5xl text-center mb-4" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+          <h2 className=" font-normal text-[#012c51] text-5xl text-center mb-4 font-serif  " >
             Fund Kpis
           </h2>
 
-          <p className="font-['Segoe_UI-Regular',Helvetica] font-normal text-black text-base text-center mb-12 max-w-[1152px] mx-auto" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+          <p className="font-['Segoe_UI-Regular',Helvetica] font-normal text-black text-base text-center mb-12 max-w-[1152px] mx-auto" >
             Fund Kpis For A Mic (mortgage Investment Corporation) Track
             Performance Through Key Metrics Like Annual Returns, Loan-to-value
             Ratios, Default Rates, And Monthly Distributions. These Indicators

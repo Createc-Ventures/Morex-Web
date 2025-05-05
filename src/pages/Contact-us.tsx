@@ -30,7 +30,7 @@ export default function ContactUs(): JSX.Element {
       content: "905-896-2642",
     },
     {
-      icon: <Mail className="w-12 h-12 text-[#cdb989]" />,
+      icon: <Mail className="w-12 h-12 text-[#cdb989] " />,
       title: "CONTACT US",
       content: "info@morexcapital.com",
     },
@@ -74,18 +74,18 @@ export default function ContactUs(): JSX.Element {
                   {card.title}
                 </h3>
                 {Array.isArray(card.content) ? (
-                  <div className="text-center">
+                  <div className="text-center [font-family:'Segoe_UI-Semibold',Helvetica]">
                     {card.content.map((line, i) => (
                       <p
                         key={i}
-                        className="font-serif font-normal text-black text-xs"
+                        className="[font-family:'Segoe_UI-Semibold',Helvetica] font-normal text-black text-xs"
                       >
                         {line}
                       </p>
                     ))}
                   </div>
                 ) : (
-                  <p className="font-serif font-normal text-black text-base text-center">
+                  <p className=" font-normal text-black text-base text-center">
                     {card.content}
                   </p>
                 )}
@@ -103,7 +103,7 @@ export default function ContactUs(): JSX.Element {
                 Get in Touch !
               </h2>
 
-              <p className="font-serif font-normal text-black text-base mb-8">
+              <p className="[font-family:'Segoe_UI-Semibold',Helvetica] font-normal text-black text-base mb-8">
                 Lorem ipsum dolor amet, consectetur elit.&nbsp;&nbsp;Aliquam
                 ullamcorper lorem dolor amet, consectetur
                 elit.&nbsp;&nbsp;Aliquam ullamcorper lorem
@@ -143,7 +143,7 @@ export default function ContactUs(): JSX.Element {
               Our location
             </h2>
 
-            <p className="font-serif font-normal text-black text-base mb-8">
+            <p className="[font-family:'Segoe_UI-Semibold',Helvetica] font-normal text-black text-base mb-8">
               5025 Orbitor Drive, Bldg.2, Suite 200 Mississauga, Ontario L4W 4Y5
             </p>
 

@@ -48,7 +48,7 @@ export default function AboutUs(): JSX.Element {
         </div>
         <div className="w-full md:w-[591px] flex flex-col items-center text-center">
           <h2 className="text-[#012c51] font-bold text-3xl md:text-5xl mb-6 font-serif">OUR JOURNEY</h2>
-          <p className="text-black text-sm md:text-base font-serif">
+          <p className="text-black text-sm md:text-base [font-family:'Segoe_UI-Semibold',Helvetica]">
             At Morex Asset Management, our story is rooted in a clear vision — to empower qualified
             investors with access to exclusive, high-quality private investment opportunities...
             <br /><br />
@@ -56,7 +56,7 @@ export default function AboutUs(): JSX.Element {
           </p>
           <div className="mt-8">
             <h3 className="font-bold text-[#cdb989] text-xl mb-3 font-serif">Want To Know More?</h3>
-            <Button className="w-40 h-12 bg-[#012c51] rounded-[30px] font-bold text-[#cdb989] text-base font-serif">
+            <Button className="w-40 h-12 bg-[#012c51] rounded-[30px] font-bold text-[#cdb989] text-base [font-family:'Segoe_UI-Semibold',Helvetica]">
               LET&apos;S CONNECT
             </Button>
           </div>
@@ -69,7 +69,7 @@ export default function AboutUs(): JSX.Element {
         </div>
         <div className="max-w-lg z-10">
           <h2 className="text-[#cdb989] font-bold text-3xl md:text-5xl mb-6 font-serif">OUR PURPOSE</h2>
-          <p className="text-black text-sm md:text-base font-serif">
+          <p className="text-black text-sm md:text-base [font-family:'Segoe_UI-Semibold',Helvetica]">
           We connect investors with alternative investment solutions designed to deliver stable 
           income and diversify portfolios beyond traditional public markets. Our disciplined, 
           investor-first approach prioritizes transparency, risk management, and long-term value creation.
@@ -85,12 +85,12 @@ export default function AboutUs(): JSX.Element {
           <div className="absolute inset-0 bg-[#00000080] rounded-[30px]"></div>
           <CardContent className="relative z-10 p-6 md:p-16 text-white">
             <h2 className="text-[#cdb989] font-bold text-3xl md:text-5xl mb-6 font-serif">OUR GROUP</h2>
-            <h3 className="font-bold mb-2 font-serif">MOREX CAPITAL</h3>
-            <p className="mb-6 text-sm md:text-base max-w-md font-serif">
+            <h3 className="font-bold mb-2 [font-family:'Segoe_UI-Semibold',Helvetica]">MOREX CAPITAL</h3>
+            <p className="mb-6 text-sm md:text-base max-w-md [font-family:'Segoe_UI-Semibold',Helvetica]">
             Established in 2012, Morex Capital is a Mortgage Investment Corporation (MIC) with a proven track record of delivering stable, 
             predictable returns by investing in short-term, owner-occupied residential mortgages primarily in Ontario’s Golden Horseshoe region.
             </p>
-            <Button className="bg-[#012c51] text-[#cdb989] rounded-[30px] text-base font-bold w-40 h-12 font-serif">
+            <Button className="bg-[#012c51] text-[#cdb989] rounded-[30px] text-base font-bold w-40 h-12 [font-family:'Segoe_UI-Semibold',Helvetica]">
               LEARN MORE
             </Button>
           </CardContent>
@@ -108,7 +108,7 @@ export default function AboutUs(): JSX.Element {
             {partnerBenefits.map((benefit, index) => (
               <Card key={index} className="bg-[#cdb989] h-auto rounded-lg shadow-[-8px_8px_10px_#00000040]">
                 <CardContent className="p-4 flex items-center justify-center h-14">
-                  <p className="text-[#012c51] font-bold text-center text-sm md:text-base font-serif">{benefit}</p>
+                  <p className="text-[#012c51] font-bold text-center text-sm md:text-base [font-family:'Segoe_UI-Semibold',Helvetica]">{benefit}</p>
                 </CardContent>
               </Card>
             ))}
@@ -119,7 +119,7 @@ export default function AboutUs(): JSX.Element {
       <section className="py-16 px-4">
         <div className="text-center mb-12">
           <h2 className="text-[#012c51] font-bold text-3xl md:text-5xl mb-4 font-serif">Our Team</h2>
-          <p className="text-[#012c51] text-sm md:text-base max-w-2xl mx-auto font-serif">
+          <p className="text-[#012c51] text-sm md:text-base max-w-2xl mx-auto [font-family:'Segoe_UI-Semibold',Helvetica]">
             Get to know the passionate professionals driving our mission...
           </p>
         </div>
@@ -127,14 +127,14 @@ export default function AboutUs(): JSX.Element {
           {teamMembers.map((member, index) => (
             <Card key={index} className="w-[90%] sm:w-[261px] bg-neutral-100 rounded-[30px_30px_30px_0px] shadow-[-8px_8px_10px_#00000040]">
               <CardContent className="flex flex-col items-center justify-center h-[124px] p-4">
-                <h3 className="text-[#012c51] font-bold text-center text-sm font-serif">{member.name}</h3>
-                <p className="text-[#cdb989] text-center mt-2 text-sm font-serif">{member.title}</p>
+                <h3 className="text-[#012c51] font-bold text-center text-sm [font-family:'Segoe_UI-Semibold',Helvetica]">{member.name}</h3>
+                <p className="text-[#cdb989] text-center mt-2 text-sm [font-family:'Segoe_UI-Semibold',Helvetica]">{member.title}</p>
               </CardContent>
             </Card>
           ))}
         </div>
         <div className="flex justify-end pr-4 mt-6">
-          <a href="/aboutus/team" className="text-[#012c51] font-bold underline text-sm font-serif">MORE DETAILS →</a>
+          <a href="/aboutus/team" className="text-[#012c51] font-bold underline text-sm [font-family:'Segoe_UI-Semibold',Helvetica]">MORE DETAILS →</a>
         </div>
       </section>
 
