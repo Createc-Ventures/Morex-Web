@@ -24,7 +24,7 @@ export default function InvestmentIntro() {
 
       <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
         <img
-          src="public\assets\images\YearofInception.png" // Replace with actual path
+          src="assets/images/YearofInception.png" // Replace with actual path
           alt="Investment guide illustration"
           className="max-w-full h-auto"
         />
