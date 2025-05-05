@@ -7,6 +7,8 @@ import Grapgh1 from "@/components/graph1";
 import Kipscards from "@/components/kipscards";
 import Blogcard from "@/components/Blogcar";
 import Footer from "@/components/footer";
+import Mic from "@/components/mic-mobile";
+import AlternativeInvestmentsSection from "@/components/alternate-mobile";
 
 const HeroSection = () => {
   return (
@@ -97,13 +99,17 @@ export default function LandingPhone(): JSX.Element {
             <img src="assets/images/aboutusmob.jpg" alt="About Company" className="w-full mb-2 rounded" />
             <h3 className="text-[#012c51] font-semibold text-sm">ABOUT COMPANY</h3>
             <p className="text-[#012c51] text-xs mt-1">
-              Morex Asset Management is a registered Exempt Market Dealer (EMD)...
+            Morex Asset Management is a registered Exempt Market Dealer (EMD) 
+            specializing in providing qualified investors with exclusive access to 
+            private investment opportunities. We are the distribution arm of the Morex
+             Group, focused on raising capital for Morex Capital, a leading Canadian Mortgage
+              Investment Corporation (MIC) specializing in high-quality, income-generating residential mortgages.
             </p>
-            <a href="#" className="text-[#cdb989] text-xs underline mt-2 inline-block">LEARN MORE ABOUT US →</a>
+            <a href="/aboutus" className="text-[#cdb989] text-xs underline mt-2 inline-block">LEARN MORE ABOUT US →</a>
           </CardContent>
         </Card>
       </section>
-
+      <Mic/>
       {/* Why MIC */}
       <section className="p-4 relative">
         <div className="absolute -left-2 top-2 bg-[#012c51] rounded-xl px-3 py-2 shadow-md z-10 ml-5">
@@ -116,8 +122,8 @@ export default function LandingPhone(): JSX.Element {
                 <h4 className="text-[#cdb989] text-xs font-bold mb-2">{title}</h4>
                 <p className="text-[#012c51] text-[10px]">
                   {title === "For Investors" ?
-                    "MICs offer a powerful way to grow your wealth..." :
-                    "MICs offer a flexible and personalized path to home financing..."}
+                    "MICs offer a powerful way to grow your wealth with regular monthly income. MICs offer a secure and effective way to grow your wealth through consistent, monthly returns backed by real estate. As an investor, you gain access to a professionally managed pool of diversified mortgage assets, tailored to deliver strong performance and dependable income. You can also hold your MIC investment within RRSPs, TFSAs, or RESPs to take advantage of valuable tax benefits. With a focus on transparency, security, and long-term growth, MICs are a smart choice for building a stable financial future" :
+                    "MICs offer a flexible and personalized path to home financing. Whether you're self-employed, new to Canada, or simply looking for a mortgage that fits your unique situation, MICs provide clear, tailored solutions that make it easier to move forward. With quicker approvals, responsive support, and a team that works with you one-on-one, MICs help turn your goals into reality. It's mortgage lending made more accessible—designed around you, not a checklist."}
                 </p>
               </CardContent>
             </Card>
@@ -130,7 +136,7 @@ export default function LandingPhone(): JSX.Element {
         <Card className="bg-[#012c51] text-white">
           <CardContent className="p-4">
             <h3 className="text-[#cdb989] text-sm">Exempt Market Dealer</h3>
-            <p className="text-xs">As a registered Exempt Market Dealer (EMD), MOREX offers investors exclusive access...</p>
+            <p className="text-xs">As a registered Exempt Market Dealer (EMD), MOREX offers investors exclusive access to private investment opportunities that are not available on public markets. Our EMD status ensures that all investments are fully compliant with regulatory standards, providing transparency, investor protection, and suitability for your financial goals. Ready to learn more about how EMDs work and how they can benefit your portfolio?</p>
           </CardContent>
           <CardFooter className="justify-between">
             <Button className="bg-[#cdb989] text-[#012c51] text-xs rounded">Learn More</Button>
@@ -153,7 +159,9 @@ export default function LandingPhone(): JSX.Element {
         <p className="text-xs text-center mb-4">Fund KPIs for a MIC track performance through key metrics...</p>
         <Kipscards />
       </section>
-
+      <section className="p-4">
+        <AlternativeInvestmentsSection />
+      </section>    
       {/* Blog Section */}
       <section className="p-4">
         <h3 className="text-[#cdb989] text-sm font-semibold">Latest Blogs and Newsletter</h3>

@@ -212,7 +212,7 @@ export default function Homepage() {
 
               <div className="p-8 flex flex-col justify-center">
                 <h2 className="font-serif font-normal text-[#012c51] text-5xl mb-6" >
-                  What is aMIC?
+                  What is a MIC?
                 </h2>
 
                 <p className="font-['Segoe_UI-Regular',Helvetica] font-normal text-[#012c51] text-base" >

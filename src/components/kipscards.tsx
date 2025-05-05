@@ -17,8 +17,7 @@ const InvestmentCards = () => {
               Annual Return Percentage
             </h3>
             <p className="text-sm text-[#4b5563]">
-              Class A: 9.25%
-              DRIP: 9.58%
+            Shows the percentage of profit the fund has generated for investors over a year—reflecting overall performance.
             </p>
           </CardContent>
         </Card>
@@ -32,10 +31,10 @@ const InvestmentCards = () => {
               className="w-[180px] h-[180px] mb-5 object-contain"
             />
             <h3 className="font-serif text-[20px] text-[#1f2937] mt-2 mb-3">
-              Mortgages Funded Till Date
+            Fund under management
             </h3>
             <p className="text-sm text-[#4b5563]">
-              $231,097,188
+            Fund Under Management refers to the total capital currently invested in the MIC. It reflects the fund’s scale, investor trust, and the value of mortgage assets being managed.
             </p>
           </CardContent>
         </Card>
@@ -52,7 +51,7 @@ const InvestmentCards = () => {
               Average Loan-to-Value (LTV)
             </h3>
             <p className="text-sm text-[#4b5563]">
-              67% (Weighted Average LTV)
+            Year of Inception indicates when the MIC was established. It highlights the fund’s experience, track record, and longevity in the mortgage investment space.
             </p>
           </CardContent>
         </Card>
