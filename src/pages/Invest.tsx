@@ -5,7 +5,12 @@ import { ChevronDown, Menu } from "lucide-react";
 import FundOverviewCard from "@/components/fundoverview";
 import Graph1 from "@/components/graph1";
 import Graph2 from "@/components/Graph2";
+import Footer from "@/components/footer";
+import DonutCard1 from "@/components/DonutCard1";
+import DonutCard2 from "@/components/DonutCard2";
+import DonutCard3 from "@/components/DonutCard3";
 import React from "react";
+
 
 export default function Invest(): JSX.Element {
   // Years data for the graph
@@ -19,7 +24,7 @@ export default function Invest(): JSX.Element {
     <div className="bg-white flex flex-row justify-center w-full">
       <div className="bg-white w-full max-w-[] relative min-h-[3173px]">
         {/* Hero Section */}
-        <div className="relative w-[] h-[900px] mx-auto  bg-[url(public/assets/images/InvestHero.jpg)] bg-cover bg-[50%_50%] ">
+        <div className="relative w-[] h-[900px] mx-auto  bg-[url(/public/assets/images/InvestHero.jpg)] bg-cover bg-[50%_50%] ">
           <div className="absolute w-full h-full top-0 left-0 bg-[#000000a6] " />
 
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
@@ -76,13 +81,22 @@ export default function Invest(): JSX.Element {
         {/* Graph Section */}
         
         <Graph2 />
-
+       {/* Donut Charts Section */}
+       <div className="flex flex-wrap justify-center gap-8 mt-16">
+        <DonutCard1 />
+        <DonutCard2 />
+        <DonutCard3 />
+       </div>
         {/* Yield Section */}
 
         <p className="text-center font-['Segoe_UI-Regular',Helvetica] font-normal text-black text-base mt-[20px]">
           Annualized Yield, February 1 2012 – March 31, 2024. Target Yield Is
           8.75% Per Annum, Subject To Change.
         </p>
+        
+        
+        {/* Contact Section */}
+        <Footer/>
       </div>
     </div>
   );

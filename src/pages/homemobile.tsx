@@ -13,7 +13,7 @@ function HeroSection() {
     <section className="relative bg-white w-full">
       {/* Top-right icon */}
       <div className="absolute top-4 right-4 z-50">
-        <img src="public\assets\logo\logo.png" alt="Menu Icon" className=" h-6" />
+        <img src="assets/logo/logo.png" alt="Menu Icon" className=" h-6" />
       </div>
 
       <VideoMaskSectionMobile />
@@ -41,7 +41,7 @@ function HeroSection() {
             <img
               className="absolute w-[22px] h-[22px] top-[10px] left-[100px] object-cover"
               alt="Logo"
-              src="public/assets/logo/Morex Cap.png"
+              src="assets/logo/Morex Cap.png"
             />
           </div>
           <p className="mt-5 text-white text-[8px]">
@@ -83,11 +83,11 @@ export default function LandingPhone(): JSX.Element {
       {/* Experience Section */}
       <section className="p-4 space-y-2 text-[#012c51] text-xs" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
         <p className="text-right">REAL HELP FROM REAL PEOPLE WHO'VE GOT YOUR BACK.</p>
-        <img src="public\assets\images\house.png" alt="" />
+        <img src="assets/images/house.png" alt="" />
         <p>
           WITH YEARS OF INDUSTRY EXPERIENCE AND A CUSTOMER-FIRST APPROACH, WE'VE HELPED THOUSANDS ACHIEVE THEIR DREAM.
         </p>
-        <img src="public\assets\images\Person.png" alt="" />
+        <img src="assets/images/Person.png" alt="" />
         <p className="text-right">
           PROVIDING EXPERT SUPPORT AND PERSONALIZED LOAN OPTIONS TO GUIDE YOU TOWARD SMART, CONFIDENT HOMEOWNERSHIP DECISIONS.
         </p>
