@@ -304,7 +304,7 @@ export default function Navbar({ startPosition = "default" }) {
             ))}
           </div>
           <div>
-            <h4 className="text-blue-900 font-bold mb-2">ABOUT US</h4>
+            <h4 className="text-blue-900 font-bold mb-2">COMPANY</h4>
             {aboutItems.map((item, idx) => (
               <Link
                 key={idx}
