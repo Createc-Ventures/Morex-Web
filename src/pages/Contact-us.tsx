@@ -104,9 +104,7 @@ export default function ContactUs(): JSX.Element {
               </h2>
 
               <p className="[font-family:'Segoe_UI-Semibold',Helvetica] font-normal text-black text-base mb-8">
-                Lorem ipsum dolor amet, consectetur elit.&nbsp;&nbsp;Aliquam
-                ullamcorper lorem dolor amet, consectetur
-                elit.&nbsp;&nbsp;Aliquam ullamcorper lorem
+                Drop in your contact details and we'll get back to you soon.
               </p>
 
               <form className="space-y-4">
@@ -149,7 +147,7 @@ export default function ContactUs(): JSX.Element {
 
             <div className="w-full h-[357px] mb-8">
             <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3095.3541223967415!2d-94.72788262402707!3d38.970548043796154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0fbf69b1323e3%3A0x5aeb5b69e5258fa0!2sLenexa%2C%20KS%2066200%2C%20USA!5e0!3m2!1sen!2sin!4v1714419847033!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.57925759488!2d-79.60097392388516!3d43.65692137110189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b385398faaaab%3A0xa67f5900b1c01a27!2s5025%20Orbitor%20Dr%20Building%202.%20Suite%20200%2C%20Mississauga%2C%20ON%20L4W%204Y5%2C%20Canada!5e0!3m2!1sen!2sin!4v1746455143088!5m2!1sen!2sin"
           width="100%"
           height="400"
           style={{ border: 0 }}

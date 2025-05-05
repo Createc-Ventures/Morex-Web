@@ -87,12 +87,12 @@ export default function ContactPage() {
         <div>
           <h2 className="text-xl font-bold mb-2">Our location</h2>
           <p className="mb-4">
-            Lorem ipsum dolor amet, consectetur elit. Aliquam ullamcorper lorem.
+            Drop in your details and we'll get back to you soon.
           </p>
           <div className="w-full h-60 mb-6">
             <iframe
               className="w-full h-full rounded-lg"
-              src="https://maps.google.com/maps?q=Lenexa%2C%20KS&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.57925759488!2d-79.60097392388516!3d43.65692137110189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b385398faaaab%3A0xa67f5900b1c01a27!2s5025%20Orbitor%20Dr%20Building%202.%20Suite%20200%2C%20Mississauga%2C%20ON%20L4W%204Y5%2C%20Canada!5e0!3m2!1sen!2sin!4v1746455143088!5m2!1sen!2sin"
               loading="lazy"
             ></iframe>
           </div>
