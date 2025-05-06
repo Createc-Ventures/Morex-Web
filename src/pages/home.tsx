@@ -162,11 +162,7 @@ export default function Homepage() {
             consistent income and low correlation to public markets, private mortgage investments serve as
             a reliable anchor of stability in a well-constructed portfolio.
           </h2>
-          <img
-            className="ml-auto w-[81px] h-[87px]"
-            alt="Whatsapp image"
-            src="assets/logo/single.png"
-          />
+          
         </section>
 
         {/* Featured Image */}

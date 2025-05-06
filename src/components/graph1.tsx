@@ -1,4 +1,4 @@
-// components/InvestmentChart.jsx
+// components/InvestmentChart.jsx or .tsx if using TypeScript
 
 import React from 'react';
 import {
@@ -10,6 +10,8 @@ import {
   LineElement,
   Legend,
   Tooltip,
+  ChartOptions,
+  ChartData,
 } from 'chart.js';
 import { Chart } from 'react-chartjs-2';
 
@@ -23,8 +25,12 @@ ChartJS.register(
   Tooltip
 );
 
+// 👇 use this typing when using TypeScript
+type MixedChartData = ChartData<'bar' | 'line', number[], string>;
+type MixedChartOptions = ChartOptions<'bar' | 'line'>;
+
 const Graph1 = () => {
-  const data = {
+  const data: MixedChartData = {
     labels: ['2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024 YTD'],
     datasets: [
       {
@@ -60,7 +66,7 @@ const Graph1 = () => {
     ]
   };
 
-  const options = {
+  const options: MixedChartOptions = {
     responsive: true,
     scales: {
       y: {
@@ -96,7 +102,7 @@ const Graph1 = () => {
     }
   };
 
-  return <Chart type="scatter" data={data} options={options} />;
+  return <Chart type="bar" data={data} options={options} />;
 };
 
 export default Graph1;

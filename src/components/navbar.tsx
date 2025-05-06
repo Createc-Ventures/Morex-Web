@@ -117,12 +117,14 @@ export default function Navbar({ startPosition = "default" }) {
         <div className="flex items-center justify-between w-full h-full relative">
           {scrolled && (
             <div className="flex-shrink-0">
+            <a href="/" aria-label="Home">
               <img
                 src="/assets/logo/single.png"
                 alt="Logo"
                 className="h-10 w-10 transition-all"
               />
-            </div>
+            </a>
+          </div>
           )}
 
           <div
@@ -255,7 +257,7 @@ export default function Navbar({ startPosition = "default" }) {
           <div className="flex-shrink-0 ml-auto">
             <Link
               to="/contactus" 
-              className="bg-blue-900 text-[#D4B968] px-6 py-3 rounded-full font-bold hover:bg-blue-800 transition font-['Segoe_UI-Bold',Helvetica]"
+              className="bg-[#002c51] text-[#D4B968] px-6 py-3 rounded-full font-bold hover:bg-[#e7d39f] hover:text-[#002c51] transition "
               
             >
               CONTACT

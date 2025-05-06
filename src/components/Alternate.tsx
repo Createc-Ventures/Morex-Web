@@ -50,10 +50,13 @@ const AlternativeInvestmentsSection: React.FC = () => {
                 which work similarly.
               </p>
             </div>
-
-            <div className="absolute w-[76px] h-[76px] top-[160px] right-[5px] bg-[#cdb989] rounded-[38px] flex items-center justify-center">
-            <MoveUpRight />
+            <a href="/learn#rrsp">
+            <div className="absolute w-[76px] h-[76px] top-[160px] right-[5px] bg-[#cdb989] rounded-[38px] hover:bg-[#012c51] flex items-center justify-center transition-colors duration-300 group">
+              <MoveUpRight className="text-[#012c51] group-hover:text-[#cdb989] transition-colors duration-300" />
             </div>
+            </a>
+              
+            
           </div>
 
           {/* TFSA Card */}
@@ -73,9 +76,12 @@ const AlternativeInvestmentsSection: React.FC = () => {
               </p>
             </div>
 
-            <div className="absolute w-[76px] h-[76px] top-[0px] right-[5px] bg-[#cdb989] rounded-[38px] flex items-center justify-center">
-              <MoveUpRight />
+            <a href="/learn#tfsa">
+            <div className="absolute w-[76px] h-[76px] top-[0px] right-[5px] bg-[#cdb989] rounded-[38px] hover:bg-[#012c51] flex items-center justify-center transition-colors duration-300 group">
+              <MoveUpRight className="text-[#012c51] group-hover:text-[#cdb989] transition-colors duration-300" />
             </div>
+
+            </a>
           </div>
 
           {/* RRSP Card */}
@@ -95,12 +101,13 @@ const AlternativeInvestmentsSection: React.FC = () => {
               </p>
             </div>
           </div>
-
-          <Button className="absolute bottom-[70px] right-[130px] w-36 h-12 bg-[#012c51] rounded-[30px]">
-            <span className="font-serif font-normal text-[#cdb989] text-base">
+          <a href="/learn#rrsp">
+          <Button className="absolute bottom-[70px] right-[130px] w-36 h-12 bg-[#012c51] hover:bg-[#cdb989] text-[#cdb989] text-base hover:text-[#012c51] rounded-[30px]">
+            <span className="font-serif font-normal ] ">
               Learn More
             </span>
           </Button>
+          </a>
         </div>
       </CardContent>
     </Card>
