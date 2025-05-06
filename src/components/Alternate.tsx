@@ -50,11 +50,11 @@ const AlternativeInvestmentsSection: React.FC = () => {
                 which work similarly.
               </p>
             </div>
-            <a href="/learn#rrsp">
+            {/*<a href="/learn#rrsp">*/}
             <div className="absolute w-[76px] h-[76px] top-[160px] right-[5px] bg-[#cdb989] rounded-[38px] hover:bg-[#012c51] flex items-center justify-center transition-colors duration-300 group">
-              <MoveUpRight className="text-[#012c51] group-hover:text-[#cdb989] transition-colors duration-300" />
+              <MoveUpRight className="text-[#012c51] group-hover:text-[#cdb989] transition-colors duration-300" onClick={event =>  window.location.href='/learn#rrsp'} />
             </div>
-            </a>
+            {/*</a>*/}
               
             
           </div>
@@ -76,12 +76,12 @@ const AlternativeInvestmentsSection: React.FC = () => {
               </p>
             </div>
 
-            <a href="/learn#tfsa">
+            {/*<a href="/learn#tfsa">*/}
             <div className="absolute w-[76px] h-[76px] top-[0px] right-[5px] bg-[#cdb989] rounded-[38px] hover:bg-[#012c51] flex items-center justify-center transition-colors duration-300 group">
-              <MoveUpRight className="text-[#012c51] group-hover:text-[#cdb989] transition-colors duration-300" />
+              <MoveUpRight className="text-[#012c51] group-hover:text-[#cdb989] transition-colors duration-300" onClick={event =>  window.location.href='/learn#fsa'} />
             </div>
 
-            </a>
+            {/*</a>*/}
           </div>
 
           {/* RRSP Card */}
@@ -101,13 +101,13 @@ const AlternativeInvestmentsSection: React.FC = () => {
               </p>
             </div>
           </div>
-          <a href="/learn#rrsp">
-          <Button className="absolute bottom-[70px] right-[130px] w-36 h-12 bg-[#012c51] hover:bg-[#cdb989] text-[#cdb989] text-base hover:text-[#012c51] rounded-[30px]">
+          {/*<a href="/learn#rrsp">*/}
+          <Button className="absolute bottom-[70px] right-[130px] w-36 h-12 bg-[#012c51] hover:bg-[#cdb989] text-[#cdb989] text-base hover:text-[#012c51] rounded-[30px] "onClick={event =>  window.location.href='/learn#rrsp'}>
             <span className="font-serif font-normal ] ">
               Learn More
             </span>
           </Button>
-          </a>
+          {/*</a>*/}
         </div>
       </CardContent>
     </Card>
