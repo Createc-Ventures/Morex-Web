@@ -1,110 +1,102 @@
-import React from "react";
+// components/InvestmentChart.jsx
+
+import React from 'react';
 import {
   Chart as ChartJS,
-  LineElement,
-  PointElement,
-  LinearScale,
   CategoryScale,
+  LinearScale,
+  BarElement,
+  PointElement,
+  LineElement,
+  Legend,
   Tooltip,
-  Filler,
-} from "chart.js";
-import { Line } from "react-chartjs-2";
+} from 'chart.js';
+import { Chart } from 'react-chartjs-2';
 
-ChartJS.register(LineElement, PointElement, LinearScale, CategoryScale, Tooltip, Filler);
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  PointElement,
+  LineElement,
+  Legend,
+  Tooltip
+);
 
-const data = {
-  labels: [
-    "2012", "2013", "2014", "2015", "2016",
-    "2017", "2018", "2019", "2020", "2021", "2022",
-  ],
-  datasets: [
-    {
-      label: "Metric",
-      data: [10, 10, 10, 10, 10, 9, 8, 8, 7, 6, 7],
-      borderColor: "#cdb989",
-      borderWidth: 4,
-      tension: 0,
-      fill: false,
-      pointBackgroundColor: (ctx: any) =>
-        ctx.dataIndex === 10 ? "#003a63" : "transparent",
-      pointBorderColor: (ctx: any) =>
-        ctx.dataIndex === 10 ? "#003a63" : "transparent",
-      pointRadius: (ctx: any) => (ctx.dataIndex === 10 ? 8 : 0),
+const Graph1 = () => {
+  const data = {
+    labels: ['2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024 YTD'],
+    datasets: [
+      {
+        label: 'Investment Value',
+        type: 'bar',
+        backgroundColor: '#1f4e79',
+        order: 3,
+        data: [110381, 121840, 134488, 148449, 163859, 179990, 196743, 215056, 230510, 247075, 266134, 288601, 295275],
+        yAxisID: 'y',
+      },
+      {
+        label: 'Annual Yield with DRIP',
+        type: 'line',
+        borderColor: '#507dbc',
+        backgroundColor: '#507dbc',
+        order: 2,
+        data: [10.00, 10.00, 10.00, 10.00, 10.05, 9.98, 9.31, 8.90, 7.19, 7.13, 7.27, 8.44, 9.58],
+        yAxisID: 'y1',
+        fill: false,
+        tension: 0.4,
+      },
+      {
+        label: 'Annual Yield',
+        type: 'line',
+        borderColor: '#f5b041',
+        backgroundColor: '#f5b041',
+        order: 1,
+        data: [10.38, 10.38, 10.38, 10.38, 10.38, 9.84, 9.31, 9.31, 7.19, 7.13, 7.27, 8.44, 9.25],
+        yAxisID: 'y1',
+        fill: false,
+        tension: 0.4,
+      }
+    ]
+  };
+
+  const options = {
+    responsive: true,
+    scales: {
+      y: {
+        type: 'linear',
+        position: 'left',
+        title: {
+          display: true,
+          text: 'Investment Value'
+        }
+      },
+      y1: {
+        type: 'linear',
+        position: 'right',
+        min: 0,
+        max: 12,
+        title: {
+          display: true,
+          text: 'Annual Yield (%)'
+        },
+        grid: {
+          drawOnChartArea: false
+        }
+      }
     },
-  ],
+    plugins: {
+      tooltip: {
+        mode: 'index',
+        intersect: false
+      },
+      legend: {
+        display: true
+      }
+    }
+  };
+
+  return <Chart type="scatter" data={data} options={options} />;
 };
 
-const options = {
-  responsive: true,
-  maintainAspectRatio: false,
-  layout: {
-    padding: {
-      top: 25, // adds vertical space above the line
-      right: 15,
-      bottom: 15,
-      left: 15,
-    },
-  },
-  plugins: {
-    legend: {
-      display: false,
-    },
-    tooltip: {
-      enabled: false,
-    },
-  },
-  scales: {
-    x: {
-      grid: {
-        display: true,
-        color: "#00000030",
-      },
-      ticks: {
-        color: "#003a63",
-        font: {
-          size: 12,
-          weight: "bold",
-        },
-      },
-    },
-    y: {
-      min: 0,
-      max: 15, // extra space above the highest value (10)
-      title: {
-        display: true,
-        text: "Yield",
-        color: "#003a63",
-        font: {
-          size: 14,
-          weight: "bold",
-        },
-        padding: { top: 0, bottom: 10 },
-      },
-      ticks: {
-        stepSize: 5,
-        callback: (value: number) => value.toString(),
-        color: "#003a63",
-        font: {
-          size: 12,
-          weight: "bold",
-        },
-      },
-      grid: {
-        display: true,
-        color: "#00000030",
-      },
-    },
-  },
-};
-
-
-const TrendGraph: React.FC = () => {
-  return (
-    
-    <div style={{ width: "100%", height: "350px",  }}>
-      <Line data={data} options={options as any} />
-    </div>
-  );
-};
-
-export default TrendGraph;
+export default Graph1;

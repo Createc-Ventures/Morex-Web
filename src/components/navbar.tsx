@@ -319,7 +319,7 @@ export default function Navbar({ startPosition = "default" }) {
           <Link
             to="/contactus"
             onClick={toggleMenu}
-            className="mt-4 inline-block bg-blue-900 text-[#D4B968] px-6 py-2 rounded-full font-bold"
+            className="mt-4 inline-block bg-[#012c51] text-[#D4B968] px-6 py-2 rounded-full font-bold"
           >
             CONTACT
           </Link>

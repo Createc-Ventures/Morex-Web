@@ -22,16 +22,17 @@ const HeroSection = () => {
         <VideoMaskSectionMobile />
       </div>
 
-      <div className=" font-serif absolute top-[750px] left-4 z-20 bg-[#d9d9d980] rounded-lg backdrop-blur-[5px] w-[210px] p-2 font-bold text-xs space-y-1" >
-        <span className="text-white">Canada's</span>{" "}
-        <span className="text-[#012c51]">Premier Mortgage</span>{" "}
-        <span className="text-white">Investment Corporation</span>
-        <div className="text-white text-[10px]">
-          YOUR TRUSTED PARTNER IN HOME FINANCING
+        <div
+            className=" font-serif absolute top-[750px] left-4 z-20 bg-[#d9d9d980] rounded-lg backdrop-blur-[5px] w-[210px] p-2 font-bold text-xs space-y-1">
+            <span className="text-white block">Accelerating Wealth </span>
+            <span className="text-[#012c51] block">Through </span>
+            <span className="text-white">Mortgage Investing </span>
+            <div className="text-[#012c51] text-[10px]">
+                YOUR TRUSTED PARTNER IN HOME FINANCING
+            </div>
         </div>
-      </div>
-      <a href="#start">
-      <Button className="  absolute top-[790px] right-[5px] w-[70px] h-[50px] bg-[#cdb989] rounded-lg z-20 p-0">
+        <a href="#start">
+            <Button className="  absolute top-[790px] right-[5px] w-[70px] h-[50px] bg-[#cdb989] rounded-lg z-20 p-0">
         <span className="text-[#012c51] text-[10px] font-bold text-center leading-tight href">
           START YOUR<br />JOURNEY
         </span>

@@ -108,12 +108,12 @@ export default function Homepage() {
           {/* Hero Content */}
           <div className="absolute w-[673px] h-[209px] top-[558px] left-[29px] bg-[#d9d9d980] rounded-[30px] backdrop-blur-[5px]">
             <h1 className="absolute w-[638px] top-4 left-[18px] font-serif font-bold text-5xl" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
-              <span className="text-white">CANADA'S PREMIER </span>
-              <span className="text-[#012c51]">MORTGAGE INVESTMENT </span>
-              <span className="text-white">CORPORATION</span>
-              <div className="font-bold text-white text-base mt-4" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+              <span className="text-white block">Accelerating Wealth </span>
+              <span className="text-[#012c51] block">Through </span>
+              <span className="text-white">Mortgage Investing </span>
+              <div className="font-bold text-base mt-4 text-[#012c51]" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
 
-            YOUR TRUSTED PARTNER IN HOME FINANCING
+            ONE OF CANADA’S TOP-PERFORMING MIC FUNDS.
           </div>
             </h1>
             
@@ -156,9 +156,11 @@ export default function Homepage() {
 
         {/* Tagline Section */}
         <section id="start" className="flex flex-col md:flex-row mt-20 px-7 gap-8 ">
-          <h2 className="font-['Mate_SC-Regular',Helvetica] font-normal text-[#012c51] text-5xl max-w-[783px]" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
-            WITH YEARS OF INDUSTRY EXPERIENCE AND A CUSTOMER-FIRST APPROACH,
-            WE'VE HELPED THOUSANDS ACHIEVE THEIR DREAM.
+          <h2 className="font-['Mate_SC-Regular',Helvetica] font-normal text-[#012c51] text-xl max-w-[783px]" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+            Our mortgage investment strategies are particularly well-suited for high-net-worth investors
+            seeking to diversify beyond traditional asset classes and enhance portfolio performance. Oﬀering
+            consistent income and low correlation to public markets, private mortgage investments serve as
+            a reliable anchor of stability in a well-constructed portfolio.
           </h2>
           <img
             className="ml-auto w-[81px] h-[87px]"
@@ -170,7 +172,7 @@ export default function Homepage() {
         {/* Featured Image */}
         <section className="mt-20 flex justify-center">
           <img
-            className="w-full max-w-[1096px] h-auto"
+            className="w-auto max-w-[1096px] h-auto"
             alt="Modern architecture"
             src="assets/images/house.png"
           />
@@ -178,7 +180,7 @@ export default function Homepage() {
 
         {/* Second Tagline Section */}
         <h2 className="mt-10 font-normal text-[#012c51] text-5xl text-left md:text-right font-serif">
-              REAL HELP FROM REAL PEOPLE <br></br>WHO'VE GOT YOUR BACK.
+              ONE OF CANADA'S FASTEST-GROWING<br></br> NON-BANK LENDERS.
             </h2>
         <section className="flex flex-col md:flex-row mt-20 px-7 gap-8">
           <img
@@ -191,8 +193,8 @@ export default function Homepage() {
             
 
             <p className="font-['Mate_SC-Regular',Helvetica] font-normal text-[#012c51] text-[28px] mt-8 text-left md:text-right" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
-              PROVIDING EXPERT SUPPORT AND PERSONALIZED LOAN OPTIONS TO GUIDE
-              YOU TOWARD SMART, CONFIDENT HOMEOWNERSHIP DECISIONS.
+              “We deliver expert guidance and tailored investment ideas designed to help investors
+              generate stable income and build truly diversified, resilient portfolios.”
             </p>
           </div>
         </section>
@@ -240,7 +242,7 @@ export default function Homepage() {
               <h2 className=" font-normal text-[#cdb989] text-[28px] font-serif" >
                 Why Is
                 <br />
-                mic Better?
+                MIC Better?
               </h2>
             </div>
 
@@ -360,7 +362,7 @@ export default function Homepage() {
         </section>
 
         {/* Performance Chart Section */}
-        <h3 className=" font-normal text-[#012c51] text-5xl text-center mt-10 font-serif">
+        <h3 className=" font-normal text-[#012c51] text-5xl text-center mt-14 font-serif">
         OUR PERFORMANCE OVER THE YEARS
       </h3>
         <Graph1 />
@@ -368,41 +370,41 @@ export default function Homepage() {
         {/* Performance Chart Section */}
 
         {/* Fund KPIs Section */}
-        <section className="mt-20 px-7">
-          <h2 className=" font-normal text-[#012c51] text-5xl text-center mb-4 font-serif  " >
-            Fund KPIs
-          </h2>
+        {/*<section className="mt-20 px-7">*/}
+        {/*  <h2 className=" font-normal text-[#012c51] text-5xl text-center mb-4 font-serif  " >*/}
+        {/*    Fund KPIs*/}
+        {/*  </h2>*/}
 
-          <p className="font-['Segoe_UI-Regular',Helvetica] font-normal text-black text-base text-center mb-12 max-w-[1152px] mx-auto" >
-            Fund KPIs For A Mic (Mortgage Investment Corporation) Track
-            Performance Through Key Metrics Like Annual Returns, Loan-to-value
-            Ratios, Mortgages Funded, And Monthly Distributions. These Indicators
-            Help Investors Assess The Fund's Stability, Income Potential, And
-            Overall Health.
-          </p>
+        {/*  <p className="font-['Segoe_UI-Regular',Helvetica] font-normal text-black text-base text-center mb-12 max-w-[1152px] mx-auto" >*/}
+        {/*    Fund KPIs For A Mic (Mortgage Investment Corporation) Track*/}
+        {/*    Performance Through Key Metrics Like Annual Returns, Loan-to-value*/}
+        {/*    Ratios, Mortgages Funded, And Monthly Distributions. These Indicators*/}
+        {/*    Help Investors Assess The Fund's Stability, Income Potential, And*/}
+        {/*    Overall Health.*/}
+        {/*  </p>*/}
 
-          
+        {/*  */}
 
-        </section>
-        <Kipscards />
+        {/*</section>*/}
+        {/*<Kipscards />*/}
               
         {/* Alternative Investments Section */}
         <AlternativeInvestments />
 
         {/* Latest Blogs Section */}
-        <section className="mt-20 px-7">
-        <a
-              href="/Blog & Article"
-              className="font-['Segoe_UI-Bold',Helvetica] font-bold text-[#012c51] text-base text-center underline"
-            >
-              View All
-            </a>
-            <Blogcard/>
+        {/*<section className="mt-20 px-7">*/}
+        {/*<a*/}
+        {/*      href="/Blog & Article"*/}
+        {/*      className="font-['Segoe_UI-Bold',Helvetica] font-bold text-[#012c51] text-base text-center underline"*/}
+        {/*    >*/}
+        {/*      View All*/}
+        {/*    </a>*/}
+        {/*    <Blogcard/>*/}
 
-          
-            
-          
-        </section>
+        {/*  */}
+        {/*    */}
+        {/*  */}
+        {/*</section>*/}
 
         {/* Contact Section */}
         <Footer/>
