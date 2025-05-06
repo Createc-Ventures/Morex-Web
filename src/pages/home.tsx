@@ -226,6 +226,11 @@ export default function Homepage() {
                   options, they offer an alternative that's more accessible and
                   responsive.
                 </p>
+                <a href="/learn#mic">
+                <Button className="h-[45px] w-[250px] flex-1 bg-[#012c51] rounded-[15px]  text-[#cdb989] hover:text-[#cdb989] text-[18px] font-serif mt-10">
+                  Learn More
+                </Button>
+                </a>
               </div>
             </CardContent>
           </Card>
@@ -286,13 +291,18 @@ export default function Homepage() {
               </p>
 
               <div className="flex gap-2">
-                <Button className="h-[65px] flex-1 bg-[#cdb989] rounded-[15px] font-['Libre_Bodoni-Regular',Helvetica] text-[#012c51] hover:text-[#cdb989] text-[28px]" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+                <a href="/learn#emd">
+                <Button className="h-[65px] w-[350px] flex-1 bg-[#cdb989] rounded-[15px]  text-[#012c51] hover:text-[#cdb989] text-[28px] font-serif">
                   Learn More
                 </Button>
+                </a>
 
-                <Button className="w-[113px] h-[65px] bg-[#cdb989] rounded-[15px] flex items-center justify-center">
-                <ArrowUpRight className="text-blue-900 w-5 h-5 hover:[#cdb989]" />
-                </Button>
+                <a
+                      href="/learn#emd"
+                      className="w-[113px] h-[65px] bg-[#cdb989] rounded-[15px] flex items-center justify-center group transition-all duration-300 hover:bg-[#012c51]"
+                    >
+                      <ArrowUpRight className="text-[#012c51] group-hover:text-[#cdb989] group-hover:rotate-45 transition-all duration-300 " />
+                    </a>
               </div>
             </CardContent>
           </Card>
