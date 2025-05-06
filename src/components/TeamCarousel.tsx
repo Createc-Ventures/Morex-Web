@@ -18,7 +18,12 @@ const teamMembers: TeamMember[] = [
     name: "MOE MANZOOR",
     title: "President & CEO, Founder",
     description:
-      "Mr. Manzoor is the founder, Chief Executive Officer, Director and President of Morex Capital Corp. He has over two decades of wide-ranging experience in all aspects of real estate investing. He is licensed as a Mortgage Broker and Mortgage Administrator with the Financial Services Regulatory Authority of Ontario (FSRA). In addition to leading the Morex Capital team, Moe is CEO and Director of the Mortgage Manager, as well as a Director of the Canadian Mortgage Group Corp — an established mortgage brokerage serving the GTA and Golden Horseshoe.",
+      "Mr. Manzoor is the founder, Chief Executive Oﬃcer, Director and President of Morex Asset\n" +
+        "Management and Morex Capital Corp. He has over two decades of wide-ranging experience in all\n" +
+        "aspects of real estate investing. He is licensed as a Mortgage Broker and Mortgage Administrator\n" +
+        "with the Financial Services Regulatory Authority of Ontario (FSRA). In addition to leading the\n" +
+        "Morex Capital team, Moe is the Director of the Canadian Mortgage Group Corp — an established\n" +
+        "mortgage brokerage serving the GTA and Golden Horseshoe.",
     social: {
       facebook: "#",
       x: "#",
@@ -29,7 +34,11 @@ const teamMembers: TeamMember[] = [
     name: "MARIA TILOTTA",
     title: "Chief Compliance Officer, Co-Founder",
     description:
-      "Ms. Tilotta is the co-founder, Chief Compliance Officer, Vice President, and Director of Morex Capital Corp. She also serves as the Executive Vice President and Director of The Mortgage Manager, and as Manager and Mortgage Broker at Canadian Mortgage Group Corp.. Additionally, Maria is a licensed mortgage broker with the Financial Services Regulatory Authority of Ontario (FSRA).",
+      "Ms. Tilotta is the co-founder, Vice President, and Director of Morex Capital Corp. She also serves\n" +
+        "as the Chief Compliance Oﬃcer, Executive Vice President and Director of Morex Asset\n" +
+        "Management, and as Manager and Mortgage Broker at Canadian Mortgage Group Corp.\n" +
+        "Additionally, Maria is a licensed mortgage broker with the Financial Services Regulatory\n" +
+        "Authority of Ontario (FSRA).",
     social: {
       facebook: "#",
       x: "#",
@@ -40,7 +49,13 @@ const teamMembers: TeamMember[] = [
     name: "ATUL MEHRA",
     title: "Vice President",
     description:
-      "Atul is co-founder, Chief Financial Officer, Vice President and Director of Morex Capital Corp, as well as founding partner and Managing Director of M & Co. Chartered Accountants Professional Corporation and is a co- founder and Director of the Canadian Mortgage Group Corp. He is licensed as a Mortgage Broker under FSRA, and holds CPA designations in both Canada and the U.S. Atul brings over 20 years of experience working in corporate and commercial finance, public and private capital markets, and has an extensive network of commercial, retail and institutional investors.",
+      "Atul is co-founder, Chief Financial Oﬃcer, Vice President and Director of Morex Capital Corp, as\n" +
+        "well as founding partner and Managing Director of M & Co. Chartered Accountants Professional\n" +
+        "Corporation and is a co- founder and Director of the Canadian Mortgage Group Corp. He is\n" +
+        "licensed as a Mortgage Broker under FSRA and holds CPA designations in both Canada and the\n" +
+        "U.S. Atul brings over 20 years of experience working in corporate and commercial finance, public\n" +
+        "and private capital markets, and has an extensive network of commercial, retail and institutional\n" +
+        "investors.",
     social: {
       facebook: "#",
       x: "#",
@@ -51,7 +66,14 @@ const teamMembers: TeamMember[] = [
     name: "DJAMAL SALEH",
     title: "Investor Relations",
     description:
-      "With over two decades of experience in Canada’s investment industry, Mr. Saleh has worked for some of the nation’s largest investment firms and banks, earning a reputation for empowering ultra-high-net-worth (UHNW) clients and families to construct resilient, diversified, and sustainably growth-oriented portfolios. His track record at leading institutions such as BMO Private Wealth, Fidelity Investments, and Invesco includes implementing innovative solutions that resulted in over $3 billion in new assets under management. Fluent in five languages and possessing a global perspective, Mr. Saleh brings exceptional expertise and commitment to the organization's objective of delivering superior value and strategic growth to clients.",
+      "With over two decades of experience in Canada’s investment industry, Mr. Saleh has worked for\n" +
+        "some of the nation’s largest investment firms and banks, earning a reputation for empowering\n" +
+        "ultra-high-net-worth (UHNW) clients and families to construct resilient, diversified, and\n" +
+        "sustainably growth-oriented portfolios. His track record at leading institutions such as BMO\n" +
+        "Private Wealth, Fidelity Investments, and Invesco includes implementing innovative solutions\n" +
+        "that resulted in over $3 billion in new assets under management. Fluent in five languages and\n" +
+        "possessing a global perspective, Mr. Saleh brings exceptional expertise and commitment to the\n" +
+        "organization's objective of delivering superior value and strategic growth to clients.",
     social: {
       facebook: "#",
       x: "#",
