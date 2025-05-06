@@ -74,13 +74,13 @@ export default function Invest(): JSX.Element {
         </div>
 
         {/* LTV Section */}
-        <h3 className="text-center font-['Libre_Bodoni-Bold',Helvetica] font-bold text-[#012c51] text-[28px] mt-[135px]" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
-          LOW&nbsp;&nbsp;LOAN-TO-VALUE&nbsp;&nbsp;(LTV)
-        </h3>
+        {/*<h3 className="text-center font-['Libre_Bodoni-Bold',Helvetica] font-bold text-[#012c51] text-[28px] mt-[135px]" style={{ fontFamily: "'Times New Roman', Times, serif" }}>*/}
+        {/*  LOW&nbsp;&nbsp;LOAN-TO-VALUE&nbsp;&nbsp;(LTV)*/}
+        {/*</h3>*/}
 
-        {/* Graph Section */}
+        {/*/!* Graph Section *!/*/}
         
-        <Graph2 />
+        {/*<Graph2 />*/}
        {/* Donut Charts Section */}
        <div className="flex flex-wrap justify-center gap-8 mt-16">
         <DonutCard1 />

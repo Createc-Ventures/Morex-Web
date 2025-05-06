@@ -47,21 +47,21 @@ export default function Footer() {
 
       {/* Social Media Links */}
       <div className="flex items-center gap-6">
-        <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/icons/fb.svg" alt="Facebook" className="w-12 h-12 cursor-pointer" />
-        </a>
-        <a href="mailto:your@email.com">
+        {/*<a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">*/}
+        {/*  <img src="/assets/icons/fb.svg" alt="Facebook" className="w-12 h-12 cursor-pointer" />*/}
+        {/*</a>*/}
+        <a href="info@morexasset.com">
           <img src="/assets/icons/mail.svg" alt="Mail" className="w-12 h-12 cursor-pointer" />
         </a>
-        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/icons/in.svg" alt="Linkedin" className="w-12 h-12 cursor-pointer" />
-        </a>
-        <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+        {/*<a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">*/}
+        {/*  <img src="/assets/icons/in.svg" alt="Linkedin" className="w-12 h-12 cursor-pointer" />*/}
+        {/*</a>*/}
+        <a href="https://www.instagram.com/morexasset/profilecard/?igsh=bW5mdHU2dGw2MHZje" target="_blank" rel="noopener noreferrer">
           <img src="/assets/icons/insta.svg" alt="Instagram" className="w-12 h-12 cursor-pointer" />
         </a>
-        <a href="https://x.com/yourprofile" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/icons/x.svg" alt="X" className="w-12 h-12 cursor-pointer" />
-        </a>
+        {/*<a href="https://x.com/yourprofile" target="_blank" rel="noopener noreferrer">*/}
+        {/*  <img src="/assets/icons/x.svg" alt="X" className="w-12 h-12 cursor-pointer" />*/}
+        {/*</a>*/}
       </div>
 
       {/* Google Map */}

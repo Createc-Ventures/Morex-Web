@@ -10,19 +10,27 @@ import {
   LineElement,
   Legend,
   Tooltip,
+  LineController,
+  Title,
   ChartOptions,
-  ChartData,
+  ChartData, BarController,
 } from 'chart.js';
+
 import { Chart } from 'react-chartjs-2';
 
 ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  PointElement,
-  LineElement,
-  Legend,
-  Tooltip
+    CategoryScale,
+    LinearScale,
+    BarElement,
+    PointElement,
+    LineElement,
+    Legend,
+    Tooltip,
+    LineController,
+    BarController,
+    LineElement,
+    LinearScale,
+    Title
 );
 
 // 👇 use this typing when using TypeScript
