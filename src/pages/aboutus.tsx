@@ -38,13 +38,13 @@ export default function AboutUs(): JSX.Element {
         </div>
         <div className="relative h-full flex flex-col items-center justify-center text-center px-4">
           <h1 className="font-serif font-bold text-[#cdb989] text-4xl md:text-5xl">ABOUT US</h1>
-          <p className="mt-4 text-white text-base font-serif">-More Than Mortgages-</p>
+          <p className="font-serif font-bold text-white mt-4 text-base">More Than Mortgages</p>
         </div>
       </section>
 
       <section className="flex flex-col md:flex-row items-center justify-between px-4 md:px-36 py-16 gap-10">
         <div className="w-full md:w-[517px]">
-          <img className="w-full max-h-[600px] object-cover" alt="Our journey" src="assets/images/journey.png" />
+          <img className="w-full h-full rounded-2xl object-cover" alt="Our journey" src="assets/images/journey.png" />
         </div>
         <div className="w-full md:w-[591px] flex flex-col items-center text-center">
           <h2 className="text-[#012c51] font-bold text-3xl md:text-5xl mb-6 font-serif">OUR JOURNEY</h2>
@@ -56,16 +56,19 @@ export default function AboutUs(): JSX.Element {
           </p>
           <div className="mt-8">
             <h3 className="font-bold text-[#cdb989] text-xl mb-3 font-serif">Want To Know More?</h3>
-            <Button className="w-40 h-12 bg-[#012c51] rounded-[30px] font-bold text-[#cdb989] text-base [font-family:'Segoe_UI-Semibold',Helvetica]">
-              LET&apos;S CONNECT
-            </Button>
+            <a href="/contactus">
+              <Button
+                  className="w-40 h-12 bg-[#012c51] rounded-[30px] font-bold text-[#cdb989] text-base [font-family:'Segoe_UI-Semibold',Helvetica]">
+                LET'S CONNECT
+              </Button>
+            </a>
           </div>
         </div>
       </section>
 
       <section className="relative py-16 flex flex-col items-center text-center px-4 md:px-0">
         <div className="absolute left-0 top-0 hidden md:block">
-          <img className="w-[392px] h-[292px]" alt="Purpose visual left" src="assets/images/perpose-1.png" />
+          <img className="w-[392px] h-[292px] rounded-3xl" alt="Purpose visual left" src="assets/images/perpose-1.png" />
         </div>
         <div className="max-w-lg z-10">
           <h2 className="text-[#cdb989] font-bold text-3xl md:text-5xl mb-6 font-serif">OUR PURPOSE</h2>
@@ -76,7 +79,7 @@ export default function AboutUs(): JSX.Element {
           </p>
         </div>
         <div className="absolute right-0 bottom-0 hidden md:block">
-          <img className="w-[420px] h-[322px]" alt="Purpose visual right" src="assets/images/perpose-2.png" />
+          <img className="w-[392px] h-[292px]" alt="Purpose visual right" src="assets/images/perpose-2.png" />
         </div>
       </section>
 
@@ -87,12 +90,17 @@ export default function AboutUs(): JSX.Element {
             <h2 className="text-[#cdb989] font-bold text-3xl md:text-5xl mb-6 font-serif">OUR GROUP</h2>
             <h3 className="font-bold mb-2 [font-family:'Segoe_UI-Semibold',Helvetica]">MOREX CAPITAL</h3>
             <p className="mb-6 text-sm md:text-base max-w-md [font-family:'Segoe_UI-Semibold',Helvetica]">
-            Established in 2012, Morex Capital is a Mortgage Investment Corporation (MIC) with a proven track record of delivering stable, 
-            predictable returns by investing in short-term, owner-occupied residential mortgages primarily in Ontario’s Golden Horseshoe region.
+              Established in 2012, Morex Capital is a Mortgage Investment Corporation (MIC) with a proven track record
+              of delivering stable,
+              predictable returns by investing in short-term, owner-occupied residential mortgages primarily in
+              Ontario’s Golden Horseshoe region.
             </p>
-            <Button className="bg-[#012c51] text-[#cdb989] rounded-[30px] text-base font-bold w-40 h-12 [font-family:'Segoe_UI-Semibold',Helvetica]">
-              LEARN MORE
-            </Button>
+            <a href="https://morexcapital.com/">
+              <Button
+                  className="bg-[#012c51] text-[#cdb989] rounded-[30px] text-base font-bold w-40 h-12 [font-family:'Segoe_UI-Semibold',Helvetica]">
+                LEARN MORE
+              </Button>
+            </a>
           </CardContent>
         </Card>
       </section>
@@ -138,7 +146,7 @@ export default function AboutUs(): JSX.Element {
         </div>
       </section>
 
-      <Testimonials />
+      {/*<Testimonials />*/}
       <Footer />
     </div>
   );

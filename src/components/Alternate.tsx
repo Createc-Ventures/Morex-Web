@@ -34,20 +34,19 @@ const AlternativeInvestmentsSection: React.FC = () => {
           </div>
 
           {/* RSP Card */}
-          <div className="absolute top-[38px] right-[130px] w-[469px] h-[233px] bg-[url(/public/assets/mask/subtract-2.svg)] bg-no-repeat">
+          <div className="absolute top-[38px] right-[130px] w-[469px] h-[240px] bg-[url(/public/assets/mask/subtract-2.svg)] bg-no-repeat">
             <div className="p-7">
-              <h3 className="font-serif font-normal text-[#012c51] text-[28px] mb-2">
-                RSP (Retirement Savings Plan)
+              <h3 className="font-serif font-normal text-[#012c51] text-[21px] mb-2">
+                RESP (Registered Education Savings Plan)
               </h3>
 
               <p className="font-['Segoe_UI-Regular',Helvetica] font-normal text-black text-base">
-                RSP is a general term for any retirement savings plan.{" "}
-                <br />
-                In most cases, when people say "RSP," they mean an RRSP.
-                It's used to help you save money for <br />
-                retirement with tax benefits, but sometimes <br />
-                companies offer their own RSP programs, <br />
-                which work similarly.
+                A Registered Education Savings Plan (RESP) is a <br/>
+                specialized investment account that helps <br/>
+                families save for a child's post-secondary <br/>
+                education. Contributions grow tax-deferred, <br/>
+                and the government provides additional grants <br/>
+                to boost savings.
               </p>
             </div>
             <a href="/learn#rrsp">
@@ -62,7 +61,7 @@ const AlternativeInvestmentsSection: React.FC = () => {
           {/* TFSA Card */}
           <div className="absolute top-[350px] left-7 w-[550px] h-[268px] bg-[url(/public/assets/mask/subtract-1.svg)] bg-no-repeat">
             <div className="p-7">
-              <h3 className="font-serif font-normal text-[#012c51] text-[28px] mb-2">
+              <h3 className="font-serif font-normal text-[#012c51] text-[21px] mb-2">
                 TFSA (Tax-Free Savings Account)
               </h3>
 
@@ -87,7 +86,7 @@ const AlternativeInvestmentsSection: React.FC = () => {
           {/* RRSP Card */}
           <div className="absolute top-[310px] right-[119px] w-[483px] h-[268px] bg-[url(/public/assets/mask/subtract.svg)] bg-no-repeat">
             <div className="p-7">
-              <h3 className="font-serif font-normal text-[#cdb989] text-[28px] mb-0">
+              <h3 className="font-serif font-normal text-[#cdb989] text-[21px] mb-0">
                 RRSP (Registered Retirement Savings Plan)
               </h3>
 

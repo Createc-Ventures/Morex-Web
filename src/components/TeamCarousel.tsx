@@ -49,7 +49,7 @@ const teamMembers: TeamMember[] = [
     name: "ATUL MEHRA",
     title: "Vice President",
     description:
-      "Atul is co-founder, Chief Financial Oﬃcer, Vice President and Director of Morex Capital Corp, as\n" +
+      "Atul is co-founder, Vice President and Director of Morex Capital Corp, as\n" +
         "well as founding partner and Managing Director of M & Co. Chartered Accountants Professional\n" +
         "Corporation and is a co- founder and Director of the Canadian Mortgage Group Corp. He is\n" +
         "licensed as a Mortgage Broker under FSRA and holds CPA designations in both Canada and the\n" +

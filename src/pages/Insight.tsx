@@ -57,7 +57,7 @@ export default function Insight(): JSX.Element {
             <h1 className="font-['Libre_Bodoni-Bold',Helvetica] font-bold text-[#cdb989] text-5xl mb-8" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
               INSIGHT
             </h1>
-            <p className="font-['Libre_Bodoni-Regular',Helvetica] text-white text-base text-center max-w-md">
+            <p className="font-['Libre_Bodoni-Regular',Helvetica] text-white text-base text-center max-w-md" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
               Timely insights to help you navigate the evolving investment
               landscape.
             </p>
@@ -109,11 +109,11 @@ export default function Insight(): JSX.Element {
               <img
                 className="w-full h-full object-cover mix-blend-overlay"
                 alt="Christina"
-                src="assets/images/private.jpg"
+                src="assets/images/Private.jpg"
               />
             </div>
             <div className="absolute inset-0 flex items-center justify-center">
-              <p className="font-['Libre_Bodoni-Regular',Helvetica] text-[#cdb989] text-[28px] text-center max-w-4xl px-4" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+              <p className="font-['Libre_Bodoni-Regular',Helvetica] backdrop-blur-[10px] text-[#b69953] text-[28px] text-center max-w-4xl px-4" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
                 "At Morex Asset Management, we specialize in connecting investors to high-quality private market opportunities, helping you build a stronger, more resilient financial future."
               </p>
             </div>
@@ -197,14 +197,14 @@ export default function Insight(): JSX.Element {
             <div className="flex flex-col lg:flex-row">
               <div className="lg:w-1/2">
                 <img
-                  className="w-full h-[50%] object-cover"
+                  className="w-full h-full object-cover"
                   alt="Imagine buddy"
                   src="assets/images/Conclusion.jpg"
                 />
               </div>
               <div className="lg:w-1/2 p-12">
                 <h2 className="font-serif text-[#012c51] text-[28px] mb-6">
-                  Conclusion: Building Stronger Portfolios with Alternatives
+                  Building Stronger Portfolios with Alternatives
                 </h2>
                 <p className="font-['Segoe_UI-Regular',Helvetica] text-black text-base">
                   Incorporating alternative investments like MICs into a modern

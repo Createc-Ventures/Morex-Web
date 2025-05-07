@@ -39,12 +39,28 @@ export default function Homepage() {
     {
       title: "For Investors",
       content:
-        "MICs offer a powerful way to grow your wealth with regular monthly income. MICs offer a secure and effective way to grow your wealth through consistent, monthly returns backed by real estate. As an investor, you gain access to a professionally managed pool of diversified mortgage assets, tailored to deliver strong performance and dependable income. You can also hold your MIC investment within RRSPs, TFSAs, or RESPs to take advantage of valuable tax benefits. With a focus on transparency, security, and long-term growth, MICs are a smart choice for building a stable financial future.",
+        "MICs oﬀer investors a compelling opportunity to enhance their financial portfolios with steady\n" +
+          "monthly earnings. They provide a reliable and eﬃcient way to grow your wealth through\n" +
+          "consistent, monthly returns backed by real estate investments. As an investor, you benefit from a\n" +
+          "professionally managed collection of diverse mortgage assets, designed to deliver robust\n" +
+          "performance and dependable income. Additionally, you can include your MIC investment in\n" +
+          "RRSPs, TFSAs, or RESPs to enjoy significant tax advantages. MICs are a smart choice for building a\n" +
+          "stable financial future, with a focus on transparency, security, and long-term growth.",
+      buttonText: "INVEST",
+      buttonLink: "/Invest",
     },
     {
       title: "For Borrowers",
       content:
-        "MICs offer a flexible and personalized path to home financing. Whether you're self-employed, new to Canada, or simply looking for a mortgage that fits your unique situation, MICs provide clear, tailored solutions that make it easier to move forward. With quicker approvals, responsive support, and a team that works with you one-on-one, MICs help turn your goals into reality. It's mortgage lending made more accessible—designed around you, not a checklist.",
+        "Mortgage Investment Corporations (MICs) provide borrowers with a flexible and customized\n" +
+          "approach to home financing. Whether individuals are self-employed, new to Canada, or seeking\n" +
+          "a mortgage that aligns with their specific circumstances, MICs oﬀer clear and tailored solutions\n" +
+          "that facilitate the progression of their financial objectives. With expedited approvals, responsive\n" +
+          "support, and a team committed to personalized collaboration, MICs assist in transforming\n" +
+          "aspirations into reality. This approach to mortgage lending is designed to be more accessible,\n" +
+          "focusing on the individual rather than a standardized checklist.",
+      buttonText: "APPLY NOW",
+      buttonLink: "https://morexcapital.com/",
     },
   ];
 
@@ -94,101 +110,107 @@ export default function Homepage() {
       <div className="bg-white overflow-hidden w-full max-w-[1280px] relative">
         {/* Hero Section */}
         <Navbar/>
-        <VideoMaskSection  />
-          {/* Navigation */}
-          
+        <VideoMaskSection/>
+        {/* Navigation */}
 
-          {/* Logo */}
-          <img
+
+        {/* Logo */}
+        <img
             className="absolute w-[336px] h-[143px] top-[30px] left-0"
             alt="Logo"
             src="assets/logo/logo.png"
-          />
+        />
 
-          {/* Hero Content */}
-          <div className="absolute w-[673px] h-[209px] top-[558px] left-[29px] bg-[#d9d9d980] rounded-[30px] backdrop-blur-[5px]">
-            <h1 className="absolute w-[638px] top-4 left-[18px] font-serif font-bold text-5xl" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
-              <span className="text-white block">Accelerating Wealth </span>
-              <span className="text-[#012c51] block">Through </span>
-              <span className="text-white">Mortgage Investing </span>
-              <div className="font-bold text-base mt-4 text-[#012c51]" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+        {/* Hero Content */}
+        <div
+            className="absolute w-[673px] h-[209px] top-[558px] left-[29px] bg-[#d9d9d980] rounded-[30px] backdrop-blur-[5px]">
+          <h1 className="absolute w-[638px] top-4 left-[18px] font-serif font-bold text-5xl"
+              style={{fontFamily: "'Times New Roman', Times, serif"}}>
+            <span className="text-white block">Accelerating Wealth </span>
+            <span className="text-[#012c51] block">Through </span>
+            <span className="text-white">Mortgage Investing </span>
+            <div className="font-bold text-base mt-4 text-[#012c51]"
+                 style={{fontFamily: "'Times New Roman', Times, serif"}}>
 
-            ONE OF CANADA’S TOP-PERFORMING MIC FUNDS.
-          </div>
-            </h1>
-            
-          </div>
+              ONE OF CANADA’S TOP-PERFORMING MIC FUNDS.
+            </div>
+          </h1>
 
-          
+        </div>
 
-          <a href="#start">
-            <Button className="absolute w-52 h-12 top-[792px] left-[1055px] bg-[#cdb989] rounded-[30px] font-['Segoe_UI-Bold',Helvetica] font-bold text-[#012c51] text-base hover:text-[#cdb989] ">
-              START YOUR JOURNEY
-            </Button>
-          </a>
 
-          {/* CTA Card */}
-          <Card className="absolute w-[285px] h-[276px] top-[480px] left-[965px] bg-[#012c51] rounded-[30px] border-none">
-            <CardContent className="p-7">
-              <div className="flex items-start mb-4" >
-                <h3 className="w-[193px] font-['Segoe_UI-Bold',Helvetica] font-bold text-[#cdb989] text-base" >
-                  DISCOVER MORE WITH MOREX CAPITAL
-                </h3>
-                <img className="w-12 h-[49px]" alt="Image" src="assets/logo/Morex Cap.png" />
-              </div>
+        <a href="#start">
+          <Button
+              className="absolute w-52 h-12 top-[792px] left-[1055px] bg-[#cdb989] rounded-[30px] font-['Segoe_UI-Bold',Helvetica] font-bold text-[#012c51] text-base hover:text-[#cdb989] ">
+            START YOUR JOURNEY
+          </Button>
+        </a>
 
-              <p className="font-['Segoe_UI-Regular',Helvetica] text-white text-base mb-4" >
-                Ready for mortgage solutions built around you? Learn how Morex
-                Capital can help you move forward with confidence.
-              </p>
+        {/* CTA Card */}
+        <Card className="absolute w-[285px] h-[276px] top-[480px] left-[965px] bg-[#012c51] rounded-[30px] border-none">
+          <CardContent className="p-7">
+            <div className="flex items-start mb-4">
+              <h3 className="w-[193px] font-['Segoe_UI-Bold',Helvetica] font-bold text-[#cdb989] text-base">
+                DISCOVER MORE WITH MOREX CAPITAL
+              </h3>
+              <img className="w-12 h-[49px]" alt="Image" src="assets/logo/Morex Cap.png"/>
+            </div>
 
-              <div className="flex justify-center ">
+            <p className="font-['Segoe_UI-Regular',Helvetica] text-white text-base mb-4">
+              Ready for mortgage solutions built around you? Learn how Morex
+              Capital can help you move forward with confidence.
+            </p>
+
+            <div className="flex justify-center ">
               <a href="https://morexcapital.com/">
-              <Button className="w-[123px] h-[42px] mb-5 bg-[#cdb989] rounded-[30px] font-['Segoe_UI-Bold',Helvetica] font-bold text-[#012c51] text-base hover:text-[#cdb989] ">
-                LEARN MORE
-              </Button>
+                <Button
+                    className="w-[123px] h-[42px] mb-5 bg-[#cdb989] rounded-[30px] font-['Segoe_UI-Bold',Helvetica] font-bold text-[#012c51] text-base hover:text-[#cdb989] ">
+                  LEARN MORE
+                </Button>
 
               </a>
-              </div>
-            </CardContent>
-          </Card>
-        
+            </div>
+          </CardContent>
+        </Card>
+
 
         {/* Tagline Section */}
         <section id="start" className="flex flex-col md:flex-row mt-20 px-7 gap-8 ">
-          <h2 className="font-['Mate_SC-Regular',Helvetica] font-normal text-[#012c51] text-xl max-w-[783px]" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+          <h2 className="font-['Mate_SC-Regular',Helvetica] font-normal text-[#012c51] text-xl max-w-[783px]"
+              style={{fontFamily: "'Times New Roman', Times, serif"}}>
             Our mortgage investment strategies are particularly well-suited for high-net-worth investors
             seeking to diversify beyond traditional asset classes and enhance portfolio performance. Oﬀering
             consistent income and low correlation to public markets, private mortgage investments serve as
             a reliable anchor of stability in a well-constructed portfolio.
           </h2>
-          
+
         </section>
 
         {/* Featured Image */}
         <section className="mt-20 flex justify-center">
           <img
-            className="w-auto max-w-[1096px] h-auto"
-            alt="Modern architecture"
-            src="assets/images/house.png"
+              className="w-auto max-w-[1096px] h-auto"
+              alt="Modern architecture"
+              src="assets/images/house.png"
           />
         </section>
 
         {/* Second Tagline Section */}
         <h2 className="mt-10 font-normal text-[#012c51] text-5xl text-left md:text-right font-serif">
-              ONE OF CANADA'S FASTEST-GROWING<br></br> NON-BANK LENDERS.
-            </h2>
+          ONE OF CANADA'S FASTEST-GROWING<br></br> NON-BANK LENDERS.
+        </h2>
         <section className="flex flex-col md:flex-row mt-20 px-7 gap-8">
           <img
-            className="w-full md:w-[670px] h-auto"
-            alt="Whatsapp image"
-            src="assets/images/Person.png"
+              className="w-full md:w-[670px] h-auto"
+              alt="Whatsapp image"
+              src="assets/images/Person.png"
           />
 
           <div className="flex flex-col justify-end">
-            
 
-            <p className="font-['Mate_SC-Regular',Helvetica] font-normal text-[#012c51] text-[28px] mt-8 text-left md:text-right" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+
+            <p className="font-['Mate_SC-Regular',Helvetica] font-normal text-[#012c51] text-[28px] mt-8 text-left md:text-right"
+               style={{fontFamily: "'Times New Roman', Times, serif"}}>
               “We deliver expert guidance and tailored investment ideas designed to help investors
               generate stable income and build truly diversified, resilient portfolios.”
             </p>
@@ -196,34 +218,36 @@ export default function Homepage() {
         </section>
 
         {/* About Company Section */}
-        <AboutCompany />
+        <AboutCompany/>
 
         {/* What Is MIC Section */}
         <section className="mt-20 relative w-full">
-          <Card className="w-full max-w-[1216px] h-[490px] bg-[#cdb989] shadow-[0px_4px_4px_#00000040] border-none mx-auto">
+          <Card
+              className="w-full max-w-[1216px] h-[490px] bg-[#cdb989] shadow-[0px_4px_4px_#00000040] border-none mx-auto">
             <CardContent className="flex flex-col md:flex-row p-0">
               <img
-                className="w-[490px] h-[490px] object-cover"
-                alt="Colin meg"
-                src="assets/images/mic.png"
+                  className="w-[490px] h-[490px] object-cover"
+                  alt="Colin meg"
+                  src="assets/images/mic.png"
               />
 
               <div className="p-8 flex flex-col justify-center">
-                <h2 className="font-serif font-normal text-[#012c51] text-5xl mb-6" >
+                <h2 className="font-serif font-normal text-[#012c51] text-5xl mb-6">
                   What is a Mortgage Investment Corporation (MIC)?
                 </h2>
 
-                <p className="font-['Segoe_UI-Regular',Helvetica] font-normal text-[#012c51] text-base" >
-                    A Mortgage Investment Corporation (MIC) is a pooled investment vehicle that lends money,
-                    primarily through residential mortgages secured by real estate. Investors in a MIC earn income
-                    through the interest paid on these loans, typically receiving regular monthly distributions. MICs
-                    oﬀer an attractive way to access the real estate market without owning physical property,
-                    providing both diversification and a steady stream of income.
+                <p className="font-['Segoe_UI-Regular',Helvetica] font-normal text-[#012c51] text-base">
+                  A Mortgage Investment Corporation (MIC) is a pooled investment vehicle that lends money,
+                  primarily through residential mortgages secured by real estate. Investors in a MIC earn income
+                  through the interest paid on these loans, typically receiving regular monthly distributions. MICs
+                  oﬀer an attractive way to access the real estate market without owning physical property,
+                  providing both diversification and a steady stream of income.
                 </p>
                 <a href="/learn#mic">
-                <Button className="h-[45px] w-[250px] flex-1 bg-[#012c51] rounded-[15px]  text-[#cdb989] hover:text-[#cdb989] text-[18px] font-serif mt-10">
-                  Learn More
-                </Button>
+                  <Button
+                      className="h-[45px] w-[250px] flex-1 bg-[#012c51] rounded-[15px]  text-[#cdb989] hover:text-[#cdb989] text-[18px] font-serif mt-10 ease-in">
+                    Learn More
+                  </Button>
                 </a>
               </div>
             </CardContent>
@@ -233,44 +257,56 @@ export default function Homepage() {
         {/* Why Is MIC Better Section */}
         <section className="mt-20 px-7">
           <div className="flex flex-col md:flex-row gap-8">
+            {/* Static Title Card */}
             <div className="w-[228px] h-[229px] bg-[#012c51] shadow-[-8px_8px_10px_#00000040] flex items-end p-7">
-              <h2 className=" font-normal text-[#cdb989] text-[28px] font-serif" >
-                Why Is
-                <br />
-                MIC Better?
+              <h2 className="font-normal text-[#cdb989] text-[28px] font-serif">
+                Why Choose
+                <br/>
+                MICs?
               </h2>
             </div>
 
+            {/* Dynamic Info Cards */}
             {micBenefitsData.map((benefit, index) => (
-              <Card
-                key={index}
-                className="flex-1 h-[387px] bg-neutral-100 shadow-[-8px_8px_10px_#00000040] border-none"
-              >
-                <CardContent className="p-7">
-                  <h3 className="font-serif font-normal text-[#cdb989] text-[28px] mb-6" >
-                    {benefit.title}
-                  </h3>
-                  <p className="font-['Segoe_UI-Regular',Helvetica] font-normal text-[#012c51] text-base" >
-                    {benefit.content}
-                  </p>
-                </CardContent>
-              </Card>
+                <div
+                    key={index}
+                    className="flex-1 bg-neutral-100 rounded-xl shadow-[-8px_8px_10px_#00000040] p-7 flex flex-col justify-between"
+                >
+                  <div>
+                    <h3 className="text-[#cdb989] text-[28px] font-serif font-normal mb-4">
+                      {benefit.title}
+                    </h3>
+                    <p className="text-[#012c51] text-base font-['Segoe_UI-Regular',Helvetica]">
+                      {benefit.content}
+                    </p>
+                  </div>
+                  <div className="mt-6">
+                    <a href={benefit.buttonLink}>
+                      <Button
+                          className="w-full sm:w-[180px] h-[45px] bg-[#012c51] rounded-[12px] text-[#cdb989] font-serif text-[16px]">
+                        {benefit.buttonText}
+                      </Button>
+                    </a>
+                  </div>
+                </div>
             ))}
           </div>
         </section>
 
         {/* Exempt Market Dealer Section */}
         <section
-  className="mt-20 relative w-full h-[656px] bg-cover bg-center"
-  style={{
-    backgroundImage:
-      "url(/assets/images/exemptmarketdealer.png)",
-  }}
->
+            className="mt-20 relative w-full h-[656px] bg-cover bg-center"
+            style={{
+              backgroundImage:
+                  "url(/assets/images/exemptmarketdealer.png)",
+            }}
+        >
 
-          <Card className="absolute w-[594px] h-[326px] top-[302px] left-[27px] bg-[#00000080] rounded-[30px] backdrop-blur-[7.5px] border-none">
+          <Card
+              className="absolute w-[594px] h-[326px] top-[302px] left-[27px] bg-[#00000080] rounded-[30px] backdrop-blur-[7.5px] border-none">
             <CardContent className="p-7">
-              <h2 className="font-['Libre_Bodoni-Regular',Helvetica] font-normal text-[#cdb989] text-[28px] mb-4" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+              <h2 className="font-['Libre_Bodoni-Regular',Helvetica] font-normal text-[#cdb989] text-[28px] mb-4"
+                  style={{fontFamily: "'Times New Roman', Times, serif"}}>
                 Exempt Market Dealer
               </h2>
 
@@ -286,17 +322,19 @@ export default function Homepage() {
 
               <div className="flex gap-2">
                 <a href="/learn#emd">
-                <Button className="h-[65px] w-[350px] flex-1 bg-[#cdb989] rounded-[15px]  text-[#012c51] hover:text-[#cdb989] text-[28px] font-serif">
-                  Learn More
-                </Button>
+                  <Button
+                      className="h-[65px] w-[350px] flex-1 bg-[#cdb989] rounded-[15px]  text-[#012c51] hover:text-[#cdb989] text-[28px] font-serif">
+                    Learn More
+                  </Button>
                 </a>
 
                 <a
-                      href="/learn#emd"
-                      className="w-[113px] h-[65px] bg-[#cdb989] rounded-[15px] flex items-center justify-center group transition-all duration-300 hover:bg-[#012c51]"
-                    >
-                      <ArrowUpRight className="text-[#012c51] group-hover:text-[#cdb989] group-hover:rotate-45 transition-all duration-300 " />
-                    </a>
+                    href="/learn#emd"
+                    className="w-[113px] h-[65px] bg-[#cdb989] rounded-[15px] flex items-center justify-center group transition-all duration-300 hover:bg-[#012c51]"
+                >
+                  <ArrowUpRight
+                      className="text-[#012c51] group-hover:text-[#cdb989] group-hover:rotate-45 transition-all duration-300 "/>
+                </a>
               </div>
             </CardContent>
           </Card>
@@ -304,68 +342,69 @@ export default function Homepage() {
 
         {/* MICs and GICs Section */}
         <section className="mt-20 px-7 ml-4">
-        <div className="flex flex-col md:flex-row gap-8">
-  {/* Left Text Card */}
-  <Card className="w-full md:w-[587px] bg-neutral-100 rounded-[30px] border-none flex gap-4">
-    <CardContent className="p-7 bg-gray-300 h-full rounded-[30px] border-none">
-      <h2 className="font-['Libre_Bodoni-Regular',Helvetica] font-normal text-[#cdb989] text-[28px] mb-6" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
-        Exploring MICs and GICs
-      </h2>
-      <p className="font-['Segoe_UI-Regular',Helvetica] font-normal text-black text-base" >
-        GICs and MICs are both popular ways to grow your savings, but
-        they work a little differently. A GIC (Guaranteed Investment
-        Certificate) gives you a fixed return over time and protects
-        your original money, making it a very safe choice. However,
-        the returns are usually lower. A MIC (Mortgage Investment
-        Corporation) pools money from investors and lends it out as
-        mortgages, offering the chance to earn higher monthly income.
-        While MICs involve a little more risk than GICs, they are
-        backed by real estate and can be a great option if you want
-        better growth. Choosing between them depends on what you feel
-        comfortable with and what you want to achieve with your money.
-      </p>
-    </CardContent>
-  </Card>
+          <div className="flex flex-col md:flex-row gap-8">
+            {/* Left Text Card */}
+            <Card className="w-full md:w-[587px] bg-neutral-100 rounded-[30px] border-none flex gap-4">
+              <CardContent className="p-7 bg-gray-300 h-full rounded-[30px] border-none">
+                <h2 className="font-['Libre_Bodoni-Regular',Helvetica] font-normal text-[#cdb989] text-[28px] mb-6"
+                    style={{fontFamily: "'Times New Roman', Times, serif"}}>
+                  Exploring MICs and GICs
+                </h2>
+                <p className="font-['Segoe_UI-Regular',Helvetica] font-normal text-black text-base">
+                  GICs and MICs are both popular ways to grow your savings, but
+                  they work a little differently. A GIC (Guaranteed Investment
+                  Certificate) gives you a fixed return over time and protects
+                  your original money, making it a very safe choice. However,
+                  the returns are usually lower. A MIC (Mortgage Investment
+                  Corporation) pools money from investors and lends it out as
+                  mortgages, offering the chance to earn higher monthly income.
+                  While MICs involve a little more risk than GICs, they are
+                  backed by real estate and can be a great option if you want
+                  better growth. Choosing between them depends on what you feel
+                  comfortable with and what you want to achieve with your money.
+                </p>
+              </CardContent>
+            </Card>
 
-  {/* Right Visual Section */}
-  <div className="flex flex-col gap-4 items-start">
-    {/* Top Row with Two Small Cards */}
-    <div className="flex gap-4 items-start">
-      {/* Text Card */}
-      <Card className="w-[267px] h-56 bg-[#012c51] rounded-[30px] border-none">
-        <CardContent className="p-4 flex items-center justify-center h-full rounded-[30px] border-none">
-          <h3 className="text-center font-normal text-[#cdb989] text-[24px]" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
-            MICs and GICs: Different Paths to Growth
-          </h3>
-        </CardContent>
-      </Card>
+            {/* Right Visual Section */}
+            <div className="flex flex-col gap-4 items-start">
+              {/* Top Row with Two Small Cards */}
+              <div className="flex gap-4 items-start">
+                {/* Text Card */}
+                <Card className="w-[267px] h-56 bg-[#012c51] rounded-[30px] border-none">
+                  <CardContent className="p-4 flex items-center justify-center h-full rounded-[30px] border-none">
+                    <h3 className="text-center font-normal text-[#cdb989] text-[24px]"
+                        style={{fontFamily: "'Times New Roman', Times, serif"}}>
+                      MICs and GICs: Different Paths to Growth
+                    </h3>
+                  </CardContent>
+                </Card>
 
-      {/* First Image */}
-      <img 
-        src="assets/images/pic.png"
-        alt="Living room" 
-        className="w-[267px] h-56 object-cover rounded-[30px]" 
-      />
-    </div>
+                {/* First Image */}
+                <img
+                    src="assets/images/pic.png"
+                    alt="Living room"
+                    className="w-[267px] h-56 object-cover rounded-[30px]"
+                />
+              </div>
 
-    {/* Bottom Image */}
-    <img 
-      src="assets/images/coin.png"
-      alt="Stacked coins" 
-      className="w-full h-[230px] object-cover rounded-[30px]" 
-    />
-  </div>
-</div>
+              {/* Bottom Image */}
+              <img
+                  src="assets/images/coin.png"
+                  alt="Stacked coins"
+                  className="w-full h-[230px] object-cover rounded-[30px]"
+              />
+            </div>
+          </div>
 
 
-          
         </section>
 
         {/* Performance Chart Section */}
         <h3 className=" font-normal text-[#012c51] text-5xl text-center mt-14 font-serif">
-        OUR PERFORMANCE OVER THE YEARS
-      </h3>
-        <Graph1 />
+          OUR PERFORMANCE OVER THE YEARS
+        </h3>
+        <Graph1/>
 
         {/* Performance Chart Section */}
 
@@ -387,9 +426,9 @@ export default function Homepage() {
 
         {/*</section>*/}
         {/*<Kipscards />*/}
-              
+
         {/* Alternative Investments Section */}
-        <AlternativeInvestments />
+        <AlternativeInvestments/>
 
         {/* Latest Blogs Section */}
         {/*<section className="mt-20 px-7">*/}
@@ -409,9 +448,9 @@ export default function Homepage() {
         {/* Contact Section */}
         <Footer/>
       </div>
-      
+
     </div>
-    
+
   );
 }
 

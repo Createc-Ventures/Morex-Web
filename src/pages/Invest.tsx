@@ -68,9 +68,11 @@ export default function Invest(): JSX.Element {
         </p>
 
         <div className="flex justify-center mt-[50px]">
-          <Button className="w-[430px] h-[72px] bg-[#012c51] rounded-[30px] shadow-[-8px_8px_10px_#00000040] font-normal text-[#cdb989] text-[28px]" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
-            Access Fund fact sheet
-          </Button>
+            <a href = "https://morexcapital.com/wp-content/uploads/2025/04/Fund-Fact-Sheet-March-2025-Final-MMA.pdf">
+                <Button className="w-[430px] h-[72px] bg-[#012c51] rounded-[30px] shadow-[-8px_8px_10px_#00000040] font-normal text-[#cdb989] text-[28px]" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+                    Access Fund fact sheet
+                </Button>
+            </a>
         </div>
 
         {/* LTV Section */}
@@ -90,8 +92,7 @@ export default function Invest(): JSX.Element {
         {/* Yield Section */}
 
         <p className="text-center font-['Segoe_UI-Regular',Helvetica] font-normal text-black text-base mt-[20px]">
-          Annualized Yield, February 1 2012 – March 31, 2024. Target Yield Is
-          8.75% Per Annum, Subject To Change.
+          Mortgage Composition as of April, 2025 for Morex Capital Corporation
         </p>
         
         

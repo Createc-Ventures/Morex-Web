@@ -160,18 +160,18 @@ export default function ContactUs(): JSX.Element {
             
 
             <div className="flex space-x-4 mt-16 ">
-              <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">
-                  <img src="assets/icons/fb.svg" alt="Facebook" className="w-12 h-12 cursor-pointer" />
-              </a>
-              <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">
-                  <img src="assets/icons/in.svg" alt="Facebook" className="w-12 h-12 cursor-pointer" />
-              </a>
-              <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">
+              {/*<a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">*/}
+              {/*    <img src="assets/icons/fb.svg" alt="Facebook" className="w-12 h-12 cursor-pointer" />*/}
+              {/*</a>*/}
+              {/*<a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">*/}
+              {/*    <img src="assets/icons/in.svg" alt="Facebook" className="w-12 h-12 cursor-pointer" />*/}
+              {/*</a>*/}
+              <a href="https://www.instagram.com/morexasset/profilecard/?igsh=bW5mdHU2dGw2MHZje" target="_blank" rel="noopener noreferrer">
                   <img src="assets/icons/insta.svg" alt="Facebook" className="w-12 h-12 cursor-pointer" />
               </a>
-              <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">
-                  <img src="assets/icons/x.svg" alt="Facebook" className="w-12 h-12 cursor-pointer" />
-              </a>
+              {/*<a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">*/}
+              {/*    <img src="assets/icons/x.svg" alt="Facebook" className="w-12 h-12 cursor-pointer" />*/}
+              {/*</a>*/}
             </div>
           </div>
         </div>

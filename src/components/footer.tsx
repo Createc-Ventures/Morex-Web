@@ -84,7 +84,7 @@ export default function Footer() {
           alt="Logo"
           className="w-32 h-auto mb-4"
         />
-        <p className="text-center text-sm">© 2025 Your Company Name. All rights reserved.</p>
+        <p className="text-center text-sm">© 2025 Morex Asset Management Group. All rights reserved.</p>
       </div>
 
     </footer>

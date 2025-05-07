@@ -153,7 +153,7 @@ export default function Navbar({ startPosition = "default" }) {
             <Link
               to="/insights"
               className="text-blue-900 hover:text-[#D4B968] font-bold font-serif"
-              
+              onMouseEnter={() => setDropdown(null)}
             >
               INSIGHT
             </Link>
@@ -164,18 +164,19 @@ export default function Navbar({ startPosition = "default" }) {
                 to="/learn"
                 className="text-blue-900 hover:text-[#D4B968] font-bold cursor-pointer"
                 style={{ fontFamily: "Times New Roman, serif" }}
-                onMouseEnter={() => setDropdown("learn")}
+                onMouseOver={() => setDropdown("learn")}
+                // onMouseOut={() => setDropdown(null)}
               >
                 LEARN
               </Link>
               {dropdown === "learn" && (
                 <div
                   className="fixed left-1/2 transform -translate-x-1/2 w-[800px] top-[68px] mt-4 bg-white shadow-xl rounded-[30px] py-6 px-8 z-50"
-                  onMouseEnter={() => setDropdown("learn")}
+                  // onMouseEnter={() => setDropdown("learn")}
                   onMouseLeave={() => setDropdown(null)}
                 >
                   <h3 className="text-[#D4B968] font-bold mb-4 text-sm tracking-widest">
-                    LEARN OVERVIEW →
+                    LEARN OVERVIEW
                   </h3>
                   <p className="text-gray-600 mb-6 text-sm">
                     Explore essential investment tools and strategies to expand
@@ -214,7 +215,7 @@ export default function Navbar({ startPosition = "default" }) {
                 style={{ fontFamily: "Times New Roman, serif" }}
                 onMouseEnter={() => setDropdown("about")}
               >
-                ABOUT US
+                COMPANY
               </Link>
               {dropdown === "about" && (
                 <div
@@ -223,7 +224,7 @@ export default function Navbar({ startPosition = "default" }) {
                   onMouseLeave={() => setDropdown(null)}
                 >
                   <h3 className="text-[#D4B968] font-bold mb-4 text-sm tracking-widest">
-                    ABOUT US →
+                    ABOUT US
                   </h3>
                   <p className="text-gray-600 mb-6 text-sm ">
                     Discover our mission and the people who bring it to life.
@@ -254,7 +255,8 @@ export default function Navbar({ startPosition = "default" }) {
             </div>
           </div>
 
-          <div className="flex-shrink-0 ml-auto">
+          <div className="flex-shrink-0 ml-auto"
+          onMouseEnter={() => setDropdown(null)}>
             <Link
               to="/contactus" 
               className="bg-[#002c51] text-[#D4B968] px-6 py-3 rounded-full font-bold hover:bg-[#e7d39f] hover:text-[#002c51] transition "
