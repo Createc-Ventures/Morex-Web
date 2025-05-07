@@ -384,7 +384,7 @@ export default function Homepage() {
                 <img
                     src="assets/images/pic.png"
                     alt="Living room"
-                    className="w-[267px] h-56 object-cover rounded-[30px]"
+                    className="w-[285px] h-55 object-cover rounded-[30px]"
                 />
               </div>
 
