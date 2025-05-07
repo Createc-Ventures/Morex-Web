@@ -6,7 +6,7 @@ const AboutCompany: React.FC = () => {
 
       {/* Text Section */}
       <div className="w-full md:w-1/2 space-y-6">
-        <h2 className="text-4xl font-bold text-blue-900 font-serif" >ABOUT COMPANY</h2>
+        <h2 className="text-4xl font-bold text-blue-900 font-serif" >ABOUT US</h2>
         <p className="text-gray-700 leading-relaxed font-['Segoe_UI-Bold',Helvetica]">
             Morex Asset Management is a registered Exempt Market Dealer (EMD) specializing in providing
             qualified investors with exclusive access to private investment opportunities. We are the

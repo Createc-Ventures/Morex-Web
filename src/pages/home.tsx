@@ -346,22 +346,21 @@ export default function Homepage() {
             {/* Left Text Card */}
             <Card className="w-full md:w-[587px] bg-neutral-100 rounded-[30px] border-none flex gap-4">
               <CardContent className="p-7 bg-gray-300 h-full rounded-[30px] border-none">
-                <h2 className="font-['Libre_Bodoni-Regular',Helvetica] font-normal text-[#cdb989] text-[28px] mb-6"
+                <h2 className="font-['Libre_Bodoni-Regular',Helvetica] font-bold text-[#cdb989] text-[26px] mb-6"
                     style={{fontFamily: "'Times New Roman', Times, serif"}}>
-                  Exploring MICs and GICs
+                  Morex MIC Vs. GICs: A Smarter Way to Earn Income
                 </h2>
                 <p className="font-['Segoe_UI-Regular',Helvetica] font-normal text-black text-base">
-                  GICs and MICs are both popular ways to grow your savings, but
-                  they work a little differently. A GIC (Guaranteed Investment
-                  Certificate) gives you a fixed return over time and protects
-                  your original money, making it a very safe choice. However,
-                  the returns are usually lower. A MIC (Mortgage Investment
-                  Corporation) pools money from investors and lends it out as
-                  mortgages, offering the chance to earn higher monthly income.
-                  While MICs involve a little more risk than GICs, they are
-                  backed by real estate and can be a great option if you want
-                  better growth. Choosing between them depends on what you feel
-                  comfortable with and what you want to achieve with your money.
+                  When it comes to building wealth, not all income is created equal. Traditional 1-year GIC rates
+                  are known for their safety, yet they currently oﬀer an average return of just 3.70%. In contrast,
+                  Morex Capital Corporation has consistently delivered annual returns exceeding 7%, currently at
+                  9.25%, through a conservative, real estate-backed lending strategy.
+                  This approach yields more than twice the income without the daily volatility of the public
+                  markets. Investors seeking higher returns without excessive risk may find Morex Capital's
+                  strategy appealing. By focusing on secured real estate lending, the company mitigates potential
+                  losses while capitalizing on a robust Canadian property market. This balanced approach allows
+                  investors to potentially earn significantly more than traditional fixed-income investments, while
+                  maintaining a level of security that is not typically associated with higher-yield options.
                 </p>
               </CardContent>
             </Card>
@@ -375,7 +374,7 @@ export default function Homepage() {
                   <CardContent className="p-4 flex items-center justify-center h-full rounded-[30px] border-none">
                     <h3 className="text-center font-normal text-[#cdb989] text-[24px]"
                         style={{fontFamily: "'Times New Roman', Times, serif"}}>
-                      MICs and GICs: Different Paths to Growth
+                      Morex MIC vs GICs: Different Paths to Growth
                     </h3>
                   </CardContent>
                 </Card>

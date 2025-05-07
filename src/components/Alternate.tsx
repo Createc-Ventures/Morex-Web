@@ -19,7 +19,7 @@ const AlternativeInvestmentsSection: React.FC = () => {
         <div className="absolute inset-0 bg-[#00000080] rounded-[30px]">
           <div className="p-7">
             <h2 className="font-serif font-normal text-white text-5xl">
-              ALTERNATE
+              ALTERNATIVE
               <br />
               INVESTMENTS
             </h2>
