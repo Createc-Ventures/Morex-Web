@@ -113,8 +113,8 @@ export default function Insight(): JSX.Element {
               />
             </div>
             <div className="absolute inset-0 flex items-center justify-center">
-              <p className="font-['Libre_Bodoni-Regular',Helvetica] backdrop-blur-[10px] text-[#b69953] text-[28px] text-center max-w-4xl px-4" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
-                "At Morex Asset Management, we specialize in connecting investors to high-quality private market opportunities, helping you build a stronger, more resilient financial future."
+              <p className="font-['Libre_Bodoni-Regular',Helvetica] backdrop-blur-[10px] text-white font-bold text-[28px] text-center max-w-4xl px-4" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+                At Morex Asset Management, we specialize in connecting investors to high-quality private market opportunities, helping you build a stronger, more resilient financial future.
               </p>
             </div>
           </div>

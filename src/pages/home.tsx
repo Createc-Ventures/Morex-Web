@@ -346,7 +346,7 @@ export default function Homepage() {
             {/* Left Text Card */}
             <Card className="w-full md:w-[587px] bg-neutral-100 rounded-[30px] border-none flex gap-4">
               <CardContent className="p-7 bg-gray-300 h-full rounded-[30px] border-none">
-                <h2 className="font-['Libre_Bodoni-Regular',Helvetica] font-bold text-[#cdb989] text-[26px] mb-6"
+                <h2 className="font-['Libre_Bodoni-Regular',Helvetica] font-bold text-[#012c51] text-[26px] mb-6"
                     style={{fontFamily: "'Times New Roman', Times, serif"}}>
                   Morex MIC Vs. GICs: A Smarter Way to Earn Income
                 </h2>
