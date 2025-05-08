@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 const MICInfoCardMobile = () => {
@@ -8,20 +9,29 @@ const MICInfoCardMobile = () => {
       <img
         src="public\assets\images\mic.png" // Replace with actual image path
         alt="Living room interior"
-        className="w-full h-60 object-cover"
+        className="w-full h-60 object-cover rounded-sm"
       />
 
       {/* Text Content Section */}
       <CardContent className="p-6 space-y-4">
         <h2 className="text-2xl font-serif font-bold text-[#012c51]">
-          What is a MIC?
+        What is a Mortgage Investment Corporation (MIC)?
         </h2>
         <p className="text-[#1f2937] text-sm leading-relaxed">
-          A MIC (Mortgage Investment Corporation) is a Canadian company that connects investors with borrowers. It pools funds from individuals looking to earn strong, steady returns and lends that money to people who need flexible mortgage solutions.
+        A Mortgage Investment Corporation (MIC) is a pooled investment vehicle that lends money, primarily through residential mortgages secured by real estate. Investors in a MIC earn income through the interest paid on these loans, typically receiving regular monthly distributions. MICs oﬀer an attractive way to access the real estate market without owning physical property, providing both diversification and a steady stream of income.
         </p>
-        <p className="text-[#1f2937] text-sm leading-relaxed">
-          Whether you're self-employed, new to Canada, or don't meet the strict requirements of traditional banks, MICs provide a real opportunity. With faster approvals and personalized lending options, they offer an alternative that's more accessible and responsive.
-        </p>
+        <div className="flex justify-center">
+  <a href="/learn#mic">
+    <Button
+      className="h-[45px] w-[150px] flex-1 bg-[#012c51] rounded-[15px] text-[#cdb989] hover:text-[#cdb989] text-[16px] font-serif mt-10 ease-in"
+    >
+      Learn More
+    </Button>
+  </a>
+</div>
+
+          
+      
       </CardContent>
     </Card>
   );
