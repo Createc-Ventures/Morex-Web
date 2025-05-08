@@ -40,16 +40,17 @@ const HeroSection = () => {
       </a>
       <Card className="absolute top-[45px] right-[15px] w-[140px] h-[140px] bg-[#012c51] rounded-lg border-none z-30">
         <CardContent className="p-2">
-          <div className="w-28 h-[23px]">
-            <div className="text-[#cdb989] text-[8px] font-bold">
-              DISCOVER MORE WITH MOREX CAPITAL
-            </div>
-            <img
-              className="w-[22px] h-[22px] mt-2"
-              alt="Logo"
-              src="assets/logo/Morex Cap.png"
-            />
+        <div className="flex items-center w-fit h-[23px] gap-2">
+          <div className="text-[#cdb989] text-[8px] font-bold">
+            DISCOVER MORE WITH MOREX CAPITAL
           </div>
+          <img
+            className="w-[22px] h-[22px]"
+            alt="Logo"
+            src="assets/logo/Morex Cap.png"
+          />
+        </div>
+
           <p id="house" className="mt-5 text-white text-[8px]">
             Ready for mortgage solutions built around you? Learn how Morex
             Capital can help you move forward with confidence.
@@ -98,7 +99,7 @@ export default function LandingPhone(): JSX.Element {
         <Card className="bg-neutral-100">
           <CardContent className="p-4">
             <img src="assets/images/aboutusmob.jpg" alt="About Company" className="w-full mb-2 rounded" />
-            <h3 className="text-[#012c51] font-semibold text-sm">ABOUT COMPANY</h3>
+            <h3 className="text-[#012c51] font-semibold text-sm font-serif">ABOUT COMPANY</h3>
             <p className="text-[#012c51] text-xs mt-1">
             Morex Asset Management is a registered Exempt Market Dealer (EMD) 
             specializing in providing qualified investors with exclusive access to 
@@ -113,38 +114,44 @@ export default function LandingPhone(): JSX.Element {
       <Mic/>
       {/* Why MIC */}
       <section className="p-4 relative">
-  <div className="absolute -left-2 top-2 bg-[#012c51] rounded-xl px-3 py-2 shadow-md z-10 ml-5">
-    <span className="text-[#cdb989] text-[10px] font-bold">Why Is<br />MIC Better?</span>
-  </div>
-  <div className="flex flex-col space-y-4 pl-20">
-    {["For Investors", "For Borrowers"].map((title, idx) => (
-      <Card key={idx} className="bg-[#f9f9f9] rounded-xl shadow-md">
-        <CardContent className="p-4">
-          <h4 className="text-[#cdb989] text-xs font-bold mb-2">{title}</h4>
-          <p className="text-[#012c51] text-[10px] mb-4">
-            {title === "For Investors" ?
-              "MICs oﬀer investors a compelling opportunity to enhance their financial portfolios with steady monthly earnings. They provide a reliable and eﬃcient way to grow your wealth through consistent, monthly returns backed by real estate investments. As an investor, you benefit from a professionally managed collection of diverse mortgage assets, designed to deliver robust performance and dependable income. Additionally, you can include your MIC investment in RRSPs, TFSAs, or RESPs to enjoy significant tax advantages. MICs are a smart choice for building a stable financial future, with a focus on transparency, security, and long-term growth" :
-              "Mortgage Investment Corporations (MICs) provide borrowers with a flexible and customized approach to home financing. Whether individuals are self-employed, new to Canada, or seeking a mortgage that aligns with their specific circumstances, MICs oﬀer clear and tailored solutions that facilitate the progression of their financial objectives. With expedited approvals, responsive support, and a team committed to personalized collaboration, MICs assist in transforming aspirations into reality. This approach to mortgage lending is designed to be more accessible, focusing on the individual rather than a standardized checklist."}
-          </p>
-          <button className="bg-[#012c51] text-[#cdb989] text-[10px] font-semibold px-3 py-1 rounded-lg shadow hover:bg-[#01406e] transition duration-300">
-            {title === "For Investors" ? "Invest" : "Apply"}
-          </button>
-        </CardContent>
-      </Card>
-    ))}
-  </div>
-</section>
+        <div className="w-32 -left-2 top-2 bg-[#012c51] rounded-xl px-3 py-2 shadow-md mb-4">
+          <span className="text-[#cdb989] text-[16px] font-serif">Why Is  MIC Better?</span>
+        </div>
+        <div className="flex flex-col space-y-4 ">
+          {["For Investors", "For Borrowers"].map((title, idx) => (
+            <Card key={idx} className="bg-[#f9f9f9] rounded-xl shadow-md">
+              <CardContent className="p-4">
+                <h4 className="text-[#cdb989] text-xs font-bold mb-2">{title}</h4>
+                <p className="text-[#012c51] text-[10px] mb-4">
+                  {title === "For Investors" ?
+                    "MICs oﬀer investors a compelling opportunity to enhance their financial portfolios with steady monthly earnings. They provide a reliable and eﬃcient way to grow your wealth through consistent, monthly returns backed by real estate investments. As an investor, you benefit from a professionally managed collection of diverse mortgage assets, designed to deliver robust performance and dependable income. Additionally, you can include your MIC investment in RRSPs, TFSAs, or RESPs to enjoy significant tax advantages. MICs are a smart choice for building a stable financial future, with a focus on transparency, security, and long-term growth" :
+                    "Mortgage Investment Corporations (MICs) provide borrowers with a flexible and customized approach to home financing. Whether individuals are self-employed, new to Canada, or seeking a mortgage that aligns with their specific circumstances, MICs oﬀer clear and tailored solutions that facilitate the progression of their financial objectives. With expedited approvals, responsive support, and a team committed to personalized collaboration, MICs assist in transforming aspirations into reality. This approach to mortgage lending is designed to be more accessible, focusing on the individual rather than a standardized checklist."}
+                </p>
+                <a
+                  href={title === "For Investors" ? "/invest" : "https://morexcapital.com/"}
+                  className="inline-block bg-[#012c51] text-[#cdb989] text-[10px] font-semibold px-3 py-1 rounded-lg shadow hover:bg-[#01406e] transition duration-300"
+                >
+                  {title === "For Investors" ? "Invest" : "Apply"}
+                </a>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
+
 
 
       {/* EMD Section */}
       <section className="p-4">
         <Card className="bg-[#012c51] text-white">
           <CardContent className="p-4">
-            <h3 className="text-[#cdb989] text-sm">Exempt Market Dealer</h3>
+            <h3 className="text-[#cdb989] text-sm font-serif">Exempt Market Dealer</h3>
             <p className="text-xs">As a registered Exempt Market Dealer (EMD), MOREX offers investors exclusive access to private investment opportunities that are not available on public markets. Our EMD status ensures that all investments are fully compliant with regulatory standards, providing transparency, investor protection, and suitability for your financial goals. Ready to learn more about how EMDs work and how they can benefit your portfolio?</p>
           </CardContent>
           <CardFooter className="justify-between">
+            <a href="/learn#emd">
             <Button className="bg-[#cdb989] text-[#012c51] text-xs rounded">Learn More</Button>
+            </a>
           </CardFooter>
         </Card>
       </section>
@@ -152,7 +159,7 @@ export default function LandingPhone(): JSX.Element {
       {/* Performance Section */}
       <section className="p-4">
         
-        <h3 className="text-[#012c51] text-sm font-semibold mb-2">OUR PERFORMANCE OVER THE YEARS</h3>
+        <h3 className="text-[#012c51] text-sm font-semibold mb-2 font-serif">OUR PERFORMANCE OVER THE YEARS</h3>
         <Grapgh1 />
         <div className="bg-neutral-100 p-4 text-center text-xs">
           <p>Annualized Yield, February 1 2012 – March 31, 2024. Target Yield Is 8.75% Per Annum.</p>

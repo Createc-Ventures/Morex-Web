@@ -248,7 +248,7 @@ const Learn: React.FC = () => {
                                 Read More
                               </summary>
                               <div className="mt-2">
-                                <p className="font-serif font-normal text-black text-base">
+                                <p className="[font-family:'Segoe_UI-Semibold',Helvetica] font-normal text-black text-base">
                                   {paragraphs[1]}
                                 </p>
                               </div>
