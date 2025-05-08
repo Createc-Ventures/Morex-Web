@@ -9,6 +9,9 @@ import {
   ChartOptions,
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
+import { hasSubscribers } from "diagnostics_channel";
+import { GalleryThumbnails } from "lucide-react";
+import { hashKey } from "@tanstack/react-query";
 
 // Register Chart.js components
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);

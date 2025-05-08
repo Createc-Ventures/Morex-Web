@@ -7,11 +7,11 @@ const MICInfoCardMobile = () => {
     <Card className="w-full max-w-sm mx-auto bg-[#d1bc8e] shadow-md rounded-xl overflow-hidden p-4">
       {/* Image Section */}
       <img
-        src="public\assets\images\mic.png" // Replace with actual image path
-        alt="Living room interior"
-        className="w-full h-60 object-cover rounded-sm"
+  src="/assets/images/mic.png"
+  alt="MIC explanation"
+  className="w-full h-60 object-cover rounded-sm"
       />
-
+      
       {/* Text Content Section */}
       <CardContent className="p-6 space-y-4">
         <h2 className="text-2xl font-serif font-bold text-[#012c51]">

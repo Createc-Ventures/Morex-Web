@@ -57,10 +57,13 @@ const HeroSection = () => {
           </p>
         </CardContent>
         <CardFooter className="p-0 flex justify-center">
-          <Button className="w-[65px] h-[19px] bg-[#cdb989] rounded-[30px] p-0 text-[8px] font-bold text-[#012c51]">
-            LEARN MORE
-          </Button>
-        </CardFooter>
+  <a href="https://morexcapital.com/" target="_blank" rel="noopener noreferrer">
+    <Button className="w-[65px] h-[19px] bg-[#cdb989] rounded-[30px] p-0 text-[8px] font-bold text-[#012c51]">
+      LEARN MORE
+    </Button>
+  </a>
+</CardFooter>
+
       </Card>
     </section>
   );
