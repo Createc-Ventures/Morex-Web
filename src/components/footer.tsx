@@ -1,47 +1,98 @@
-import { Card, CardContent } from '@/components/ui/card';
+
+import { useRef, useState } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 
 export default function Footer() {
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
+
+  const handleCaptcha = (token: string | null) => {
+    setCaptchaToken(token);
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!captchaToken) {
+      alert('Please complete the CAPTCHA');
+      return;
+    }
+
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ...formData, token: captchaToken }),
+    });
+
+    const result = await res.json();
+    if (result.success) {
+      alert('Message sent successfully!');
+      setFormData({ name: '', email: '', subject: '', message: '' });
+      recaptchaRef.current?.reset();
+    } else {
+      alert('Error: ' + result.error);
+    }
+  };
+
   return (
     <footer className="bg-[#062244] text-[#e3c07b] p-10 flex flex-col items-center gap-12 mt-20">
-
-      {/* Contact Info */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-        <div className="flex flex-col items-center gap-2">
-          <img src="/assets/icons/phone.svg" alt="Phone" className="w-15 h-15" />
-          <p className="font-bold font-serif">Phone</p>
-          <p className=''>905-896-2642</p>
-          
-        </div>
-
-        <div className="flex flex-col items-center gap-2">
-          <img src="assets/icons/location.svg" alt="Address" className="w-15 h-15" />
-          <p className="font-bold font-serif">Address</p>
-          <p className=''>5025 Orbitor Drive, Bldg. #2, Suite 200 Mississauga, Ontario L4W 4Y5</p>
-        </div>
-
-        <div className="flex flex-col items-center gap-2">
-          <img src="assets/icons/mail-top.svg" alt="Email" className="w-15 h-15" />
-          <p className="font-bold font-serif">Email</p>
-          <p className=''>info@morexcapital.com</p>
-         
-        </div>
-      </div>
-
       {/* Contact Form */}
       <div className="w-full max-w-lg">
         <h3 className="text-center text-lg mb-4 font-serif">
           If you got any questions<br />
           Please do not hesitate to send us a message.
         </h3>
-        <form className="flex flex-col gap-4 font-serif">
-          <Input placeholder="Name" />
-          <Input placeholder="Email" />
-          <Input placeholder="Subject" />
-          <Textarea placeholder="Message" className="h-32" />
-          <Button className="bg-[#e3c07b] text-black hover:bg-[#c7a872]">Send Message</Button>
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4 font-serif">
+          <Input
+            name="name"
+            placeholder="Name"
+            value={formData.name}
+            onChange={handleChange}
+          />
+          <Input
+            name="email"
+            placeholder="Email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+          <Input
+            name="subject"
+            placeholder="Subject"
+            value={formData.subject}
+            onChange={handleChange}
+          />
+          <Textarea
+            name="message"
+            placeholder="Message"
+            className="h-32"
+            value={formData.message}
+            onChange={handleChange}
+          />
+          <ReCAPTCHA
+            ref={recaptchaRef}
+            sitekey="6LdHVEYrAAAAAPAyPAqOXKIVopnud5oJaneImCkY"
+            onChange={handleCaptcha}
+            theme="light"
+          />
+          <Button
+            type="submit"
+            className="bg-[#e3c07b] text-black hover:bg-[#c7a872]"
+          >
+            Send Message
+          </Button>
         </form>
       </div>
 
