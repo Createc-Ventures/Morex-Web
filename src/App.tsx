@@ -11,8 +11,9 @@ import NotFound from "./pages/NotFound";
 import ContactUs from "./pages/Contact-us";
 import Learn from "./pages/Learn";
 import Insights from "./pages/Insight";
-import Meettheteam from "./pages/Meet-the-team";
+import Meettheteam from "./pages/meet-the-team.tsx";
 import BlogandArticle from "./pages/blog";
+import ContactUsWrapper from "./pages/ContactUsWrapper.tsx";
 
 const queryClient = new QueryClient();
 
@@ -29,7 +30,7 @@ const App = () => (
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/aboutus/team" element={<Meettheteam />} />
           <Route path="/invest" element={<Invest />} />
-          <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/contactus" element={<ContactUsWrapper />} />
           <Route path="/Learn" element={<Learn />} />
           <Route path="/insights" element={<Insights />} />
           <Route path="/insights/:id" element={<Insights />} />
