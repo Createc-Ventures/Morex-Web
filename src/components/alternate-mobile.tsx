@@ -19,48 +19,49 @@ const MobileAltInvestments = () => {
         </p>
       </div>
 
-      {/* TFSA Card */}
-      <div className="bg-[#F5E7D3] p-4 rounded-xl shadow-md space-y-2">
-        <h3 className="font-semibold text-[14px] text-[#1f2937]">
-          TFSA (Tax-Free Savings Account)
-        </h3>
-        <p className="text-sm text-gray-700">
-          Expanding Your Investment Choices: Discover Opportunities Beyond
-          Traditional Paths. Take your portfolio further by exploring
-          alternative investments like MICs, offering new ways to grow your
-          wealth, diversify your holdings, and build a more resilient financial
-          future.
-        </p>
-        <div className="flex justify-end">
-          <a href="/learn#tfsa">
-          <div className="bg-black text-white p-2 rounded-full w-8 h-8 flex items-center justify-center">
-            <MoveRight className="w-4 h-4" />
-          </div>
-          </a>
-        </div>
+{/* TFSA Card */}
+<div className="bg-[#F5E7D3] p-4 rounded-xl shadow-md space-y-2">
+  <h3 className="font-semibold text-[14px] text-[#1f2937]">
+    TFSA (Tax-Free Savings Account)
+  </h3>
+  <p className="text-sm text-gray-700">
+    Expanding Your Investment Choices: Discover Opportunities Beyond
+    Traditional Paths. Take your portfolio further by exploring
+    alternative investments like MICs, offering new ways to grow your
+    wealth, diversify your holdings, and build a more resilient financial
+    future.
+  </p>
+  <div className="flex justify-end">
+    <a href="/learn#tfsa">
+      <div className="bg-[#093E6B] text-white p-2 rounded-full w-8 h-8 flex items-center justify-center">
+        <MoveRight className="w-4 h-4" />
       </div>
+    </a>
+  </div>
+</div>
 
-      {/* RSP Card */}
-      <div className="bg-[#F2EAD3] p-4 rounded-xl shadow-md space-y-2">
-        <h3 className="font-semibold text-[14px] text-[#1f2937]">
-          RESP (Registered Education Savings Plan)
-        </h3>
-        <p className="text-[14px] text-gray-700">
-        A Registered Education Savings Plan (RESP) is a
-        specialized investment account that helps
-        families save for a child's post-secondary
-        education. Contributions grow tax-deferred,
-        and the government provides additional grants
-        to boost savings.
-        </p>
-        <div className="flex justify-end">
-          <a href="/learn#resp">
-          <div className="bg-black text-white p-2 rounded-full w-8 h-8 flex items-center justify-center">
-            <MoveRight className="w-4 h-4" />
-          </div>
-          </a>
-        </div>
+{/* RESP Card */}
+<div className="bg-[#F2EAD3] p-4 rounded-xl shadow-md space-y-2">
+  <h3 className="font-semibold text-[14px] text-[#1f2937]">
+    RESP (Registered Education Savings Plan)
+  </h3>
+  <p className="text-[14px] text-gray-700">
+    A Registered Education Savings Plan (RESP) is a
+    specialized investment account that helps
+    families save for a child's post-secondary
+    education. Contributions grow tax-deferred,
+    and the government provides additional grants
+    to boost savings.
+  </p>
+  <div className="flex justify-end">
+    <a href="/learn#resp">
+      <div className="bg-[#093E6B] text-white p-2 rounded-full w-8 h-8 flex items-center justify-center">
+        <MoveRight className="w-4 h-4" />
       </div>
+    </a>
+  </div>
+</div>
+
 
       {/* RRSP Card */}
       <div className="bg-[#093E6B] p-4 rounded-xl shadow-md space-y-2 text-white">

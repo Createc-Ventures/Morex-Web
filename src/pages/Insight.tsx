@@ -156,41 +156,44 @@ export default function Insight(): JSX.Element {
 
           {/* Key Considerations Section */}
           <Card className="bg-neutral-100 rounded-[30px] mb-16">
-            <CardContent className="p-7">
-              <div className="flex flex-col flex-auto lg:flex-row gap-8">
-                <div className="lg:w-1/2">
-                  <h2 className="font-serif text-[#012c51] text-4xl mb-8 align-middle flex-auto flex-shrink-1" >
-                    Key Considerations for Investors
-                  </h2>
-                  <p className="font-['Segoe_UI-Regular',Helvetica] text-black text-base mb-6" >
-                    While alternative investments present compelling advantages,
-                    it is important to understand their unique characteristics:
-                  </p>
-                  <p className="font-['Segoe_UI-Regular',Helvetica] text-black text-base" >
-                    Professional advice, a disciplined investment process, and
-                    regular portfolio monitoring are essential to successfully
-                    integrating private mortgage investments into a broader
-                    strategy.
-                  </p>
-                </div>
+  <CardContent className="px-4 py-7 sm:px-7">
+    <div className="flex flex-col lg:flex-row gap-8">
+      {/* Left Side */}
+      <div className="lg:w-1/2">
+        <h2 className="font-serif text-[#012c51] text-2xl sm:text-4xl mb-6">
+          Key Considerations for Investors
+        </h2>
+        <p className="font-['Segoe_UI-Regular',Helvetica] text-black text-base mb-6">
+          While alternative investments present compelling advantages,
+          it is important to understand their unique characteristics:
+        </p>
+        <p className="font-['Segoe_UI-Regular',Helvetica] text-black text-base">
+          Professional advice, a disciplined investment process, and regular
+          portfolio monitoring are essential to successfully integrating private
+          mortgage investments into a broader strategy.
+        </p>
+      </div>
 
-                <div className="lg:w-1/2 flex flex-col gap-6">
-                  {considerationCards.map((card, index) => (
-                    <div
-                      key={index}
-                      className="bg-[#cdb989] rounded-[30px_8px_8px_0px] shadow-[-8px_8px_10px_#00000040] p-6" >
-                      <p className="font-['Segoe_UI-Regular',Helvetica] text-black text-base" >
-                        <span className="font-['Segoe_UI-Bold',Helvetica] font-bold">
-                          {card.title}:
-                        </span>{" "}
-                        {card.description}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+      {/* Right Side Cards */}
+      <div className="lg:w-1/2 flex flex-col gap-6">
+        {considerationCards.map((card, index) => (
+          <div
+            key={index}
+            className="bg-[#cdb989] rounded-[30px_8px_8px_0px] shadow-[-8px_8px_10px_#00000040] p-6"
+          >
+            <p className="font-['Segoe_UI-Regular',Helvetica] text-black text-base">
+              <span className="font-bold font-['Segoe_UI-Bold',Helvetica]">
+                {card.title}:
+              </span>{" "}
+              {card.description}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </CardContent>
+</Card>
+
 
           {/* Conclusion Section */}
           <div className="bg-neutral-100">

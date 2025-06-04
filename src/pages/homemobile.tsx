@@ -117,30 +117,33 @@ export default function LandingPhone(): JSX.Element {
       <Mic/>
       {/* Why MIC */}
       <section className="p-4 relative">
-        <div className="w-32 -left-2 top-2 bg-[#012c51] rounded-xl px-3 py-2 shadow-md mb-4">
-          <span className="text-[#cdb989] text-[16px] font-serif">Why Is  MIC Better?</span>
-        </div>
-        <div className="flex flex-col space-y-4 ">
-          {["For Investors", "For Borrowers"].map((title, idx) => (
-            <Card key={idx} className="bg-[#f9f9f9] rounded-xl shadow-md">
-              <CardContent className="p-4">
-                <h4 className="text-[#cdb989] text-xs font-bold mb-2">{title}</h4>
-                <p className="text-[#012c51] text-[10px] mb-4">
-                  {title === "For Investors" ?
-                    "MICs oﬀer investors a compelling opportunity to enhance their financial portfolios with steady monthly earnings. They provide a reliable and eﬃcient way to grow your wealth through consistent, monthly returns backed by real estate investments. As an investor, you benefit from a professionally managed collection of diverse mortgage assets, designed to deliver robust performance and dependable income. Additionally, you can include your MIC investment in RRSPs, TFSAs, or RESPs to enjoy significant tax advantages. MICs are a smart choice for building a stable financial future, with a focus on transparency, security, and long-term growth" :
-                    "Mortgage Investment Corporations (MICs) provide borrowers with a flexible and customized approach to home financing. Whether individuals are self-employed, new to Canada, or seeking a mortgage that aligns with their specific circumstances, MICs oﬀer clear and tailored solutions that facilitate the progression of their financial objectives. With expedited approvals, responsive support, and a team committed to personalized collaboration, MICs assist in transforming aspirations into reality. This approach to mortgage lending is designed to be more accessible, focusing on the individual rather than a standardized checklist."}
-                </p>
-                <a
-                  href={title === "For Investors" ? "/invest" : "https://morexcapital.com/"}
-                  className="inline-block bg-[#012c51] text-[#cdb989] text-[10px] font-semibold px-3 py-1 rounded-lg shadow hover:bg-[#01406e] transition duration-300"
-                >
-                  {title === "For Investors" ? "Invest" : "Apply"}
-                </a>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </section>
+  <div className="inline-block -left-2 top-2 bg-[#012c51] rounded-xl px-3 py-2 shadow-md mb-4 whitespace-nowrap">
+    <span className="text-[#cdb989] text-[16px] font-serif">
+      Why Is MIC Better?
+    </span>
+  </div>
+  <div className="flex flex-col space-y-4">
+    {["For Investors", "For Borrowers"].map((title, idx) => (
+      <Card key={idx} className="bg-[#f9f9f9] rounded-xl shadow-md">
+        <CardContent className="p-4">
+          <h4 className="text-[#cdb989] text-xs font-bold mb-2">{title}</h4>
+          <p className="text-[#012c51] text-[10px] mb-4">
+            {title === "For Investors"
+              ? "MICs oﬀer investors a compelling opportunity to enhance their financial portfolios with steady monthly earnings. They provide a reliable and eﬃcient way to grow your wealth through consistent, monthly returns backed by real estate investments. As an investor, you benefit from a professionally managed collection of diverse mortgage assets, designed to deliver robust performance and dependable income. Additionally, you can include your MIC investment in RRSPs, TFSAs, or RESPs to enjoy significant tax advantages. MICs are a smart choice for building a stable financial future, with a focus on transparency, security, and long-term growth"
+              : "Mortgage Investment Corporations (MICs) provide borrowers with a flexible and customized approach to home financing. Whether individuals are self-employed, new to Canada, or seeking a mortgage that aligns with their specific circumstances, MICs oﬀer clear and tailored solutions that facilitate the progression of their financial objectives. With expedited approvals, responsive support, and a team committed to personalized collaboration, MICs assist in transforming aspirations into reality. This approach to mortgage lending is designed to be more accessible, focusing on the individual rather than a standardized checklist."}
+          </p>
+          <a
+            href={title === "For Investors" ? "/invest" : "https://morexcapital.com/"}
+            className="inline-block bg-[#012c51] text-[#cdb989] text-[10px] font-semibold px-3 py-1 rounded-lg shadow hover:bg-[#01406e] transition duration-300"
+          >
+            {title === "For Investors" ? "Invest" : "Apply"}
+          </a>
+        </CardContent>
+      </Card>
+    ))}
+  </div>
+</section>
+
 
 
 
