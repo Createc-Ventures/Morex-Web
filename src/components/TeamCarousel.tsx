@@ -113,7 +113,7 @@ const TeamCarousel: React.FC = () => {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -40 }}
           transition={{ duration: 0.4 }}
-          className="max-w-xl w-full mx-auto text-left"
+          className="max-w-lg w-full mx-auto text-left px-6"
         >
           <h2 className="text-[#cdb989] text-2xl md:text-3xl font-semibold mb-2 font-serif"  >
             {current.name}
