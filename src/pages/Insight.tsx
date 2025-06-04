@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/navbar";
-import { Menu } from "lucide-react";
+import {ChevronDown, Menu} from "lucide-react";
 import React from "react";
 import Footer from "@/components/footer";
 import Insightmain from "@/components/insightmain";
@@ -51,29 +51,41 @@ export default function Insight(): JSX.Element {
     <div className="bg-white flex flex-row justify-center w-full">
       <div className="bg-white w-full max-w-[] relative">
         {/* Hero Section */}
-        <div className="relative w-full h-[450px] bg-[url(/public/assets/images/insighthero.jpg)] bg-cover bg-center">
-          <div className="absolute inset-0 bg-[#000000a6]" />
+        <div
+            className="relative w-full h-[450px] mx- auto bg-[url(/public/assets/images/insighthero.jpg)] bg-cover bg-center">
+          <div className="absolute inset-0 bg-[#000000a6]"/>
           <div className="absolute inset-0 flex flex-col items-center justify-center">
-            <h1 className="font-['Libre_Bodoni-Bold',Helvetica] font-bold text-[#cdb989] text-5xl mb-8" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+            <h1 className="font-['Libre_Bodoni-Bold',Helvetica] font-bold text-[#cdb989] text-5xl mb-8"
+                style={{fontFamily: "'Times New Roman', Times, serif"}}>
               INSIGHT
             </h1>
-            <p className="font-['Libre_Bodoni-Regular',Helvetica] text-white text-base text-center max-w-md" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+            <p className="font-['Libre_Bodoni-Regular',Helvetica] text-white text-base text-center max-w-md"
+               style={{fontFamily: "'Times New Roman', Times, serif"}}>
               Timely insights to help you navigate the evolving investment
               landscape.
             </p>
+          </div>
+          <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
+            <Button
+                variant="ghost"
+                size="icon"
+                className="rounded-full w-12 h-12 bg-transparent"
+            >
+              <ChevronDown className="h-8 w-8 text-[#cdb989]"/>
+            </Button>
           </div>
         </div>
 
         {/* Main Content */}
         <div className="px-4 md:px-12 py-16">
-            <Insightmain />
+          <Insightmain/>
           {/* First Section */}
-          
+
 
           {/* The Power of Private Mortgage Investments Section */}
           <div className="mb-16">
             <h2 className="font-serif text-[#012c51] text-3xl text-center mb-6">
-              The Power of Private Mortgage Investments
+            The Power of Private Mortgage Investments
             </h2>
             <p className="font-['Segoe_UI-Regular',Helvetica] text-black text-base text-center mb-10 text-1xl" >
               Private mortgage investments, especially those organized through

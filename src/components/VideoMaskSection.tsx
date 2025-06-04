@@ -11,9 +11,9 @@ const VideoMaskSection: React.FC = () => {
           autoPlay
           loop
           muted
-          playsInline
+          // playsInline
           preload="auto"
-          src='assets/Vid/bg.mp4'
+          src='assets/Vid/bg.webm'
         />
       </div>
     </section>

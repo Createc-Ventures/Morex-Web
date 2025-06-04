@@ -179,7 +179,7 @@ export default function Homepage() {
           <h2 className="font-['Mate_SC-Regular',Helvetica] font-normal text-[#012c51] text-xl max-w-[783px]"
               style={{fontFamily: "'Times New Roman', Times, serif"}}>
             Our mortgage investment strategies are particularly well-suited for high-net-worth investors
-            seeking to diversify beyond traditional asset classes and enhance portfolio performance. Oﬀering
+            seeking to diversify beyond traditional asset classes and enhance portfolio performance. Offering
             consistent income and low correlation to public markets, private mortgage investments serve as
             a reliable anchor of stability in a well-constructed portfolio.
           </h2>

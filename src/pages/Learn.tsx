@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
+import {ArrowLeft, ChevronDown} from "lucide-react";
 
 // Components
 import Footer from "@/components/footer";
@@ -13,6 +13,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Card, CardContent } from "@/components/ui/card";
+import {Button} from "@/components/ui/button.tsx";
 
 // Types
 interface InvestmentTopic {
@@ -169,105 +170,108 @@ const Learn: React.FC = () => {
   };
 
   return (
-    <div className="bg-white flex flex-row justify-center w-full">
-      <div className="bg-white w-full">
-        {/* Hero Section */}
-        <div className="relative w-full h-[776px] mb-36">
-          <div className="absolute inset-0 overflow-hidden">
-            <img
-              className="w-full h-full object-cover"
-              alt="Person climbing mountain at sunset"
-              src="assets/images/learn.jpg"
-            />
-            <div className="absolute inset-0 bg-[#000000a6]" />
-          </div>
-
-          {/* Navigation Bar */}
-          <Navbar startPosition="custom" />
-
-          {/* Hero Content */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full">
-            <h1 className="font-serif font-bold text-[#cdb989] text-5xl mb-6">
-              YOUR INVESTMENT GUIDE
-            </h1>
-            <p className="font-serif font-normal text-white text-base max-w-xl mx-auto">
-              Learn the basics, explore your options, and understand how smart
-              investing can work for you.
-            </p>
-          </div>
-        </div>
-
-        {/* Main Content */}
-        <div className="px-7 mb-20 m-10">
-          <Learnmain />
-          <div className="flex flex-row gap-12">
-            <div className="w-full">
-              <h3 className="font-serif font-bold text-[#cdb989] text-[28px] mb-6">
-                Investment Fundamentals:
-              </h3>
-
-              <Accordion 
-                type="single" 
-                collapsible 
-                className="w-full"
-                ref={accordionRef}
-                value={openItem}
-                onValueChange={setOpenItem}
+      <div className="bg-white flex flex-row justify-center w-full">
+        <div className="bg-white w-full max-w-[] relative">
+          {/* Hero Section */}
+          <div
+              className="relative w-full h-[450px] mx- auto bg-[url(/public/assets/images/learn.jpg)] bg-cover bg-center">
+            <div className="absolute inset-0 bg-[#000000a6]"/>
+            <div className="absolute inset-0 flex flex-col items-center justify-center">
+              <h1 className="font-['Libre_Bodoni-Bold',Helvetica] font-bold text-[#cdb989] text-5xl mb-8"
+                  style={{fontFamily: "'Times New Roman', Times, serif"}}>
+                YOUR INVESTMENT GUIDE
+              </h1>
+              <p className="font-['Libre_Bodoni-Regular',Helvetica] text-white text-base text-center max-w-md"
+                 style={{fontFamily: "'Times New Roman', Times, serif"}}>
+                Learn the basics, explore your options, and understand how smart
+                investing can work for you.
+              </p>
+            </div>
+            <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
+              <Button
+                  variant="ghost"
+                  size="icon"
+                  className="rounded-full w-12 h-12 bg-transparent"
               >
-                {investmentTopics.map((topic) => {
-                  const paragraphs = splitContent(topic.content);
-                  
-                  return (
-                    <AccordionItem
-                      key={topic.id}
-                      value={topic.id}
-                      id={topic.id}
-                      data-value={topic.id}
-                      className="mb-4 bg-neutral-100 rounded-lg shadow-[-8px_8px_10px_#00000040] overflow-hidden"
-                    >
-                      <AccordionTrigger className="px-7 py-4 hover:no-underline">
-                        <div className="w-full text-left">
-                          <h4 className=" font-bold text-[#012c51] text-base mb-4">
-                            {topic.title}
-                          </h4>
-                          <p className="[font-family:'Segoe_UI-Semibold',Helvetica] font-normal text-black text-base">
-                            {topic.description}
-                          </p>
-                        </div>
-                      </AccordionTrigger>
-
-                      <AccordionContent className="px-7 py-4">
-                        <div className="pl-0 pr-12 ">
-                          <p className="[font-family:'Segoe_UI-Semibold',Helvetica] text-black text-base mb-4">
-                            {paragraphs[0]}
-                          </p>
-
-                          {paragraphs.length > 1 && (
-                            <details className="text-[#cdb989] cursor-pointer">
-                              <summary className="[font-family:'Segoe_UI-Semibold',Helvetica] text-sm mb-2 list-none outline-none">
-                                Read More
-                              </summary>
-                              <div className="mt-2">
-                                <p className="[font-family:'Segoe_UI-Semibold',Helvetica] font-normal text-black text-base">
-                                  {paragraphs[1]}
-                                </p>
-                              </div>
-                            </details>
-                          )}
-                        </div>
-                      </AccordionContent>
-                    </AccordionItem>
-                  );
-                })}
-              </Accordion>
+                <ChevronDown className="h-8 w-8 text-[#cdb989]"/>
+              </Button>
             </div>
           </div>
-        </div>
 
-        {/* Footer */}
-        <Footer />
+
+          {/* Main Content */}
+          <div className="px-7 mb-20 m-10">
+            <Learnmain/>
+            <div className="flex flex-row gap-12">
+              <div className="w-full">
+                <h3 className="font-serif font-bold text-[#cdb989] text-[28px] mb-6">
+                  Investment Fundamentals:
+                </h3>
+
+                <Accordion
+                    type="single"
+                    collapsible
+                    className="w-full"
+                    ref={accordionRef}
+                    value={openItem}
+                    onValueChange={setOpenItem}
+                >
+                  {investmentTopics.map((topic) => {
+                    const paragraphs = splitContent(topic.content);
+
+                    return (
+                        <AccordionItem
+                            key={topic.id}
+                            value={topic.id}
+                            id={topic.id}
+                            data-value={topic.id}
+                            className="mb-4 bg-neutral-100 rounded-lg shadow-[-8px_8px_10px_#00000040] overflow-hidden"
+                        >
+                          <AccordionTrigger className="px-7 py-4 hover:no-underline">
+                            <div className="w-full text-left">
+                              <h4 className=" font-bold text-[#012c51] text-base mb-4">
+                                {topic.title}
+                              </h4>
+                              <p className="[font-family:'Segoe_UI-Semibold',Helvetica] font-normal text-black text-base">
+                                {topic.description}
+                              </p>
+                            </div>
+                          </AccordionTrigger>
+
+                          <AccordionContent className="px-7 py-4">
+                            <div className="pl-0 pr-12 ">
+                              <p className="[font-family:'Segoe_UI-Semibold',Helvetica] text-black text-base mb-4">
+                                {paragraphs[0]}
+                              </p>
+
+                              {paragraphs.length > 1 && (
+                                  <details className="text-[#cdb989] cursor-pointer">
+                                    <summary
+                                        className="[font-family:'Segoe_UI-Semibold',Helvetica] text-sm mb-2 list-none outline-none">
+                                      Read More
+                                    </summary>
+                                    <div className="mt-2">
+                                      <p className="[font-family:'Segoe_UI-Semibold',Helvetica] font-normal text-black text-base">
+                                        {paragraphs[1]}
+                                      </p>
+                                    </div>
+                                  </details>
+                              )}
+                            </div>
+                          </AccordionContent>
+                        </AccordionItem>
+                    );
+                  })}
+                </Accordion>
+              </div>
+            </div>
+          </div>
+          {/* Navigation Bar */}
+          <Navbar startPosition="custom"/>
+          {/* Footer */}
+          <Footer/>
+        </div>
       </div>
-    </div>
   );
 };
 

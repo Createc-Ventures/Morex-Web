@@ -7,6 +7,7 @@ import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import {ChevronDown} from "lucide-react";
 
 export default function AboutUs(): JSX.Element {
   const teamMembers = [
@@ -24,29 +25,35 @@ export default function AboutUs(): JSX.Element {
   ];
 
   return (
-    <div className="bg-white w-full font-times">
-      <Navbar startPosition="custom" />
+    <div className="bg-white flex flex-row justify-center w-full">
+      <div className="bg-white w-full max-w-[] relative">
+        {/* Hero Section */}
+        <div className="relative w-full h-[450px] mx- auto bg-[url(/public/assets/images/hero.png)] bg-cover bg-center">
+          <div className="absolute inset-0 bg-[#000000a6]"/>
+          <div className="absolute inset-0 flex flex-col items-center justify-center">
+            <h1 className="font-serif font-bold text-[#cdb989] text-4xl md:text-5xl">
+              ABOUT US
+            </h1>
+            <p className="font-serif font-bold text-white mt-4 text-base">
+              More Than Mortgages
+            </p>
+          </div>
+          <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
+            <Button
+                variant="ghost"
+                size="icon"
+                className="rounded-full w-12 h-12 bg-transparent"
+            >
+              <ChevronDown className="h-8 w-8 text-[#cdb989]"/>
+            </Button>
+          </div>
+        </div>
 
-      <section className="relative w-full h-[450px]">
-        <div className="absolute w-full h-full">
-          <img
-            className="w-full h-full object-cover"
-            alt="Hero background"
-            src="assets/images/hero.png"
-          />
-          <div className="absolute w-full h-full top-0 left-0 bg-[#000000a6]" />
-        </div>
-        <div className="relative h-full flex flex-col items-center justify-center text-center px-4">
-          <h1 className="font-serif font-bold text-[#cdb989] text-4xl md:text-5xl">ABOUT US</h1>
-          <p className="font-serif font-bold text-white mt-4 text-base">More Than Mortgages</p>
-        </div>
-      </section>
-
-      <section className="flex flex-col md:flex-row items-center justify-between px-4 md:px-36 py-16 gap-10">
-        <div className="w-full md:w-[517px]">
-          <img className="w-full h-full rounded-2xl object-cover" alt="Our journey" src="assets/images/journey.png" />
-        </div>
-        <div className="w-full md:w-[591px] flex flex-col items-center text-center">
+        <section className="flex flex-col md:flex-row items-center justify-between px-4 md:px-36 py-16 gap-10">
+          <div className="w-full md:w-[517px]">
+            <img className="w-full h-full rounded-2xl object-cover" alt="Our journey" src="assets/images/journey.png"/>
+          </div>
+          <div className="w-full md:w-[591px] flex flex-col items-center text-center">
           <h2 className="text-[#012c51] font-bold text-3xl md:text-5xl mb-6 font-serif">OUR JOURNEY</h2>
           <p className="text-black text-sm md:text-base [font-family:'Segoe_UI-Semibold',Helvetica]">
             At Morex Asset Management, our story is rooted in a clear vision — to empower qualified
@@ -147,7 +154,10 @@ export default function AboutUs(): JSX.Element {
       </section>
 
       {/*<Testimonials />*/}
+      <Navbar startPosition="custom" />
+
       <Footer />
+    </div>
     </div>
   );
 }

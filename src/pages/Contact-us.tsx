@@ -10,7 +10,7 @@ import { Textarea } from "@/components/ui/textarea";
 import {
   Home,
   Phone,
-  Mail,
+  Mail, ChevronDown,
 } from "lucide-react";
 import React from "react";
 
@@ -70,20 +70,30 @@ export default function ContactUs(): JSX.Element {
       <div className="bg-white w-full relative">
         <Navbar startPosition="custom" />
         <div className="w-full h-[450px] relative bg-[url(/assets/images/contactus.jpg)] bg-cover">
-          <div className="absolute w-full h-full top-0 left-0 bg-[#000000a6]" />
+          <div className="absolute w-full h-full top-0 left-0 bg-[#000000a6]"/>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
             <h1 className="font-serif font-bold text-[#cdb989] text-5xl mb-8">CONTACT US</h1>
             <p className="font-serif font-normal text-white text-base">
-              Need an expert? you are more than welcomed to leave your contact<br />
+              Need an expert? you are more than welcomed to leave your contact<br/>
               info and we will be in touch shortly.
             </p>
+          </div>
+          <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
+            <Button
+                variant="ghost"
+                size="icon"
+                className="rounded-full w-12 h-12 bg-transparent"
+            >
+              <ChevronDown className="h-8 w-8 text-[#cdb989]"/>
+            </Button>
           </div>
         </div>
 
         <div className="flex justify-center gap-16 mt-16">
           {contactCards.map((card, index) => (
-            <Card key={index} className="w-80 h-[297px] bg-neutral-100 rounded-lg shadow-[-8px_8px_10px_#00000040] flex flex-col items-center justify-center">
-              <CardContent className="flex flex-col items-center pt-16">
+              <Card key={index}
+                    className="w-80 h-[297px] bg-neutral-100 rounded-lg shadow-[-8px_8px_10px_#00000040] flex flex-col items-center justify-center">
+                <CardContent className="flex flex-col items-center pt-16">
                 <div className="mb-8">{card.icon}</div>
                 <h3 className="font-normal text-[#012c51] text-base mb-8 font-serif">{card.title}</h3>
                 <p className="font-normal text-black text-base text-center">{card.content}</p>

@@ -74,7 +74,7 @@ export default function Navbar({ startPosition = "default" }) {
   ];
 
   const baseClass =
-    "fixed z-50 transition-all duration-500 ease-in-out bg-white shadow-[0px_4px_4px_2px_#00000040] px-6";
+    "fixed z-50 transition-all duration-500 ease-in-out shadow-[0px_4px_4px_2px_#00000040] px-6";
   const scrolledClass =
     "top-4 left-1/2 transform -translate-x-1/2 w-[90%] h-[80px] rounded-[40px]";
   const defaultClass =
@@ -106,7 +106,7 @@ export default function Navbar({ startPosition = "default" }) {
 
       {/* Main Navbar (Desktop) */}
       <header
-        className={`${baseClass} ${
+        className={`bg-accent ${baseClass} ${
           scrolled
             ? scrolledClass
             : startPosition === "custom"
@@ -190,7 +190,7 @@ export default function Navbar({ startPosition = "default" }) {
                         className="flex flex-col border border-gray-200 p-4 rounded-xl hover:bg-[#F9F9F9] hover:border-[#D4B968] transition-all duration-200 group"
                       >
                         <div className="flex justify-between items-center">
-                          <h4 className="text-blue-900 font-bold text-sm group-hover:text-[#D4B968] transition-colors duration-200">
+                          <h4 className="text-blue-900 font-bold text-sm group-hover:text-text-blue-900 transition-colors duration-200">
                             {item.title}
                           </h4>
                           <span className="text-blue-900 group-hover:translate-x-1 group-hover:text-[#D4B968] transition-transform">
@@ -237,7 +237,7 @@ export default function Navbar({ startPosition = "default" }) {
                         className="flex flex-col border border-gray-200 p-4 rounded-xl hover:bg-[#F9F9F9] hover:border-[#D4B968] transition-all duration-200 group"
                       >
                         <div className="flex justify-between items-center">
-                          <h4 className="text-blue-900 font-bold text-sm group-hover:text-[#D4B968] transition-colors duration-200">
+                          <h4 className="text-blue-900 font-bold text-sm group-hover:text-text-blue-900 transition-colors duration-200">
                             {item.title}
                           </h4>
                           <span className="text-blue-900 group-hover:translate-x-1 group-hover:text-[#D4B968] transition-transform">

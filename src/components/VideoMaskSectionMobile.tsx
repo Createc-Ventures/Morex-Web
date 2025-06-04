@@ -13,7 +13,7 @@ const VideoMaskSectionMobile: React.FC = () => {
           muted
           playsInline
           preload="auto"
-          src='assets/Vid/bg.mp4'
+          src='assets/Vid/bg.webm'
         />
       </div>
     </section>
