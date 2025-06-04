@@ -157,9 +157,9 @@ export default function Insight(): JSX.Element {
           {/* Key Considerations Section */}
           <Card className="bg-neutral-100 rounded-[30px] mb-16">
             <CardContent className="p-7">
-              <div className="flex flex-col lg:flex-row gap-8">
+              <div className="flex flex-col flex-auto lg:flex-row gap-8">
                 <div className="lg:w-1/2">
-                  <h2 className="font-serif text-[#012c51] text-5xl mb-8" >
+                  <h2 className="font-serif text-[#012c51] text-4xl mb-8 align-middle flex-auto flex-shrink-1" >
                     Key Considerations for Investors
                   </h2>
                   <p className="font-['Segoe_UI-Regular',Helvetica] text-black text-base mb-6" >
