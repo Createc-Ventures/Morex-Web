@@ -31,11 +31,13 @@ export default function AboutUs(): JSX.Element {
         <div className="relative w-full h-[450px] mx- auto bg-[url(/public/assets/images/hero.png)] bg-cover bg-center">
           <div className="absolute inset-0 bg-[#000000a6]"/>
           <div className="absolute inset-0 flex flex-col items-center justify-center">
-            <h1 className="font-serif font-bold text-[#cdb989] text-4xl md:text-5xl">
+            <h1 className="font-['Libre_Bodoni-Bold',Helvetica] font-bold text-[#cdb989] text-5xl mb-8"
+                style={{fontFamily: "'Times New Roman', Times, serif"}}>
               ABOUT US
             </h1>
-            <p className="font-serif font-bold text-white mt-4 text-base">
-              More Than Mortgages
+            <p className="font-['Libre_Bodoni-Regular',Helvetica] text-white text-base text-center max-w-md"
+               style={{fontFamily: "'Times New Roman', Times, serif"}}>
+              More than mortgages — your partner in building financial security and wealth.
             </p>
           </div>
           <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
