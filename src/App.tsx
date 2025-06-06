@@ -13,6 +13,7 @@ import Learn from "./pages/Learn";
 import Insights from "./pages/Insight";
 import Meettheteam from "./pages/meet-the-team.tsx";
 import BlogandArticle from "./pages/blog";
+import OtpForm from "./components/OtpForm"; // ✅ OTP component
 import { usePageTracking } from "./hooks/usePageTracking";
 
 const queryClient = new QueryClient();
@@ -30,11 +31,12 @@ const AppRoutes = () => {
         <Route path="/aboutus/team" element={<Meettheteam />} />
         <Route path="/invest" element={<Invest />} />
         <Route path="/contactus" element={<ContactUs />} />
-        <Route path="/Learn" element={<Learn />} />
+        <Route path="/learn" element={<Learn />} />
         <Route path="/insights" element={<Insights />} />
         <Route path="/insights/:id" element={<Insights />} />
         <Route path="/insights/:id/:title" element={<Insights />} />
-        <Route path="/Blog & Article" element={<BlogandArticle />} />
+        <Route path="/blog-articles" element={<BlogandArticle />} /> {/* ✅ Fixed */}
+        <Route path="/otp" element={<OtpForm />} /> {/* ✅ New OTP Route */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
@@ -54,6 +56,3 @@ const App = () => (
 );
 
 export default App;
-
-
-

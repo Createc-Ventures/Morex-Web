@@ -1,9 +1,9 @@
-
 import { useRef, useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
+import { sendOtp } from "@/api/api"; // Adjust path if needed
 
 export default function Footer() {
   const recaptchaRef = useRef<ReCAPTCHA>(null);
@@ -41,6 +41,7 @@ export default function Footer() {
     if (result.success) {
       alert('Message sent successfully!');
       setFormData({ name: '', email: '', subject: '', message: '' });
+      setCaptchaToken(null);
       recaptchaRef.current?.reset();
     } else {
       alert('Error: ' + result.error);
@@ -64,9 +65,11 @@ export default function Footer() {
           />
           <Input
             name="email"
+            type="email"
             placeholder="Email"
             value={formData.email}
             onChange={handleChange}
+            required
           />
           <Input
             name="subject"
@@ -88,10 +91,10 @@ export default function Footer() {
             theme="light"
           />
           <Button
-            type="submit"
-            className="bg-[#e3c07b] text-black hover:bg-[#c7a872]"
-          >
-            Send Message
+           type="submit"
+           className="bg-[#e3c07b] text-black hover:bg-[#c7a872]"
+           >
+           Verify via Email
           </Button>
         </form>
       </div>
@@ -101,7 +104,7 @@ export default function Footer() {
         {/*<a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">*/}
         {/*  <img src="/assets/icons/fb.svg" alt="Facebook" className="w-12 h-12 cursor-pointer" />*/}
         {/*</a>*/}
-        <a href="info@morexasset.com">
+        <a href="mailto:info@morexasset.com">
           <img src="/assets/icons/mail.svg" alt="Mail" className="w-12 h-12 cursor-pointer" />
         </a>
         {/*<a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">*/}
@@ -137,7 +140,6 @@ export default function Footer() {
         />
         <p className="text-center text-sm">© 2025 Morex Asset Management Group. All rights reserved.</p>
       </div>
-
     </footer>
   );
 }

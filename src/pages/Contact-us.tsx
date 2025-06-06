@@ -13,7 +13,6 @@ import {
   Mail,
 } from "lucide-react";
 import React from "react";
-
 export default function ContactUs(): JSX.Element {
   const recaptchaRef = useRef<ReCAPTCHA>(null);
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
@@ -114,9 +113,13 @@ export default function ContactUs(): JSX.Element {
                   theme="light"
                 />
 
-                <Button type="submit" className="bg-[#cdb989] text-[#012c51] rounded-[30px] h-[38px] w-[187px] font-serif font-normal">
-                  Send Message
+                <Button
+                 type="submit"
+                 className="bg-[#cdb989] text-[#012c51] rounded-[30px] h-[38px] w-[187px] font-serif font-normal"
+>
+                 Verify via Email
                 </Button>
+
               </form>
             </CardContent>
           </Card>

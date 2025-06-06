@@ -1,0 +1,11 @@
+# Secret key for your app (used for tokens, encryption, etc.)
+SECRET_KEY=supersecretkey123
+
+# SMTP (email) server settings
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_USER=your-email@gmail.com
+EMAIL_PASS=your-email-password-or-app-password
+
+# OTP expiration time in minutes
+OTP_EXPIRY_MINUTES=5
